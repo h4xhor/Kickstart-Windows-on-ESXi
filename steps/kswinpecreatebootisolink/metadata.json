@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "18e95bc7-525c-4705-909b-da70092f570f", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "a7464102-ebd7-44d2-a291-74239c220e76", 
+    "key": "kswinpecreatebootisolink", 
+    "name": "KS WinPE Create Boot ISO (Link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

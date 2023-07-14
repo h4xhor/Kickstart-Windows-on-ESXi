@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "a40fa396-7212-4dde-ac6a-43645cf09f17", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "c2e93dc3-0bc7-4a8e-9d49-ba4f2a0ca055", 
+    "key": "ksesxibootwinperecreatevirtualmachineserverlink", 
+    "name": "KS ESXi Boot WinPE Recreate Virtual Machine Server (Link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "c681b760-e629-454d-b9a1-99e44e5bd269", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

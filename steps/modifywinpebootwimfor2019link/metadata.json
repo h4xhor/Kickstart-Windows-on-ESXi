@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "666de3ea-6e5f-4193-baac-14a0bc82a6de", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "3d34c4b1-c662-496f-bc42-48511274c027", 
+    "key": "modifywinpebootwimfor2019link", 
+    "name": "Modify WinPE boot.wim for 2019 (Link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

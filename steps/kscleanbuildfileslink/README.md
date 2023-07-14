@@ -1,0 +1,1 @@
+Removes the directory `{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}` and ISO file at `{ksVmwareAttuneBaseDir}/kickstart_{targetServer.fqn}.iso`. 

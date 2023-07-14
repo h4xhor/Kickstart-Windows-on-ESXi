@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "f5cf8fbd-6427-4b9f-bb29-aa9ec80cabbb", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "9af3298b-811a-4736-9196-241a230e1f1e", 
+    "key": "winpedeploywinpefilesforesxilink", 
+    "name": "WinPE Deploy WinPE Files for ESXi (Link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}
