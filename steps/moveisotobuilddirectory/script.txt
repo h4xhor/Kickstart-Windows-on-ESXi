@@ -1,0 +1,5 @@
+mkdir -vp "{ksAttuneBaseDir}/build-{targetServer.fqn}"
+
+cd "{ksAttuneBaseDir}"
+
+mv "kickstart_{targetServer.fqn}.iso" "build-{targetServer.fqn}"

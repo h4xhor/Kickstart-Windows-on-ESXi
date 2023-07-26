@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "438c6d03-430e-436b-9702-6ddad907f612", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "eb59f78f-904a-4e4d-b24a-711cdbaa3035", 
+    "key": "ksdeploywindowsserverunattendedconfiglink", 
+    "name": "KS Deploy Windows Server Unattended Config (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

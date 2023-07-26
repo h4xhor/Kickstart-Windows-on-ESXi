@@ -1,0 +1,28 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "cdda3384-70e4-4128-8922-63805736b63e", 
+    "isBlueprint": true, 
+    "key": "kickstartwindows10dvdonesxi", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "createwindowsdesktop10dvdkickstartisolink"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "esxideployvmwaredriverslink"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "createdriversiso"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "esxiwinrecreatevirtualmachinelink"
+        }
+    ], 
+    "name": "Kickstart Windows 10 DVD on ESXi", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

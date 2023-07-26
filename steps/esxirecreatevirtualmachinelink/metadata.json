@@ -4,16 +4,16 @@
     "blueprintUuid": "a40fa396-7212-4dde-ac6a-43645cf09f17", 
     "cloneUrl": "", 
     "enabled": true, 
-    "externalUuid4": "c2e93dc3-0bc7-4a8e-9d49-ba4f2a0ca055", 
-    "key": "ksesxibootwinperecreatevirtualmachineserverlink", 
-    "name": "KS ESXi Boot WinPE Recreate Virtual Machine Server (Link)", 
+    "externalUuid4": "403baff2-2a7a-47e2-bb27-322bdabf012a", 
+    "key": "esxirecreatevirtualmachinelink", 
+    "name": "ESXi Recreate Virtual Machine (link)", 
     "parameterMap": [
         {
             "childParameterName": null, 
             "childParameterType": "c.s.s.b.phv.Text", 
             "childParameterUuid": "92d11185-28c3-4c1e-9f4e-bf3d4c31cd13", 
             "childProjectName": null, 
-            "childProjectUuid": "c681b760-e629-454d-b9a1-99e44e5bd269", 
+            "childProjectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
             "parentParameterKey": null, 
             "parentStaticTextValue": "windows9Server64Guest"
         }

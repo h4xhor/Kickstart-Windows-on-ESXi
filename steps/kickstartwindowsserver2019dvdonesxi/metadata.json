@@ -1,0 +1,36 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "de2c92b7-e704-4c90-8d7a-cd393bc9885c", 
+    "isBlueprint": true, 
+    "key": "kickstartwindowsserver2019dvdonesxi", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "createwindowsserver2019dvdkickstartisolink"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "moveisotobuilddirectory"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "extractwindowsisolink"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "esxideployvmwaredriverslink"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "createwindowsbootisolink"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "esxirecreatevirtualmachinelink"
+        }
+    ], 
+    "name": "Kickstart Windows Server 2019 DVD on ESXi", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "ff586b39-f136-40b2-85e7-80423455be70", 
+    "key": "targetserverwin", 
+    "name": "Target Server: Win", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.WindowsServer"
+}

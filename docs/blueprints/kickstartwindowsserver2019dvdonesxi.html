@@ -6,29 +6,29 @@
 
 
 <head>
-    <title>How to WinPE Kickstart Win 2019+ESXi - Attune Automation</title>
+    <title>How to Kickstart Windows Server 2019 DVD on ESXi - Attune Automation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title"
-          content="How to WinPE Kickstart Win 2019+ESXi - Attune Automation">
+          content="How to Kickstart Windows Server 2019 DVD on ESXi - Attune Automation">
     <meta name="description"
-          content="Kickstarts a Windows Server 2019 virtual machine on ESXi.">
+          content="">
     <meta name="robots"
           content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
 
     <meta property="og:locale" content="en_AU" />
     <meta property="og:type" content="article" />
     <meta property="og:title"
-          content="HowTo WinPE Kickstart Win 2019+ESXi - Attune Automation" />
-    <meta property="og:description" content="Kickstarts a Windows Server 2019 virtual machine on ESXi." />
+          content="HowTo Kickstart Windows Server 2019 DVD on ESXi - Attune Automation" />
+    <meta property="og:description" content="" />
     <meta property="og:site_name" content="Attune Automation" />
     <meta property="article:section" content="IT Instruction" />
 
     <meta name="twitter:title"
-          content="How to WinPE Kickstart Win 2019+ESXi - Attune Automation" />
-    <meta name="twitter:description" content="Kickstarts a Windows Server 2019 virtual machine on ESXi." />
+          content="How to Kickstart Windows Server 2019 DVD on ESXi - Attune Automation" />
+    <meta name="twitter:description" content="" />
 
     <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
     <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-192x192.png" sizes="192x192">
@@ -74,7 +74,7 @@
             </a>
         </li>
         <li class="breadcrumb-item active" aria-current="page">
-            <strong>WinPE Kickstart Win 2019+ESXi</strong>
+            <strong>Kickstart Windows Server 2019 DVD on ESXi</strong>
         </li>
     </ol>
 </nav>
@@ -86,19 +86,12 @@
     <div class="row pt-5">
         <div class="col px-0">
             <h1 class="text-left">
-                How to WinPE Kickstart Win 2019+ESXi
+                How to Kickstart Windows Server 2019 DVD on ESXi
             </h1>
         </div>
     </div>
 
 <!-- Blueprint Description -->
-    <div class="row">
-        <div class="blueprint-description col px-0">
-            <p class="text-left">
-                <p>Kickstarts a Windows Server 2019 virtual machine on ESXi.</p>
-            </p>
-        </div>
-    </div>
     <div class="row pt-4">
         <div class="col-6 px-0">
             <h6 class="text-left">
@@ -157,7 +150,7 @@
                     </h6>
                     <h6 class="text-muted">
                         <a href="#top">
-                            <strong>WinPE Kickstart Win 2019+ESXi</strong>
+                            <strong>Kickstart Windows Server 2019 DVD on ESXi</strong>
                         </a>
                     </h6>
 
@@ -166,72 +159,48 @@
         
 
                     <h6 class="text-muted pt-2">
-                        <a href="#kscleanbuildfileslink">
-                            <strong>Step 1 -</strong> KS Clean Build Files (Link)
+                        <a href="#createwindowsserver2019dvdkickstartisolink">
+                            <strong>Step 1 -</strong> Create Windows Server 2019 DVD Kickstart ISO (link)
                         </a>
                     </h6>
 
         
 
                     <h6 class="text-muted pt-2">
-                        <a href="#winpedeploywinpefilesforesxilink">
-                            <strong>Step 2 -</strong> WinPE Deploy WinPE Files for ESXi (Link)
+                        <a href="#moveisotobuilddirectory">
+                            <strong>Step 2 -</strong> Move ISO to Build Directory
                         </a>
                     </h6>
 
         
 
                     <h6 class="text-muted pt-2">
-                        <a href="#ksdeploywindowsserverunattendedconfiglink">
-                            <strong>Step 3 -</strong> KS Deploy Windows Server Unattended Config (link)
+                        <a href="#extractwindowsisolink">
+                            <strong>Step 3 -</strong> Extract Windows ISO (link)
                         </a>
                     </h6>
 
         
 
                     <h6 class="text-muted pt-2">
-                        <a href="#modifywinpebootwimfor2019link">
-                            <strong>Step 4 -</strong> Modify WinPE boot.wim for 2019 (Link)
+                        <a href="#esxideployvmwaredriverslink">
+                            <strong>Step 4 -</strong> ESXi Deploy VMWare Drivers (link)
                         </a>
                     </h6>
 
         
 
                     <h6 class="text-muted pt-2">
-                        <a href="#kswinpecreatebootisolink">
-                            <strong>Step 5 -</strong> KS WinPE Create Boot ISO (Link)
+                        <a href="#createwindowsbootisolink">
+                            <strong>Step 5 -</strong> Create Windows Boot ISO (link)
                         </a>
                     </h6>
 
         
 
                     <h6 class="text-muted pt-2">
-                        <a href="#ksesxibootwinperecreatevirtualmachineserverlink">
-                            <strong>Step 6 -</strong> KS ESXi Boot WinPE Recreate Virtual Machine Server (Link)
-                        </a>
-                    </h6>
-
-        
-
-                    <h6 class="text-muted pt-2">
-                        <a href="#kswinwinrmhttpswait120s">
-                            <strong>Step 7 -</strong> KS Win WinRM HTTPS Wait 120s
-                        </a>
-                    </h6>
-
-        
-
-                    <h6 class="text-muted pt-2">
-                        <a href="#winrebootlink">
-                            <strong>Step 8 -</strong> WIN Reboot (Link)
-                        </a>
-                    </h6>
-
-        
-
-                    <h6 class="text-muted pt-2">
-                        <a href="#kscleanbuildfileslink">
-                            <strong>Step 9 -</strong> KS Clean Build Files (Link)
+                        <a href="#esxirecreatevirtualmachinelink">
+                            <strong>Step 6 -</strong> ESXi Recreate Virtual Machine (link)
                         </a>
                     </h6>
 
@@ -294,7 +263,7 @@
                 </ol>
             </p>
             <p class="lead text-center">
-                You've automated: <strong>WinPE Kickstart Win 2019+ESXi</strong>
+                You've automated: <strong>Kickstart Windows Server 2019 DVD on ESXi</strong>
             </p>
             <hr class="my-4 text-center">
             <div class="col px-0">
@@ -325,16 +294,16 @@
 
 
                     <div class="row pt-5">
-                        <h4 id="kscleanbuildfileslink">
-                            <a href="#kscleanbuildfileslink">
-                                <strong>Step 1 -</strong> KS Clean Build Files (Link)
+                        <h4 id="createwindowsserver2019dvdkickstartisolink">
+                            <a href="#createwindowsserver2019dvdkickstartisolink">
+                                <strong>Step 1 -</strong> Create Windows Server 2019 DVD Kickstart ISO (link)
                             </a>
                         </h4>
                     </div>
 
                     <div class="blueprint-description row">
                         <p>
-                            <p>Removes the directory <code>{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}</code> and ISO file at <code>{ksVmwareAttuneBaseDir}/kickstart_{targetServer.fqn}.iso</code>. </p>
+                            
                         </p>
                     </div>
 
@@ -354,164 +323,16 @@
 
 
                     <div class="row pt-5">
-                        <h4 id="winpedeploywinpefilesforesxilink">
-                            <a href="#winpedeploywinpefilesforesxilink">
-                                <strong>Step 2 -</strong> WinPE Deploy WinPE Files for ESXi (Link)
+                        <h4 id="moveisotobuilddirectory">
+                            <a href="#moveisotobuilddirectory">
+                                <strong>Step 2 -</strong> Move ISO to Build Directory
                             </a>
                         </h4>
                     </div>
 
                     <div class="blueprint-description row">
                         <p>
-                            <p>Deploys WinPE ISO and ESXi drivers.</p>
-                        </p>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h4 id="ksdeploywindowsserverunattendedconfiglink">
-                            <a href="#ksdeploywindowsserverunattendedconfiglink">
-                                <strong>Step 3 -</strong> KS Deploy Windows Server Unattended Config (link)
-                            </a>
-                        </h4>
-                    </div>
-
-                    <div class="blueprint-description row">
-                        <p>
-                            <p>Deploys a autounattend.xml file compatible with Windows Server 2016, 2019 and 2022.</p>
-                        </p>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h4 id="modifywinpebootwimfor2019link">
-                            <a href="#modifywinpebootwimfor2019link">
-                                <strong>Step 4 -</strong> Modify WinPE boot.wim for 2019 (Link)
-                            </a>
-                        </h4>
-                    </div>
-
-                    <div class="blueprint-description row">
-                        <p>
-                            <p>Modifies <code>startnet.cmd</code> that's inside <code>boot.wim</code>.</p>
-                        </p>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h4 id="kswinpecreatebootisolink">
-                            <a href="#kswinpecreatebootisolink">
-                                <strong>Step 5 -</strong> KS WinPE Create Boot ISO (Link)
-                            </a>
-                        </h4>
-                    </div>
-
-                    <div class="blueprint-description row">
-                        <p>
-                            <p>Recreates the bootable WinPE ISO.</p>
-                        </p>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h4 id="ksesxibootwinperecreatevirtualmachineserverlink">
-                            <a href="#ksesxibootwinperecreatevirtualmachineserverlink">
-                                <strong>Step 6 -</strong> KS ESXi Boot WinPE Recreate Virtual Machine Server (Link)
-                            </a>
-                        </h4>
-                    </div>
-
-                    <div class="blueprint-description row">
-                        <p>
-                            <p>Uploads the modified WinPE ISO to ESXi.</p>
-<p>Creates a virtual machine.</p>
-<p>Boots the virtual machine from the WinPE ISO for Windows Server.</p>
-                        </p>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h4 id="kswinwinrmhttpswait120s">
-                            <a href="#kswinwinrmhttpswait120s">
-                                <strong>Step 7 -</strong> KS Win WinRM HTTPS Wait 120s
-                            </a>
-                        </h4>
-                    </div>
-
-                    <div class="blueprint-description row">
-                        <p>
-                            <p>Waits until we get WinRM access to the target Windows virtual machine.</p>
-<p>Then waits 120 seconds to allow time for remaining PowerShell scripts in <code>autounattend.xml</code> to complete.</p>
+                            
                         </p>
                     </div>
 
@@ -524,17 +345,40 @@
 
 
 
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
 
 
     
+
+
 
     <div class="row">
-        <p class="mb-0">
-            Check if TCP Port <strong>0</strong> is listening.
-            When the TCP Port is up, wait <strong>120</strong>
-            seconds.
+        <p>
+            Execute the following script:
         </p>
-        <p>Use Telnet to check if the TCP Service is accepting connections.</p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+mkdir -vp &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+cd &quot;{ksAttuneBaseDir}&quot;
+
+mv &quot;kickstart_{targetServer.fqn}.iso&quot; &quot;build-{targetServer.fqn}&quot;
+                </code>
+            </pre>
+        </div>
     </div>
 
 
@@ -546,16 +390,16 @@
 
 
                     <div class="row pt-5">
-                        <h4 id="winrebootlink">
-                            <a href="#winrebootlink">
-                                <strong>Step 8 -</strong> WIN Reboot (Link)
+                        <h4 id="extractwindowsisolink">
+                            <a href="#extractwindowsisolink">
+                                <strong>Step 3 -</strong> Extract Windows ISO (link)
                             </a>
                         </h4>
                     </div>
 
                     <div class="blueprint-description row">
                         <p>
-                            <p>Reboots the target Windows virtual machine.</p>
+                            
                         </p>
                     </div>
 
@@ -575,16 +419,74 @@
 
 
                     <div class="row pt-5">
-                        <h4 id="kscleanbuildfileslink">
-                            <a href="#kscleanbuildfileslink">
-                                <strong>Step 9 -</strong> KS Clean Build Files (Link)
+                        <h4 id="esxideployvmwaredriverslink">
+                            <a href="#esxideployvmwaredriverslink">
+                                <strong>Step 4 -</strong> ESXi Deploy VMWare Drivers (link)
                             </a>
                         </h4>
                     </div>
 
                     <div class="blueprint-description row">
                         <p>
-                            <p>Removes the directory <code>{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}</code> and ISO file at <code>{ksVmwareAttuneBaseDir}/kickstart_{targetServer.fqn}.iso</code>. </p>
+                            
+                        </p>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="createwindowsbootisolink">
+                            <a href="#createwindowsbootisolink">
+                                <strong>Step 5 -</strong> Create Windows Boot ISO (link)
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="blueprint-description row">
+                        <p>
+                            
+                        </p>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="esxirecreatevirtualmachinelink">
+                            <a href="#esxirecreatevirtualmachinelink">
+                                <strong>Step 6 -</strong> ESXi Recreate Virtual Machine (link)
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="blueprint-description row">
+                        <p>
+                            
                         </p>
                     </div>
 

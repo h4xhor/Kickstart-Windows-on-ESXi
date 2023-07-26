@@ -1,0 +1,1 @@
+Deploys a autounattend.xml file compatible with Windows Desktop 10.

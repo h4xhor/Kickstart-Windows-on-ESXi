@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "8cc1e69c-770a-48a2-aacb-75ecb02b0875", 
+    "interpreter": 1, 
+    "key": "createdriversiso", 
+    "name": "Create Drivers ISO", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneosbuildserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

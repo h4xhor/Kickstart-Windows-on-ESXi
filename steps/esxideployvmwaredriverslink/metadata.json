@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "78b36dec-af9f-4f10-afcf-9875296f4b56", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "5c9b6d70-caec-4c19-8d74-fbc4a12d06c3", 
+    "key": "esxideployvmwaredriverslink", 
+    "name": "ESXi Deploy VMWare Drivers (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

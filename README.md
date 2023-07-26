@@ -54,6 +54,15 @@ This Project contains the following Blueprints.
 
 
 
+### Kickstart Windows 10 DVD on ESXi
+
+
+### Kickstart Windows Server 2019 DVD on ESXi
+
+
+### WinPE Kickstart Win10+ESXi
+
+
 ### WinPE Kickstart Win 2019+ESXi
 
 Kickstarts a Windows Server 2019 virtual machine on ESXi.
@@ -66,7 +75,11 @@ Kickstarts a Windows Server 2019 virtual machine on ESXi.
 
 | Name | Type | Script Reference | Comment |
 | ---- | ---- | ---------------- | ------- |
+| Attune OS Build Server | Linux/Unix Node | `attuneosbuildserver` |  |
+| KS: Attune Base Dir | Text | `ksattunebasedir` |  |
+| Linux: Attune User | Linux/Unix Credential | `linuxattuneuser` |  |
 | Target Server | Basic Node | `targetserver` |  |
+| Target Server: Win | Windows Node | `targetserverwin` |  |
 
 
 
