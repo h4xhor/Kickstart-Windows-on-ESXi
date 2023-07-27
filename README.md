@@ -57,6 +57,9 @@ This Project contains the following Blueprints.
 ### Kickstart Windows 10 DVD on ESXi
 
 
+### Kickstart Windows 10 DVD on ESXi with Single ISO
+
+
 ### Kickstart Windows Server 2019 DVD on ESXi
 
 

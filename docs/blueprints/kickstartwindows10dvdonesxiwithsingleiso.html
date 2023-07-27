@@ -6,13 +6,13 @@
 
 
 <head>
-    <title>How to Kickstart Windows 10 DVD on ESXi - Attune Automation</title>
+    <title>How to Kickstart Windows 10 DVD on ESXi with Single ISO - Attune Automation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title"
-          content="How to Kickstart Windows 10 DVD on ESXi - Attune Automation">
+          content="How to Kickstart Windows 10 DVD on ESXi with Single ISO - Attune Automation">
     <meta name="description"
           content="">
     <meta name="robots"
@@ -21,13 +21,13 @@
     <meta property="og:locale" content="en_AU" />
     <meta property="og:type" content="article" />
     <meta property="og:title"
-          content="HowTo Kickstart Windows 10 DVD on ESXi - Attune Automation" />
+          content="HowTo Kickstart Windows 10 DVD on ESXi with Single ISO - Attune Automation" />
     <meta property="og:description" content="" />
     <meta property="og:site_name" content="Attune Automation" />
     <meta property="article:section" content="IT Instruction" />
 
     <meta name="twitter:title"
-          content="How to Kickstart Windows 10 DVD on ESXi - Attune Automation" />
+          content="How to Kickstart Windows 10 DVD on ESXi with Single ISO - Attune Automation" />
     <meta name="twitter:description" content="" />
 
     <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
@@ -74,7 +74,7 @@
             </a>
         </li>
         <li class="breadcrumb-item active" aria-current="page">
-            <strong>Kickstart Windows 10 DVD on ESXi</strong>
+            <strong>Kickstart Windows 10 DVD on ESXi with Single ISO</strong>
         </li>
     </ol>
 </nav>
@@ -86,7 +86,7 @@
     <div class="row pt-5">
         <div class="col px-0">
             <h1 class="text-left">
-                How to Kickstart Windows 10 DVD on ESXi
+                How to Kickstart Windows 10 DVD on ESXi with Single ISO
             </h1>
         </div>
     </div>
@@ -150,7 +150,7 @@
                     </h6>
                     <h6 class="text-muted">
                         <a href="#top">
-                            <strong>Kickstart Windows 10 DVD on ESXi</strong>
+                            <strong>Kickstart Windows 10 DVD on ESXi with Single ISO</strong>
                         </a>
                     </h6>
 
@@ -159,8 +159,24 @@
         
 
                     <h6 class="text-muted pt-2">
-                        <a href="#createwindowsdesktop10dvdkickstartiso2link">
-                            <strong>Step 1 -</strong> Create Windows Desktop 10 DVD Kickstart ISO - 2 (link)
+                        <a href="#createwindowsdesktop10dvdkickstartisolink">
+                            <strong>Step 1 -</strong> Create Windows Desktop 10 DVD Kickstart ISO (link)
+                        </a>
+                    </h6>
+
+        
+
+                    <h6 class="text-muted pt-2">
+                        <a href="#moveisotobuilddirectory">
+                            <strong>Step 2 -</strong> Move ISO to Build Directory
+                        </a>
+                    </h6>
+
+        
+
+                    <h6 class="text-muted pt-2">
+                        <a href="#extractwindowsisolink">
+                            <strong>Step 3 -</strong> Extract Windows ISO (link)
                         </a>
                     </h6>
 
@@ -168,23 +184,23 @@
 
                     <h6 class="text-muted pt-2">
                         <a href="#esxideployvmwaredriverslink">
-                            <strong>Step 2 -</strong> ESXi Deploy VMWare Drivers (link)
+                            <strong>Step 4 -</strong> ESXi Deploy VMWare Drivers (link)
                         </a>
                     </h6>
 
         
 
                     <h6 class="text-muted pt-2">
-                        <a href="#createdriversiso">
-                            <strong>Step 3 -</strong> Create Drivers ISO
+                        <a href="#createwindowsbootisolink">
+                            <strong>Step 5 -</strong> Create Windows Boot ISO (link)
                         </a>
                     </h6>
 
         
 
                     <h6 class="text-muted pt-2">
-                        <a href="#esxiwinrecreatevirtualmachinelink">
-                            <strong>Step 4 -</strong> ESXi Win Recreate Virtual Machine (link)
+                        <a href="#esxirecreatevirtualmachinelink">
+                            <strong>Step 6 -</strong> ESXi Recreate Virtual Machine (link)
                         </a>
                     </h6>
 
@@ -247,7 +263,7 @@
                 </ol>
             </p>
             <p class="lead text-center">
-                You've automated: <strong>Kickstart Windows 10 DVD on ESXi</strong>
+                You've automated: <strong>Kickstart Windows 10 DVD on ESXi with Single ISO</strong>
             </p>
             <hr class="my-4 text-center">
             <div class="col px-0">
@@ -278,18 +294,13 @@
 
 
                     <div class="row pt-5">
-                        <h4 id="createwindowsdesktop10dvdkickstartiso2link">
-                            <a href="#createwindowsdesktop10dvdkickstartiso2link">
-                                <strong>Step 1 -</strong> Create Windows Desktop 10 DVD Kickstart ISO - 2 (link)
+                        <h4 id="createwindowsdesktop10dvdkickstartisolink">
+                            <a href="#createwindowsdesktop10dvdkickstartisolink">
+                                <strong>Step 1 -</strong> Create Windows Desktop 10 DVD Kickstart ISO (link)
                             </a>
                         </h4>
                     </div>
 
-                    <div class="blueprint-description row">
-                        <p>
-                            
-                        </p>
-                    </div>
 
 
 
@@ -307,38 +318,9 @@
 
 
                     <div class="row pt-5">
-                        <h4 id="esxideployvmwaredriverslink">
-                            <a href="#esxideployvmwaredriverslink">
-                                <strong>Step 2 -</strong> ESXi Deploy VMWare Drivers (link)
-                            </a>
-                        </h4>
-                    </div>
-
-                    <div class="blueprint-description row">
-                        <p>
-                            
-                        </p>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h4 id="createdriversiso">
-                            <a href="#createdriversiso">
-                                <strong>Step 3 -</strong> Create Drivers ISO
+                        <h4 id="moveisotobuilddirectory">
+                            <a href="#moveisotobuilddirectory">
+                                <strong>Step 2 -</strong> Move ISO to Build Directory
                             </a>
                         </h4>
                     </div>
@@ -384,11 +366,11 @@ ssh {linuxattuneuser}@{attuneosbuildserver}
         <div class="col px-0">
             <pre>
                 <code class="language-sql py-0">
-cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+mkdir -vp &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
 
-mkisofs -o {targetServer.fqn}-Drivers.iso \
-    -iso-level 2 -udf -joliet-long -relaxed-filenames -allow-limited-size \
-    -J -l -D -N -V &quot;DRIVERS&quot; Drivers
+cd &quot;{ksAttuneBaseDir}&quot;
+
+mv &quot;kickstart_{targetServer.fqn}.iso&quot; &quot;build-{targetServer.fqn}&quot;
                 </code>
             </pre>
         </div>
@@ -403,9 +385,96 @@ mkisofs -o {targetServer.fqn}-Drivers.iso \
 
 
                     <div class="row pt-5">
-                        <h4 id="esxiwinrecreatevirtualmachinelink">
-                            <a href="#esxiwinrecreatevirtualmachinelink">
-                                <strong>Step 4 -</strong> ESXi Win Recreate Virtual Machine (link)
+                        <h4 id="extractwindowsisolink">
+                            <a href="#extractwindowsisolink">
+                                <strong>Step 3 -</strong> Extract Windows ISO (link)
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="blueprint-description row">
+                        <p>
+                            
+                        </p>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="esxideployvmwaredriverslink">
+                            <a href="#esxideployvmwaredriverslink">
+                                <strong>Step 4 -</strong> ESXi Deploy VMWare Drivers (link)
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="blueprint-description row">
+                        <p>
+                            
+                        </p>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="createwindowsbootisolink">
+                            <a href="#createwindowsbootisolink">
+                                <strong>Step 5 -</strong> Create Windows Boot ISO (link)
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="blueprint-description row">
+                        <p>
+                            
+                        </p>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="esxirecreatevirtualmachinelink">
+                            <a href="#esxirecreatevirtualmachinelink">
+                                <strong>Step 6 -</strong> ESXi Recreate Virtual Machine (link)
                             </a>
                         </h4>
                     </div>
