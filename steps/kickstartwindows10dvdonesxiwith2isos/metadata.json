@@ -4,11 +4,11 @@
     "enabled": true, 
     "externalUuid4": "cdda3384-70e4-4128-8922-63805736b63e", 
     "isBlueprint": true, 
-    "key": "kickstartwindows10dvdonesxi", 
+    "key": "kickstartwindows10dvdonesxiwith2isos", 
     "links": [
         {
             "order": 0, 
-            "stepKey": "createwindowsdesktop10dvdkickstartiso2link"
+            "stepKey": "createwindowsdesktop10dvdkickstartisowith2isoslink"
         }, 
         {
             "order": 50, 
@@ -21,8 +21,12 @@
         {
             "order": 150, 
             "stepKey": "esxiwinrecreatevirtualmachinelink"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "kscleanbuildfileslink"
         }
     ], 
-    "name": "Kickstart Windows 10 DVD on ESXi", 
+    "name": "Kickstart Windows 10 DVD on ESXi with 2 ISOs", 
     "type": "com.servertribe.attune.tuples.StepGroupTuple"
 }

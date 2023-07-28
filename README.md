@@ -54,13 +54,10 @@ This Project contains the following Blueprints.
 
 
 
-### Kickstart Windows 10 DVD on ESXi
-
-
 ### Kickstart Windows 10 DVD on ESXi with Single ISO
 
 
-### Kickstart Windows Server 2019 DVD on ESXi
+### Kickstart Windows Server 2019 DVD on ESXi with Single ISO
 
 
 ### WinPE Kickstart Win10+ESXi
@@ -69,6 +66,12 @@ This Project contains the following Blueprints.
 ### WinPE Kickstart Win 2019+ESXi
 
 Kickstarts a Windows Server 2019 virtual machine on ESXi.
+
+### Kickstart Windows 10 DVD on ESXi with 2 ISOs
+
+Kickstarts a Windows virtual machine from two ISOs.
+1. Unaltered Windows ISO.
+2. ESXi Drivers ISO.
 
 
 

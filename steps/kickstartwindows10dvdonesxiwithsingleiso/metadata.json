@@ -29,6 +29,10 @@
         {
             "order": 250, 
             "stepKey": "esxirecreatevirtualmachinelink"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "kscleanbuildfileslink"
         }
     ], 
     "name": "Kickstart Windows 10 DVD on ESXi with Single ISO", 

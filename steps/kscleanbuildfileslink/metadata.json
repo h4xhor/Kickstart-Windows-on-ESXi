@@ -1,7 +1,7 @@
 {
     "actionOnStepFail": null, 
     "blueprintName": "", 
-    "blueprintUuid": "da143bbe-1b26-440a-b642-e1931dbc0233", 
+    "blueprintUuid": "02a345a5-9788-4b17-b1dc-cc3fa7bf9fa7", 
     "cloneUrl": "", 
     "enabled": true, 
     "externalUuid4": "ad914cdc-2655-499d-965d-b6f832b36e08", 
@@ -9,7 +9,7 @@
     "name": "KS Clean Build Files (Link)", 
     "parameterMap": [], 
     "projectName": "", 
-    "projectUuid": "d0c58a02-9cfc-483f-9777-9c8fe7285609", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
     "projectVersion": "", 
     "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
 }
