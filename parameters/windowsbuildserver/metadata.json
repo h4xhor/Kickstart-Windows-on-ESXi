@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "bd506886-50e8-4cf4-9896-a1b35a51e23a", 
+    "key": "windowsbuildserver", 
+    "name": "Windows Build Server", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.WindowsServer"
+}

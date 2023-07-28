@@ -1,0 +1,7 @@
+{
+    "externalUuid4": "984ace2d-4954-41ae-9fc1-ba7ae9a56baf", 
+    "key": "windowsbuilduser", 
+    "name": "Windows Build User", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.WinOsCred"
+}

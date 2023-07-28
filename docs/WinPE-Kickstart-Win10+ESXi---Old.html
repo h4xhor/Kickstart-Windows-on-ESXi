@@ -6,29 +6,29 @@
 
 
 <head>
-    <title>How to Kickstart Windows 10 DVD on ESXi with Single ISO - Attune Automation</title>
+    <title>How to WinPE Kickstart Win10+ESXi - Old - Attune Automation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title"
-          content="How to Kickstart Windows 10 DVD on ESXi with Single ISO - Attune Automation">
+          content="How to WinPE Kickstart Win10+ESXi - Old - Attune Automation">
     <meta name="description"
-          content="Kickstarts Windows Desktop 10 from a single ISO.">
+          content="">
     <meta name="robots"
           content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
 
     <meta property="og:locale" content="en_AU" />
     <meta property="og:type" content="article" />
     <meta property="og:title"
-          content="HowTo Kickstart Windows 10 DVD on ESXi with Single ISO - Attune Automation" />
-    <meta property="og:description" content="Kickstarts Windows Desktop 10 from a single ISO." />
+          content="HowTo WinPE Kickstart Win10+ESXi - Old - Attune Automation" />
+    <meta property="og:description" content="" />
     <meta property="og:site_name" content="Attune Automation" />
     <meta property="article:section" content="IT Instruction" />
 
     <meta name="twitter:title"
-          content="How to Kickstart Windows 10 DVD on ESXi with Single ISO - Attune Automation" />
-    <meta name="twitter:description" content="Kickstarts Windows Desktop 10 from a single ISO." />
+          content="How to WinPE Kickstart Win10+ESXi - Old - Attune Automation" />
+    <meta name="twitter:description" content="" />
 
     <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
     <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-192x192.png" sizes="192x192">
@@ -119,7 +119,7 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                    <strong>Kickstart Windows 10 DVD on ESXi with Single ISO</strong>
+                    <strong>WinPE Kickstart Win10+ESXi - Old</strong>
                 </li>
             </ol>
         </nav>
@@ -133,19 +133,12 @@
     <div class="row">
         <div class="col px-0">
             <h1 class="text-left">
-                How to Kickstart Windows 10 DVD on ESXi with Single ISO
+                How to WinPE Kickstart Win10+ESXi - Old
             </h1>
         </div>
     </div>
 
 <!-- Blueprint Description -->
-    <div class="row">
-        <div class="description col px-0">
-            <p class="text-left">
-                <p>Kickstarts Windows Desktop 10 from a single ISO.</p>
-            </p>
-        </div>
-    </div>
     <div class="row pt-4">
         <div class="col-6 px-0">
             <h6 class="text-left">
@@ -204,7 +197,7 @@
                     </p>
                     <p class="text-muted">
                         <a href="#top">
-                            <strong>Kickstart Windows 10 DVD on ESXi with Single ISO</strong>
+                            <strong>WinPE Kickstart Win10+ESXi - Old</strong>
                         </a>
                     </p>
 
@@ -213,32 +206,32 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#createwindowsdesktop10dvdkickstartisolink">
-                            <strong>Step 1 -</strong> Create Windows Desktop 10 DVD Kickstart ISO (link)
+                        <a href="#kscleanbuildfileslink">
+                            <strong>Step 1 -</strong> KS Clean Build Files (Link)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#moveisotobuilddirectory">
-                            <strong>Step 2 -</strong> Move ISO to Build Directory
+                        <a href="#deployplainwinpeisolink">
+                            <strong>Step 2 -</strong> Deploy Plain WinPE ISO  (Link)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#extractwindowsisolink">
-                            <strong>Step 3 -</strong> Extract Windows ISO (link)
+                        <a href="#deploywin10unattendedconfiglink">
+                            <strong>Step 3 -</strong> Deploy Win10 Unattended Config (Link)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#esxideployvmwaredriverslink">
-                            <strong>Step 4 -</strong> ESXi Deploy VMWare Drivers (link)
+                        <a href="#modifywinpebootwimforwin10link">
+                            <strong>Step 4 -</strong> Modify WinPE boot.wim for Win10 (Link)
                         </a>
                     </p>
 
@@ -253,8 +246,24 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#esxirecreatevirtualmachinelink">
-                            <strong>Step 6 -</strong> ESXi Recreate Virtual Machine (link)
+                        <a href="#ksesxibootwinperecreatevirtualmachinewin10link">
+                            <strong>Step 6 -</strong> KS ESXi Boot WinPE Recreate Virtual Machine Win10 (Link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#winrmhttpswait60s">
+                            <strong>Step 7 -</strong> WinRM HTTPS Wait 60s
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#winrebootlink">
+                            <strong>Step 8 -</strong> WIN Reboot (Link)
                         </a>
                     </p>
 
@@ -262,7 +271,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#kscleanbuildfileslink">
-                            <strong>Step 7 -</strong> KS Clean Build Files (Link)
+                            <strong>Step 9 -</strong> KS Clean Build Files (Link)
                         </a>
                     </p>
 
@@ -325,7 +334,7 @@
                 </ol>
             </p>
             <p class="lead text-center">
-                You've automated: <strong>Kickstart Windows 10 DVD on ESXi with Single ISO</strong>
+                You've automated: <strong>WinPE Kickstart Win10+ESXi - Old</strong>
             </p>
             <hr class="my-4 text-center">
             <div class="col px-0">
@@ -356,9 +365,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="createwindowsdesktop10dvdkickstartisolink">
-                            <a href="#createwindowsdesktop10dvdkickstartisolink">
-                                <strong>Step 1 -</strong> Create Windows Desktop 10 DVD Kickstart ISO (link)
+                        <h3 id="kscleanbuildfileslink">
+                            <a href="#kscleanbuildfileslink">
+                                <strong>Step 1 -</strong> KS Clean Build Files (Link)
                             </a>
                         </h3>
                     </div>
@@ -366,7 +375,7 @@
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                
+                                <p>Removes the directory <code>{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}</code> and ISO file at <code>{ksVmwareAttuneBaseDir}/kickstart_{targetServer.fqn}.iso</code>. </p>
                             </p>
                         </div>
                     </div>
@@ -387,9 +396,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="moveisotobuilddirectory">
-                            <a href="#moveisotobuilddirectory">
-                                <strong>Step 2 -</strong> Move ISO to Build Directory
+                        <h3 id="deployplainwinpeisolink">
+                            <a href="#deployplainwinpeisolink">
+                                <strong>Step 2 -</strong> Deploy Plain WinPE ISO  (Link)
                             </a>
                         </h3>
                     </div>
@@ -397,76 +406,7 @@
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                <p>Moves the ISO from "{ksAttuneBaseDir}" to "{ksAttuneBaseDir}/build-{targetServer.fqn}/".</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-                        <div class="row">
-                            <p>
-                                Connect via ssh:
-                            </p>
-                        </div>
-                        <div class="row py-1">
-                            <code class="language-sql">
-ssh {linuxattuneuser}@{attuneosbuildserver}
-                            </code>
-                        </div>
-
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-mkdir -vp &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-
-cd &quot;{ksAttuneBaseDir}&quot;
-
-mv -v &quot;kickstart_{targetServer.fqn}.iso&quot; &quot;build-{targetServer.fqn}&quot;
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="extractwindowsisolink">
-                            <a href="#extractwindowsisolink">
-                                <strong>Step 3 -</strong> Extract Windows ISO (link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Extracts the <code>boot.img</code> image file out of the WinPE ISO into the <code>WinPE_amd64Dir</code> directory.</p>
+                                <p>Deploys WinPE ISO and ESXi drivers.</p>
                             </p>
                         </div>
                     </div>
@@ -487,9 +427,9 @@ mv -v &quot;kickstart_{targetServer.fqn}.iso&quot; &quot;build-{targetServer.fqn
 
 
                     <div class="row pt-5">
-                        <h3 id="esxideployvmwaredriverslink">
-                            <a href="#esxideployvmwaredriverslink">
-                                <strong>Step 4 -</strong> ESXi Deploy VMWare Drivers (link)
+                        <h3 id="deploywin10unattendedconfiglink">
+                            <a href="#deploywin10unattendedconfiglink">
+                                <strong>Step 3 -</strong> Deploy Win10 Unattended Config (Link)
                             </a>
                         </h3>
                     </div>
@@ -497,7 +437,38 @@ mv -v &quot;kickstart_{targetServer.fqn}.iso&quot; &quot;build-{targetServer.fqn
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                <p>Deploys VMWare ESXi drivers to the {ksAttuneBaseDir}/build-{targetServer.fqn} folder.</p>
+                                <p>Deploys a autounattend.xml file compatible with Windows Desktop 10.</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="modifywinpebootwimforwin10link">
+                            <a href="#modifywinpebootwimforwin10link">
+                                <strong>Step 4 -</strong> Modify WinPE boot.wim for Win10 (Link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Modifies <code>startnet.cmd</code> that's inside <code>boot.wim</code>.</p>
                             </p>
                         </div>
                     </div>
@@ -549,9 +520,9 @@ mv -v &quot;kickstart_{targetServer.fqn}.iso&quot; &quot;build-{targetServer.fqn
 
 
                     <div class="row pt-5">
-                        <h3 id="esxirecreatevirtualmachinelink">
-                            <a href="#esxirecreatevirtualmachinelink">
-                                <strong>Step 6 -</strong> ESXi Recreate Virtual Machine (link)
+                        <h3 id="ksesxibootwinperecreatevirtualmachinewin10link">
+                            <a href="#ksesxibootwinperecreatevirtualmachinewin10link">
+                                <strong>Step 6 -</strong> KS ESXi Boot WinPE Recreate Virtual Machine Win10 (Link)
                             </a>
                         </h3>
                     </div>
@@ -559,7 +530,86 @@ mv -v &quot;kickstart_{targetServer.fqn}.iso&quot; &quot;build-{targetServer.fqn
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                <p>Creates a ESXi virtual machine.</p>
+                                <p>Uploads the modified WinPE ISO to ESXi.</p>
+<p>Creates a virtual machine.</p>
+<p>Boots the virtual machine from the WinPE ISO for Windows Desktop 10.</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="winrmhttpswait60s">
+                            <a href="#winrmhttpswait60s">
+                                <strong>Step 7 -</strong> WinRM HTTPS Wait 60s
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <div class="row">
+        <p class="mb-0">
+            Check if TCP Port <strong>0</strong> is listening.
+            When the TCP Port is up, wait <strong>60</strong>
+            seconds.
+        </p>
+        <p>Use Telnet to check if the TCP Service is accepting connections.</p>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="winrebootlink">
+                            <a href="#winrebootlink">
+                                <strong>Step 8 -</strong> WIN Reboot (Link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Reboots the target Windows virtual machine.</p>
                             </p>
                         </div>
                     </div>
@@ -582,7 +632,7 @@ mv -v &quot;kickstart_{targetServer.fqn}.iso&quot; &quot;build-{targetServer.fqn
                     <div class="row pt-5">
                         <h3 id="kscleanbuildfileslink">
                             <a href="#kscleanbuildfileslink">
-                                <strong>Step 7 -</strong> KS Clean Build Files (Link)
+                                <strong>Step 9 -</strong> KS Clean Build Files (Link)
                             </a>
                         </h3>
                     </div>

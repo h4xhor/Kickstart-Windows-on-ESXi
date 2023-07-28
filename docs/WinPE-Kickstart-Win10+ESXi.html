@@ -214,16 +214,24 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#winpedeploywinpefilesforesxilink">
-                            <strong>Step 2 -</strong> WinPE Deploy WinPE Files for ESXi (Link)
+                        <a href="#deployplainwinpeisolink">
+                            <strong>Step 2 -</strong> Deploy Plain WinPE ISO  (Link)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#ksdeploywin10unattendedconfiglink">
-                            <strong>Step 3 -</strong> KS Deploy Win10 Unattended Config (Link)
+                        <a href="#deploywin10unattendedconfiglink">
+                            <strong>Step 3 -</strong> Deploy Win10 Unattended Config (Link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#moveautounattendxmltowinpebuilddirectory">
+                            <strong>Step 4 -</strong> Move autounattend.xml to WinPE Build Directory
                         </a>
                     </p>
 
@@ -231,47 +239,23 @@
 
                     <p class="text-muted pt-2">
                         <a href="#modifywinpebootwimforwin10link">
-                            <strong>Step 4 -</strong> Modify WinPE boot.wim for Win10 (Link)
+                            <strong>Step 5 -</strong> Modify WinPE boot.wim for Win10 (Link)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#kswinpecreatebootisolink">
-                            <strong>Step 5 -</strong> KS WinPE Create Boot ISO (Link)
+                        <a href="#winpecreatebootisolink">
+                            <strong>Step 6 -</strong> WinPE Create Boot ISO (link)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#ksesxibootwinperecreatevirtualmachinewin10link">
-                            <strong>Step 6 -</strong> KS ESXi Boot WinPE Recreate Virtual Machine Win10 (Link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#winrmhttpswait60s">
-                            <strong>Step 7 -</strong> WinRM HTTPS Wait 60s
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#winrebootlink">
-                            <strong>Step 8 -</strong> WIN Reboot (Link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#kscleanbuildfileslink">
-                            <strong>Step 9 -</strong> KS Clean Build Files (Link)
+                        <a href="#pullwinpeisofromwindowsbuildserver">
+                            <strong>Step 7 -</strong> Pull WinPE ISO from Windows Build Server
                         </a>
                     </p>
 
@@ -396,9 +380,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="winpedeploywinpefilesforesxilink">
-                            <a href="#winpedeploywinpefilesforesxilink">
-                                <strong>Step 2 -</strong> WinPE Deploy WinPE Files for ESXi (Link)
+                        <h3 id="deployplainwinpeisolink">
+                            <a href="#deployplainwinpeisolink">
+                                <strong>Step 2 -</strong> Deploy Plain WinPE ISO  (Link)
                             </a>
                         </h3>
                     </div>
@@ -427,9 +411,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="ksdeploywin10unattendedconfiglink">
-                            <a href="#ksdeploywin10unattendedconfiglink">
-                                <strong>Step 3 -</strong> KS Deploy Win10 Unattended Config (Link)
+                        <h3 id="deploywin10unattendedconfiglink">
+                            <a href="#deploywin10unattendedconfiglink">
+                                <strong>Step 3 -</strong> Deploy Win10 Unattended Config (Link)
                             </a>
                         </h3>
                     </div>
@@ -458,9 +442,69 @@
 
 
                     <div class="row pt-5">
+                        <h3 id="moveautounattendxmltowinpebuilddirectory">
+                            <a href="#moveautounattendxmltowinpebuilddirectory">
+                                <strong>Step 4 -</strong> Move autounattend.xml to WinPE Build Directory
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+mv -v &quot;autounattend.xml&quot; &quot;WinPE_amd64Dir&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
                         <h3 id="modifywinpebootwimforwin10link">
                             <a href="#modifywinpebootwimforwin10link">
-                                <strong>Step 4 -</strong> Modify WinPE boot.wim for Win10 (Link)
+                                <strong>Step 5 -</strong> Modify WinPE boot.wim for Win10 (Link)
                             </a>
                         </h3>
                     </div>
@@ -489,20 +533,13 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="kswinpecreatebootisolink">
-                            <a href="#kswinpecreatebootisolink">
-                                <strong>Step 5 -</strong> KS WinPE Create Boot ISO (Link)
+                        <h3 id="winpecreatebootisolink">
+                            <a href="#winpecreatebootisolink">
+                                <strong>Step 6 -</strong> WinPE Create Boot ISO (link)
                             </a>
                         </h3>
                     </div>
 
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Recreates the bootable WinPE ISO.</p>
-                            </p>
-                        </div>
-                    </div>
 
 
 
@@ -520,137 +557,67 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="ksesxibootwinperecreatevirtualmachinewin10link">
-                            <a href="#ksesxibootwinperecreatevirtualmachinewin10link">
-                                <strong>Step 6 -</strong> KS ESXi Boot WinPE Recreate Virtual Machine Win10 (Link)
+                        <h3 id="pullwinpeisofromwindowsbuildserver">
+                            <a href="#pullwinpeisofromwindowsbuildserver">
+                                <strong>Step 7 -</strong> Pull WinPE ISO from Windows Build Server
                             </a>
                         </h3>
                     </div>
 
-                    <div class="row">
-                        <div class="description col px-0">
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
                             <p>
-                                <p>Uploads the modified WinPE ISO to ESXi.</p>
-<p>Creates a virtual machine.</p>
-<p>Boots the virtual machine from the WinPE ISO for Windows Desktop 10.</p>
+                                Connect via RDP:
                             </p>
                         </div>
-                    </div>
-
-
-
+                        <div class="row py-1">
+                            <code class="language-sql">
+mstsc /admin /v:{windowsbuildserver}
+                            </code>
+                        </div>
+                        <div class="row">
+                            <p>
+                                Login as user {windowsbuilduser} and open a
+                                command prompt.
+                            </p>
+                        </div>
 
 
 
     
 
 
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="winrmhttpswait60s">
-                            <a href="#winrmhttpswait60s">
-                                <strong>Step 7 -</strong> WinRM HTTPS Wait 60s
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
     <div class="row">
-        <p class="mb-0">
-            Check if TCP Port <strong>0</strong> is listening.
-            When the TCP Port is up, wait <strong>60</strong>
-            seconds.
+        <p>
+            Execute the following script:
         </p>
-        <p>Use Telnet to check if the TCP Service is accepting connections.</p>
     </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+$CLIENT = New-Object System.Net.WebClient
 
+$ISO_FILE = &quot;kickstart_{targetServer.fqn}.iso&quot;
 
+$URL = &quot;http://{attuneOsBuildServer.ip}:8050/$ISO_FILE&quot;
+$PATH = &quot;c:\kickstart_{targetServer.fqn}\$ISO_FILE&quot;
 
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="winrebootlink">
-                            <a href="#winrebootlink">
-                                <strong>Step 8 -</strong> WIN Reboot (Link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Reboots the target Windows virtual machine.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="kscleanbuildfileslink">
-                            <a href="#kscleanbuildfileslink">
-                                <strong>Step 9 -</strong> KS Clean Build Files (Link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Removes the directory <code>{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}</code> and ISO file at <code>{ksVmwareAttuneBaseDir}/kickstart_{targetServer.fqn}.iso</code>. </p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
+$CLIENT.DownloadFile($URL, $PATH)
+                </code>
+            </pre>
+        </div>
+    </div>
 
 
 

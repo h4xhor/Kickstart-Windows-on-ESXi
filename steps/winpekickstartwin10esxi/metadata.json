@@ -2,7 +2,7 @@
     "actionOnStepFail": "stop", 
     "concurrency": 1, 
     "enabled": true, 
-    "externalUuid4": "e8337719-537d-4061-ac44-4a0a967902bb", 
+    "externalUuid4": "3cbbaef5-fe7b-40dc-bbd6-0f9cf109dea4", 
     "isBlueprint": true, 
     "key": "winpekickstartwin10esxi", 
     "links": [
@@ -12,35 +12,27 @@
         }, 
         {
             "order": 50, 
-            "stepKey": "winpedeploywinpefilesforesxilink"
+            "stepKey": "deployplainwinpeisolink"
         }, 
         {
             "order": 100, 
-            "stepKey": "ksdeploywin10unattendedconfiglink"
+            "stepKey": "deploywin10unattendedconfiglink"
         }, 
         {
             "order": 150, 
-            "stepKey": "modifywinpebootwimforwin10link"
+            "stepKey": "moveautounattendxmltowinpebuilddirectory"
         }, 
         {
             "order": 200, 
-            "stepKey": "kswinpecreatebootisolink"
-        }, 
-        {
-            "order": 250, 
-            "stepKey": "ksesxibootwinperecreatevirtualmachinewin10link"
+            "stepKey": "modifywinpebootwimforwin10link"
         }, 
         {
             "order": 300, 
-            "stepKey": "winrmhttpswait60s"
+            "stepKey": "winpecreatebootisolink"
         }, 
         {
             "order": 350, 
-            "stepKey": "winrebootlink"
-        }, 
-        {
-            "order": 400, 
-            "stepKey": "kscleanbuildfileslink"
+            "stepKey": "pullwinpeisofromwindowsbuildserver"
         }
     ], 
     "name": "WinPE Kickstart Win10+ESXi", 

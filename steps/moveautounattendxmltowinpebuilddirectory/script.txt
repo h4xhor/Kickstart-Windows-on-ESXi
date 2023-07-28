@@ -1,0 +1,3 @@
+cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
+
+mv -v "autounattend.xml" "WinPE_amd64Dir"
