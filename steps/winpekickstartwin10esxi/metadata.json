@@ -19,10 +19,6 @@
             "stepKey": "deploywin10unattendedconfiglink"
         }, 
         {
-            "order": 150, 
-            "stepKey": "moveautounattendxmltowinpebuilddirectory"
-        }, 
-        {
             "order": 200, 
             "stepKey": "modifywinpebootwimforwin10link"
         }, 

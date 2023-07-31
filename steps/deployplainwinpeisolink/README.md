@@ -1,1 +1,1 @@
-Deploys WinPE ISO and ESXi drivers.
+Deploys Plain WinPE ISO.

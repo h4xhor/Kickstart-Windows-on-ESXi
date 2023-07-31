@@ -230,16 +230,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#moveautounattendxmltowinpebuilddirectory">
-                            <strong>Step 4 -</strong> Move autounattend.xml to WinPE Build Directory
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
                         <a href="#modifywinpebootwimforwin10link">
-                            <strong>Step 5 -</strong> Modify WinPE boot.wim for Win10 (Link)
+                            <strong>Step 4 -</strong> Modify WinPE boot.wim for Win10 (Link)
                         </a>
                     </p>
 
@@ -247,7 +239,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#winpecreatebootisolink">
-                            <strong>Step 6 -</strong> WinPE Create Boot ISO (link)
+                            <strong>Step 5 -</strong> WinPE Create Boot ISO (link)
                         </a>
                     </p>
 
@@ -255,7 +247,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#pullwinpeisofromwindowsbuildserver">
-                            <strong>Step 7 -</strong> Pull WinPE ISO from Windows Build Server
+                            <strong>Step 6 -</strong> Pull WinPE ISO from Windows Build Server
                         </a>
                     </p>
 
@@ -390,7 +382,7 @@
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                <p>Deploys WinPE ISO and ESXi drivers.</p>
+                                <p>Deploys Plain WinPE ISO.</p>
                             </p>
                         </div>
                     </div>
@@ -442,69 +434,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="moveautounattendxmltowinpebuilddirectory">
-                            <a href="#moveautounattendxmltowinpebuilddirectory">
-                                <strong>Step 4 -</strong> Move autounattend.xml to WinPE Build Directory
-                            </a>
-                        </h3>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-                        <div class="row">
-                            <p>
-                                Connect via ssh:
-                            </p>
-                        </div>
-                        <div class="row py-1">
-                            <code class="language-sql">
-ssh {linuxattuneuser}@{attuneosbuildserver}
-                            </code>
-                        </div>
-
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-
-mv -v &quot;autounattend.xml&quot; &quot;WinPE_amd64Dir&quot;
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
                         <h3 id="modifywinpebootwimforwin10link">
                             <a href="#modifywinpebootwimforwin10link">
-                                <strong>Step 5 -</strong> Modify WinPE boot.wim for Win10 (Link)
+                                <strong>Step 4 -</strong> Modify WinPE boot.wim for Win10 (Link)
                             </a>
                         </h3>
                     </div>
@@ -535,11 +467,18 @@ mv -v &quot;autounattend.xml&quot; &quot;WinPE_amd64Dir&quot;
                     <div class="row pt-5">
                         <h3 id="winpecreatebootisolink">
                             <a href="#winpecreatebootisolink">
-                                <strong>Step 6 -</strong> WinPE Create Boot ISO (link)
+                                <strong>Step 5 -</strong> WinPE Create Boot ISO (link)
                             </a>
                         </h3>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 
@@ -559,11 +498,18 @@ mv -v &quot;autounattend.xml&quot; &quot;WinPE_amd64Dir&quot;
                     <div class="row pt-5">
                         <h3 id="pullwinpeisofromwindowsbuildserver">
                             <a href="#pullwinpeisofromwindowsbuildserver">
-                                <strong>Step 7 -</strong> Pull WinPE ISO from Windows Build Server
+                                <strong>Step 6 -</strong> Pull WinPE ISO from Windows Build Server
                             </a>
                         </h3>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 
