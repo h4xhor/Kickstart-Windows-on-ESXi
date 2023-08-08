@@ -302,8 +302,24 @@
         
 
                     <p class="text-muted pt-2">
+                        <a href="#extractplainwinpebootimgtowinpestaging">
+                            <strong>Step 13 -</strong> Extract Plain WinPE boot.img to winpe_staging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#winpecreatebiosbootiso">
+                            <strong>Step 14 -</strong> WinPE Create BIOS Boot ISO
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
                         <a href="#createuefidiskfromwinpestaginglink">
-                            <strong>Step 13 -</strong> Create UEFI Disk from winpe_staging (link)
+                            <strong>Step 15 -</strong> Create UEFI Disk from winpe_staging (link)
                         </a>
                     </p>
 
@@ -311,7 +327,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#unmountuefiwinpeplainiso">
-                            <strong>Step 14 -</strong> Unmount UEFI winpe_plain ISO
+                            <strong>Step 16 -</strong> Unmount UEFI winpe_plain ISO
                         </a>
                     </p>
 
@@ -319,7 +335,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#unmountalllink">
-                            <strong>Step 15 -</strong> Unmount All (link)
+                            <strong>Step 17 -</strong> Unmount All (link)
                         </a>
                     </p>
 
@@ -327,7 +343,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#cleanuefimountwinimgandwinpedirectorieslink">
-                            <strong>Step 16 -</strong> Clean uefi_mount winimg and winpe Directories (link)
+                            <strong>Step 18 -</strong> Clean uefi_mount winimg and winpe Directories (link)
                         </a>
                     </p>
 
@@ -335,7 +351,15 @@
 
                     <p class="text-muted pt-2">
                         <a href="#cleanbuilddirectorylink">
-                            <strong>Step 17 -</strong> Clean Build Directory (link)
+                            <strong>Step 19 -</strong> Clean Build Directory (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#esxiwinperecreatevirtualmachinelink">
+                            <strong>Step 20 -</strong> ESXi WinPE Recreate Virtual Machine (link)
                         </a>
                     </p>
 
@@ -1054,9 +1078,143 @@ cp -rv &quot;winpe_plain/boot/etfsboot.com&quot; &quot;winpe_staging/boot&quot;
 
 
                     <div class="row pt-5">
+                        <h3 id="extractplainwinpebootimgtowinpestaging">
+                            <a href="#extractplainwinpebootimgtowinpestaging">
+                                <strong>Step 13 -</strong> Extract Plain WinPE boot.img to winpe_staging
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Extract the boot.img out of the WinPE ISO
+
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+
+# Set the filename of the ISO
+F=&quot;winpe_plain.iso&quot;
+
+# Get the Boot image offset
+OFFSET=`isoinfo -d -i $F | grep Bootoff | cut  -c21-`
+
+# Extract the boot.img.
+dd if=$F of=boot.img bs=2048 count=8 skip=$OFFSET
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="winpecreatebiosbootiso">
+                            <a href="#winpecreatebiosbootiso">
+                                <strong>Step 14 -</strong> WinPE Create BIOS Boot ISO
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}/winpe_staging
+
+# Create new ISO with answer file
+mkisofs -o {ksAttuneBaseDir}/kickstart_{targetServer.fqn}.iso \
+    -b boot.img -no-emul-boot -c BOOT.CAT \
+    -iso-level 2 -udf -joliet-long -relaxed-filenames -allow-limited-size \
+    -J -l -D -N -V &quot;KS_WIN&quot; .
+
+# # Create new ISO with answer file
+# mkisofs  -o {ksAttuneBaseDir}/kickstart_{targetServer.fqn}.iso \
+# 	-iso-level 4 -udf -R -D -U -b boot.img -no-emul-boot -boot-load-size 8 -boot-load-seg 1984 \
+# 	-joliet-long -relaxed-filenames -allow-limited-size \
+# 	-eltorito-alt-boot -b efi/boot/bootx64.efi -no-emul-boot .
+
+# Create new ISO with answer file
+# mkisofs  -o {ksAttuneBaseDir}/kickstart_{targetServer.fqn}.iso \
+# 	-iso-level 4 -udf -R -D -U -b boot.img -no-emul-boot \
+# 	-joliet-long -relaxed-filenames -allow-limited-size \
+# 	-eltorito-alt-boot -b efi/boot/bootx64.efi -no-emul-boot .
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
                         <h3 id="createuefidiskfromwinpestaginglink">
                             <a href="#createuefidiskfromwinpestaginglink">
-                                <strong>Step 13 -</strong> Create UEFI Disk from winpe_staging (link)
+                                <strong>Step 15 -</strong> Create UEFI Disk from winpe_staging (link)
                             </a>
                         </h3>
                     </div>
@@ -1087,7 +1245,7 @@ cp -rv &quot;winpe_plain/boot/etfsboot.com&quot; &quot;winpe_staging/boot&quot;
                     <div class="row pt-5">
                         <h3 id="unmountuefiwinpeplainiso">
                             <a href="#unmountuefiwinpeplainiso">
-                                <strong>Step 14 -</strong> Unmount UEFI winpe_plain ISO
+                                <strong>Step 16 -</strong> Unmount UEFI winpe_plain ISO
                             </a>
                         </h3>
                     </div>
@@ -1108,7 +1266,18 @@ cp -rv &quot;winpe_plain/boot/etfsboot.com&quot; &quot;winpe_staging/boot&quot;
 
 
 
-    
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
 
 
     
@@ -1154,7 +1323,7 @@ fi
                     <div class="row pt-5">
                         <h3 id="unmountalllink">
                             <a href="#unmountalllink">
-                                <strong>Step 15 -</strong> Unmount All (link)
+                                <strong>Step 17 -</strong> Unmount All (link)
                             </a>
                         </h3>
                     </div>
@@ -1185,7 +1354,7 @@ fi
                     <div class="row pt-5">
                         <h3 id="cleanuefimountwinimgandwinpedirectorieslink">
                             <a href="#cleanuefimountwinimgandwinpedirectorieslink">
-                                <strong>Step 16 -</strong> Clean uefi_mount winimg and winpe Directories (link)
+                                <strong>Step 18 -</strong> Clean uefi_mount winimg and winpe Directories (link)
                             </a>
                         </h3>
                     </div>
@@ -1216,7 +1385,7 @@ fi
                     <div class="row pt-5">
                         <h3 id="cleanbuilddirectorylink">
                             <a href="#cleanbuilddirectorylink">
-                                <strong>Step 17 -</strong> Clean Build Directory (link)
+                                <strong>Step 19 -</strong> Clean Build Directory (link)
                             </a>
                         </h3>
                     </div>
@@ -1228,6 +1397,30 @@ fi
                             </p>
                         </div>
                     </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="esxiwinperecreatevirtualmachinelink">
+                            <a href="#esxiwinperecreatevirtualmachinelink">
+                                <strong>Step 20 -</strong> ESXi WinPE Recreate Virtual Machine (link)
+                            </a>
+                        </h3>
+                    </div>
+
 
 
 

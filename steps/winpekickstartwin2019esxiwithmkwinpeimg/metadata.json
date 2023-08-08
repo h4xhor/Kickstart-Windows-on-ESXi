@@ -56,23 +56,35 @@
         }, 
         {
             "order": 700, 
-            "stepKey": "createuefidiskfromwinpestaginglink"
+            "stepKey": "extractplainwinpebootimgtowinpestaging"
         }, 
         {
             "order": 750, 
-            "stepKey": "unmountuefiwinpeplainiso"
+            "stepKey": "winpecreatebiosbootiso"
         }, 
         {
             "order": 800, 
-            "stepKey": "unmountalllink"
+            "stepKey": "createuefidiskfromwinpestaginglink"
         }, 
         {
             "order": 850, 
-            "stepKey": "cleanuefimountwinimgandwinpedirectorieslink"
+            "stepKey": "unmountuefiwinpeplainiso"
         }, 
         {
             "order": 900, 
+            "stepKey": "unmountalllink"
+        }, 
+        {
+            "order": 950, 
+            "stepKey": "cleanuefimountwinimgandwinpedirectorieslink"
+        }, 
+        {
+            "order": 1000, 
             "stepKey": "cleanbuilddirectorylink"
+        }, 
+        {
+            "order": 1050, 
+            "stepKey": "esxiwinperecreatevirtualmachinelink"
         }
     ], 
     "name": "WinPE Kickstart Win 2019+ESXi with mkwinpeimg", 

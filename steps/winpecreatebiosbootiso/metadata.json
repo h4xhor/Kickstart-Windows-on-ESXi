@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "611a7d54-165b-4ce0-aa71-4d0d6d9b1597", 
+    "interpreter": 1, 
+    "key": "winpecreatebiosbootiso", 
+    "name": "WinPE Create BIOS Boot ISO", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneosbuildserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

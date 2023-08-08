@@ -1,0 +1,19 @@
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}/winpe_staging
+
+# Create new ISO with answer file
+mkisofs -o {ksAttuneBaseDir}/kickstart_{targetServer.fqn}.iso \
+    -b boot.img -no-emul-boot -c BOOT.CAT \
+    -iso-level 2 -udf -joliet-long -relaxed-filenames -allow-limited-size \
+    -J -l -D -N -V "KS_WIN" .
+
+# # Create new ISO with answer file
+# mkisofs  -o {ksAttuneBaseDir}/kickstart_{targetServer.fqn}.iso \
+# 	-iso-level 4 -udf -R -D -U -b boot.img -no-emul-boot -boot-load-size 8 -boot-load-seg 1984 \
+# 	-joliet-long -relaxed-filenames -allow-limited-size \
+# 	-eltorito-alt-boot -b efi/boot/bootx64.efi -no-emul-boot .
+
+# Create new ISO with answer file
+# mkisofs  -o {ksAttuneBaseDir}/kickstart_{targetServer.fqn}.iso \
+# 	-iso-level 4 -udf -R -D -U -b boot.img -no-emul-boot \
+# 	-joliet-long -relaxed-filenames -allow-limited-size \
+# 	-eltorito-alt-boot -b efi/boot/bootx64.efi -no-emul-boot .
