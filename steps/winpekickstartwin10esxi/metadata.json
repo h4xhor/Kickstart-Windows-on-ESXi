@@ -28,6 +28,14 @@
         }, 
         {
             "order": 350, 
+            "stepKey": "createkickstartsfolderonwindowsbuildserver"
+        }, 
+        {
+            "order": 400, 
+            "stepKey": "createkickstartssubfolderonwindowsbuildserver"
+        }, 
+        {
+            "order": 450, 
             "stepKey": "pullwinpeisofromwindowsbuildserver"
         }
     ], 

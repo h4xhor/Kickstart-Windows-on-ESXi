@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "6692d528-4cad-4639-a504-84bad352166e", 
+    "interpreter": 1, 
+    "key": "copywinpeplainefifilestowinpestaging", 
+    "name": "Copy WinPE Plain EFI Files to WinPE Staging", 
+    "osCredKey": "linuxrootuser", 
+    "serverKey": "attuneosbuildserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

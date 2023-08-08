@@ -1,0 +1,13 @@
+$kickstartsFolder = "C:\kickstarts\kickstart_{targetServer.fqn}"
+
+if (Test-Path "$kickstartsFolder") {
+    Write-Host "Kickstarts folder $kickstartsFolder exists, good"
+} else {
+    Write-Host "Kickstarts folder $kickstartsFolder deos not exist, creating"
+    New-Item "$kickstartsFolder" -ItemType Directory
+    if (Test-Path "$kickstartsFolder") {
+        Write-Host "Kickstarts folder $kickstartsFolder created."
+    } else {
+        Write-Error "Failed to create ISO folder $kickstartsFolder" -ErrorAction Stop
+    }
+}

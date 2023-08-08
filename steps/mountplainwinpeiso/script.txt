@@ -1,0 +1,9 @@
+MOUNT_FOLDER="winpe_plain"
+cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
+mkdir -p "${MOUNT_FOLDER}"
+
+ISO="winpe_plain.iso"
+
+mount --options "uid={linuxAttuneUser.user}" \
+    --options "gid={linuxAttuneUser.user}" \
+    "${ISO}" "${MOUNT_FOLDER}"

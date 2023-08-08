@@ -6,13 +6,13 @@
 
 
 <head>
-    <title>How to WinPE Kickstart Win10+ESXi - Attune Automation</title>
+    <title>How to WinPE Kickstart Win 2019+ESXi with mkwinpeimg - Attune Automation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title"
-          content="How to WinPE Kickstart Win10+ESXi - Attune Automation">
+          content="How to WinPE Kickstart Win 2019+ESXi with mkwinpeimg - Attune Automation">
     <meta name="description"
           content="">
     <meta name="robots"
@@ -21,13 +21,13 @@
     <meta property="og:locale" content="en_AU" />
     <meta property="og:type" content="article" />
     <meta property="og:title"
-          content="HowTo WinPE Kickstart Win10+ESXi - Attune Automation" />
+          content="HowTo WinPE Kickstart Win 2019+ESXi with mkwinpeimg - Attune Automation" />
     <meta property="og:description" content="" />
     <meta property="og:site_name" content="Attune Automation" />
     <meta property="article:section" content="IT Instruction" />
 
     <meta name="twitter:title"
-          content="How to WinPE Kickstart Win10+ESXi - Attune Automation" />
+          content="How to WinPE Kickstart Win 2019+ESXi with mkwinpeimg - Attune Automation" />
     <meta name="twitter:description" content="" />
 
     <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
@@ -119,7 +119,7 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                    <strong>WinPE Kickstart Win10+ESXi</strong>
+                    <strong>WinPE Kickstart Win 2019+ESXi with mkwinpeimg</strong>
                 </li>
             </ol>
         </nav>
@@ -133,7 +133,7 @@
     <div class="row">
         <div class="col px-0">
             <h1 class="text-left">
-                How to WinPE Kickstart Win10+ESXi
+                How to WinPE Kickstart Win 2019+ESXi with mkwinpeimg
             </h1>
         </div>
     </div>
@@ -197,7 +197,7 @@
                     </p>
                     <p class="text-muted">
                         <a href="#top">
-                            <strong>WinPE Kickstart Win10+ESXi</strong>
+                            <strong>WinPE Kickstart Win 2019+ESXi with mkwinpeimg</strong>
                         </a>
                     </p>
 
@@ -206,64 +206,96 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#kscleanbuildfileslink">
-                            <strong>Step 1 -</strong> KS Clean Build Files (Link)
+                        <a href="#renameplainwinpeiso">
+                            <strong>Step 1 -</strong> Rename Plain WinPE ISO
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#deployplainwinpeisolink">
-                            <strong>Step 2 -</strong> Deploy Plain WinPE ISO  (Link)
+                        <a href="#mountplainwinpeiso">
+                            <strong>Step 2 -</strong> Mount Plain WinPE ISO
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#deploywin10unattendedconfiglink">
-                            <strong>Step 3 -</strong> Deploy Win10 Unattended Config (Link)
+                        <a href="#esxideployvmwaredriverslink">
+                            <strong>Step 3 -</strong> ESXi Deploy VMWare Drivers (link)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#modifywinpebootwimforwin10link">
-                            <strong>Step 4 -</strong> Modify WinPE boot.wim for Win10 (Link)
+                        <a href="#moveesxidriverstooverlay">
+                            <strong>Step 4 -</strong> Move ESXi Drivers to Overlay
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#winpecreatebootisolink">
-                            <strong>Step 5 -</strong> WinPE Create Boot ISO (link)
+                        <a href="#deploystartnetcmdforwinpeonesxiforwin2019linkk">
+                            <strong>Step 5 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (linkk)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#createkickstartsfolderonwindowsbuildserver">
-                            <strong>Step 6 -</strong> Create Kickstarts Folder on Windows Build Server
+                        <a href="#deploywin2019uattendedconfigbiosgrouplink">
+                            <strong>Step 6 -</strong> Deploy Win2019 Uattended Config BIOS - Group (link)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#createkickstartssubfolderonwindowsbuildserver">
-                            <strong>Step 7 -</strong> Create Kickstarts Subfolder on Windows Build Server
+                        <a href="#moveautounattendxmltooverlay">
+                            <strong>Step 7 -</strong> Move autounattend.xml to Overlay
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#pullwinpeisofromwindowsbuildserver">
-                            <strong>Step 8 -</strong> Pull WinPE ISO from Windows Build Server
+                        <a href="#addwritepermissionstobootwim">
+                            <strong>Step 8 -</strong> Add Write Permissions to boot.wim
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#createbioswinpeisowithoverlayusingwinpeplainbootwim">
+                            <strong>Step 9 -</strong> Create BIOS WinPE ISO with Overlay using WinPE Plain boot.wim
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#mountwinpeisoandcopytowinpestaginglink">
+                            <strong>Step 10 -</strong> Mount WinPE ISO and Copy to WinPE Staging (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#copywinpeplainefifilestowinpestaging">
+                            <strong>Step 11 -</strong> Copy WinPE Plain EFI Files to WinPE Staging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#createuefidiskfromwinpestaginglink">
+                            <strong>Step 12 -</strong> Create UEFI Disk from winpe_staging (link)
                         </a>
                     </p>
 
@@ -326,7 +358,7 @@
                 </ol>
             </p>
             <p class="lead text-center">
-                You've automated: <strong>WinPE Kickstart Win10+ESXi</strong>
+                You've automated: <strong>WinPE Kickstart Win 2019+ESXi with mkwinpeimg</strong>
             </p>
             <hr class="my-4 text-center">
             <div class="col px-0">
@@ -357,164 +389,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="kscleanbuildfileslink">
-                            <a href="#kscleanbuildfileslink">
-                                <strong>Step 1 -</strong> KS Clean Build Files (Link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Removes the directory <code>{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}</code> and ISO file at <code>{ksVmwareAttuneBaseDir}/kickstart_{targetServer.fqn}.iso</code>. </p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="deployplainwinpeisolink">
-                            <a href="#deployplainwinpeisolink">
-                                <strong>Step 2 -</strong> Deploy Plain WinPE ISO  (Link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Deploys Plain WinPE ISO.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="deploywin10unattendedconfiglink">
-                            <a href="#deploywin10unattendedconfiglink">
-                                <strong>Step 3 -</strong> Deploy Win10 Unattended Config (Link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Deploys a autounattend.xml file compatible with Windows Desktop 10.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="modifywinpebootwimforwin10link">
-                            <a href="#modifywinpebootwimforwin10link">
-                                <strong>Step 4 -</strong> Modify WinPE boot.wim for Win10 (Link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Modifies <code>startnet.cmd</code> that's inside <code>boot.wim</code>.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="winpecreatebootisolink">
-                            <a href="#winpecreatebootisolink">
-                                <strong>Step 5 -</strong> WinPE Create Boot ISO (link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="createkickstartsfolderonwindowsbuildserver">
-                            <a href="#createkickstartsfolderonwindowsbuildserver">
-                                <strong>Step 6 -</strong> Create Kickstarts Folder on Windows Build Server
+                        <h3 id="renameplainwinpeiso">
+                            <a href="#renameplainwinpeiso">
+                                <strong>Step 1 -</strong> Rename Plain WinPE ISO
                             </a>
                         </h3>
                     </div>
@@ -538,19 +415,80 @@
 
                         <div class="row">
                             <p>
-                                Connect via RDP:
+                                Connect via ssh:
                             </p>
                         </div>
                         <div class="row py-1">
                             <code class="language-sql">
-mstsc /admin /v:{windowsbuildserver}
+ssh {linuxattuneuser}@{attuneosbuildserver}
                             </code>
                         </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+mkdir --parents &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+mv --verbose &quot;../kickstart_{targetServer.fqn}.iso&quot; &quot;winpe_plain.iso&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="mountplainwinpeiso">
+                            <a href="#mountplainwinpeiso">
+                                <strong>Step 2 -</strong> Mount Plain WinPE ISO
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
                         <div class="row">
                             <p>
-                                Login as user {windowsbuilduser} and open a
-                                command prompt.
+                                Connect via ssh:
                             </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attuneosbuildserver}
+                            </code>
                         </div>
 
 
@@ -568,19 +506,15 @@ mstsc /admin /v:{windowsbuildserver}
         <div class="col px-0">
             <pre>
                 <code class="language-sql py-0">
-$kickstartsFolder = &quot;C:\kickstarts&quot;
+MOUNT_FOLDER=&quot;winpe_plain&quot;
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+mkdir -p &quot;${MOUNT_FOLDER}&quot;
 
-if (Test-Path &quot;$kickstartsFolder&quot;) {
-    Write-Host &quot;Kickstarts folder $kickstartsFolder exists, good&quot;
-} else {
-    Write-Host &quot;Kickstarts folder $kickstartsFolder deos not exist, creating&quot;
-    New-Item &quot;$kickstartsFolder&quot; -ItemType Directory
-    if (Test-Path &quot;$kickstartsFolder&quot;) {
-        Write-Host &quot;Kickstarts folder $kickstartsFolder created.&quot;
-    } else {
-        Write-Error &quot;Failed to create ISO folder $kickstartsFolder&quot; -ErrorAction Stop
-    }
-}
+ISO=&quot;winpe_plain.iso&quot;
+
+mount --options &quot;uid={linuxAttuneUser.user}&quot; \
+    --options &quot;gid={linuxAttuneUser.user}&quot; \
+    &quot;${ISO}&quot; &quot;${MOUNT_FOLDER}&quot;
                 </code>
             </pre>
         </div>
@@ -595,9 +529,176 @@ if (Test-Path &quot;$kickstartsFolder&quot;) {
 
 
                     <div class="row pt-5">
-                        <h3 id="createkickstartssubfolderonwindowsbuildserver">
-                            <a href="#createkickstartssubfolderonwindowsbuildserver">
-                                <strong>Step 7 -</strong> Create Kickstarts Subfolder on Windows Build Server
+                        <h3 id="esxideployvmwaredriverslink">
+                            <a href="#esxideployvmwaredriverslink">
+                                <strong>Step 3 -</strong> ESXi Deploy VMWare Drivers (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Deploys VMWare ESXi drivers to the {ksAttuneBaseDir}/build-{targetServer.fqn} folder.</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="moveesxidriverstooverlay">
+                            <a href="#moveesxidriverstooverlay">
+                                <strong>Step 4 -</strong> Move ESXi Drivers to Overlay
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+ATTUNE_DRIVERS=&quot;overlay/attune_drivers&quot;
+
+mkdir --parents --verbose &quot;${ATTUNE_DRIVERS}&quot;
+
+DRIVERS=&quot;Drivers&quot;
+mv --verbose ${DRIVERS}/* &quot;${ATTUNE_DRIVERS}&quot;
+
+rmdir --verbose &quot;${DRIVERS}&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="deploystartnetcmdforwinpeonesxiforwin2019linkk">
+                            <a href="#deploystartnetcmdforwinpeonesxiforwin2019linkk">
+                                <strong>Step 5 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (linkk)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="deploywin2019uattendedconfigbiosgrouplink">
+                            <a href="#deploywin2019uattendedconfigbiosgrouplink">
+                                <strong>Step 6 -</strong> Deploy Win2019 Uattended Config BIOS - Group (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="moveautounattendxmltooverlay">
+                            <a href="#moveautounattendxmltooverlay">
+                                <strong>Step 7 -</strong> Move autounattend.xml to Overlay
                             </a>
                         </h3>
                     </div>
@@ -634,19 +735,9 @@ if (Test-Path &quot;$kickstartsFolder&quot;) {
         <div class="col px-0">
             <pre>
                 <code class="language-sql py-0">
-$kickstartsFolder = &quot;C:\kickstarts\kickstart_{targetServer.fqn}&quot;
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
 
-if (Test-Path &quot;$kickstartsFolder&quot;) {
-    Write-Host &quot;Kickstarts folder $kickstartsFolder exists, good&quot;
-} else {
-    Write-Host &quot;Kickstarts folder $kickstartsFolder deos not exist, creating&quot;
-    New-Item &quot;$kickstartsFolder&quot; -ItemType Directory
-    if (Test-Path &quot;$kickstartsFolder&quot;) {
-        Write-Host &quot;Kickstarts folder $kickstartsFolder created.&quot;
-    } else {
-        Write-Error &quot;Failed to create ISO folder $kickstartsFolder&quot; -ErrorAction Stop
-    }
-}
+mv --verbose autounattend.xml &quot;overlay&quot;
                 </code>
             </pre>
         </div>
@@ -661,9 +752,9 @@ if (Test-Path &quot;$kickstartsFolder&quot;) {
 
 
                     <div class="row pt-5">
-                        <h3 id="pullwinpeisofromwindowsbuildserver">
-                            <a href="#pullwinpeisofromwindowsbuildserver">
-                                <strong>Step 8 -</strong> Pull WinPE ISO from Windows Build Server
+                        <h3 id="addwritepermissionstobootwim">
+                            <a href="#addwritepermissionstobootwim">
+                                <strong>Step 8 -</strong> Add Write Permissions to boot.wim
                             </a>
                         </h3>
                     </div>
@@ -700,22 +791,194 @@ if (Test-Path &quot;$kickstartsFolder&quot;) {
         <div class="col px-0">
             <pre>
                 <code class="language-sql py-0">
-Write-Host &quot;foo&quot;
-
-$CLIENT = New-Object System.Net.WebClient
-
-$ISO_FILE = &quot;kickstart_{targetServer.fqn}.iso&quot;
-
-Write-Host &quot;$ISO_FILE=$ISO_FILE&quot;
-
-$URL = &quot;http://{attuneOsBuildServer.ip}:8050/$ISO_FILE&quot;
-$PATH = &quot;c:\kickstarts\kickstart_{targetServer.fqn}\$ISO_FILE&quot;
-
-$CLIENT.DownloadFile($URL, $PATH)
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+chmod a+w &quot;winpe_plain/sources/boot.wim&quot;
                 </code>
             </pre>
         </div>
     </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="createbioswinpeisowithoverlayusingwinpeplainbootwim">
+                            <a href="#createbioswinpeisowithoverlayusingwinpeplainbootwim">
+                                <strong>Step 9 -</strong> Create BIOS WinPE ISO with Overlay using WinPE Plain boot.wim
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+    
+mkwinpeimg --iso --windows-dir=&quot;winpe_plain&quot; \
+    --wim=&quot;winpe_plain/sources/boot.wim&quot; \
+    --overlay=&quot;overlay&quot; \
+    &quot;winpe.iso&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="mountwinpeisoandcopytowinpestaginglink">
+                            <a href="#mountwinpeisoandcopytowinpestaginglink">
+                                <strong>Step 10 -</strong> Mount WinPE ISO and Copy to WinPE Staging (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="copywinpeplainefifilestowinpestaging">
+                            <a href="#copywinpeplainefifilestowinpestaging">
+                                <strong>Step 11 -</strong> Copy WinPE Plain EFI Files to WinPE Staging
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+# Copy EFI Files from WinPE Plain ISO
+cp -rv &quot;winpe_plain/efi&quot; &quot;winpe_staging&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="createuefidiskfromwinpestaginglink">
+                            <a href="#createuefidiskfromwinpestaginglink">
+                                <strong>Step 12 -</strong> Create UEFI Disk from winpe_staging (link)
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+    
 
 
 

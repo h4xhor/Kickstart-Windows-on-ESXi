@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "94c24338-84e5-4e9d-bf57-6570e435c491", 
+    "interpreter": 1, 
+    "key": "addwritepermissionstobootwim", 
+    "name": "Add Write Permissions to boot.wim", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneosbuildserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

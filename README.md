@@ -78,6 +78,9 @@ Kickstarts Windows Server 2019 from a single ISO.
 
 Kickstarts a Windows Server 2019 virtual machine on ESXi.
 
+### WinPE Kickstart Win 2019+ESXi with mkwinpeimg
+
+
 
 
 
@@ -89,6 +92,7 @@ Kickstarts a Windows Server 2019 virtual machine on ESXi.
 | Attune OS Build Server | Linux/Unix Node | `attuneosbuildserver` |  |
 | KS: Attune Base Dir | Text | `ksattunebasedir` |  |
 | Linux: Attune User | Linux/Unix Credential | `linuxattuneuser` |  |
+| Linux: Root User | Linux/Unix Credential | `linuxrootuser` |  |
 | Target Server | Basic Node | `targetserver` |  |
 | Target Server: Win | Windows Node | `targetserverwin` |  |
 | Windows Build Server | Windows Node | `windowsbuildserver` |  |

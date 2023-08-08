@@ -1,0 +1,60 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "f8a47fea-de55-4fbf-b321-add84a7501f0", 
+    "isBlueprint": true, 
+    "key": "winpekickstartwin2019esxiwithmkwinpeimg", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "renameplainwinpeiso"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "mountplainwinpeiso"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "esxideployvmwaredriverslink"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "moveesxidriverstooverlay"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "deploystartnetcmdforwinpeonesxiforwin2019linkk"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "deploywin2019uattendedconfigbiosgrouplink"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "moveautounattendxmltooverlay"
+        }, 
+        {
+            "order": 350, 
+            "stepKey": "addwritepermissionstobootwim"
+        }, 
+        {
+            "order": 400, 
+            "stepKey": "createbioswinpeisowithoverlayusingwinpeplainbootwim"
+        }, 
+        {
+            "order": 450, 
+            "stepKey": "mountwinpeisoandcopytowinpestaginglink"
+        }, 
+        {
+            "order": 500, 
+            "stepKey": "copywinpeplainefifilestowinpestaging"
+        }, 
+        {
+            "order": 550, 
+            "stepKey": "createuefidiskfromwinpestaginglink"
+        }
+    ], 
+    "name": "WinPE Kickstart Win 2019+ESXi with mkwinpeimg", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

@@ -1,0 +1,4 @@
+cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
+
+# Copy EFI Files from WinPE Plain ISO
+cp -rv "winpe_plain/efi" "winpe_staging"

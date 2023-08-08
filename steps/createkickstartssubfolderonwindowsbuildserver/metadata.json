@@ -1,16 +1,16 @@
 {
     "actionOnStepFail": null, 
     "enabled": true, 
-    "externalUuid4": "e62e7d9b-7904-40f9-8583-9940857d52ad", 
+    "externalUuid4": "d2f75a9b-cc4f-4e5a-963a-62ed4870663c", 
     "interpreter": 2, 
     "interpreterCommand": "", 
     "interpreterScriptExt": null, 
     "interpreterScriptSyntax": "", 
-    "key": "pullwinpeisofromwindowsbuildserver", 
-    "name": "Pull WinPE ISO from Windows Build Server", 
+    "key": "createkickstartssubfolderonwindowsbuildserver", 
+    "name": "Create Kickstarts Subfolder on Windows Build Server", 
     "osCredKey": "windowsbuilduser", 
     "serverKey": "windowsbuildserver", 
     "successExitCode": 0, 
-    "timeout": 600, 
+    "timeout": 5, 
     "type": "com.servertribe.attune.tuples.StepWinRmTuple"
 }

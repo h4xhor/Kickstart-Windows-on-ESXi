@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "2680f639-947b-43e3-acda-a1c2bd04675e", 
+    "interpreter": 1, 
+    "key": "moveautounattendxmltooverlay", 
+    "name": "Move autounattend.xml to Overlay", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneosbuildserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

@@ -1,0 +1,3 @@
+cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
+
+mv --verbose autounattend.xml "overlay"

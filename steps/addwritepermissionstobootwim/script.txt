@@ -1,0 +1,2 @@
+cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
+chmod a+w "winpe_plain/sources/boot.wim"
