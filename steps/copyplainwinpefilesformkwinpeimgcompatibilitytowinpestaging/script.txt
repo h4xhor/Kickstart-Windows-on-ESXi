@@ -1,0 +1,3 @@
+cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
+
+cp -rv "winpe_plain/boot/etfsboot.com" "winpe_staging/boot"

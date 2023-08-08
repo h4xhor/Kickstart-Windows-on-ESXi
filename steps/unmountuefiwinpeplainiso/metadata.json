@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "08857934-489e-4f84-a35e-2a0f304e3a41", 
+    "interpreter": 1, 
+    "key": "unmountuefiwinpeplainiso", 
+    "name": "Unmount UEFI winpe_plain ISO", 
+    "osCredKey": "linuxrootuser", 
+    "serverKey": "attuneosbuildserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "f5a5817f-0295-40f8-ae13-ad8e72218b56", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "73c27eba-e138-4369-9d6c-019f58d87b52", 
+    "key": "unmountalllink", 
+    "name": "Unmount All (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

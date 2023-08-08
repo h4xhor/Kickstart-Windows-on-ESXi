@@ -246,8 +246,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#deploywin2019uattendedconfigbiosgrouplink">
-                            <strong>Step 6 -</strong> Deploy Win2019 Uattended Config BIOS - Group (link)
+                        <a href="#deploywin2019unattendedconfigbiosfordriversonxdrivelink">
+                            <strong>Step 6 -</strong> Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
                         </a>
                     </p>
 
@@ -294,8 +294,48 @@
         
 
                     <p class="text-muted pt-2">
+                        <a href="#copyplainwinpefilesformkwinpeimgcompatibilitytowinpestaging">
+                            <strong>Step 12 -</strong> Copy Plain WinPE  Files for mkwinpeimg Compatibility to WinPE Staging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
                         <a href="#createuefidiskfromwinpestaginglink">
-                            <strong>Step 12 -</strong> Create UEFI Disk from winpe_staging (link)
+                            <strong>Step 13 -</strong> Create UEFI Disk from winpe_staging (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#unmountuefiwinpeplainiso">
+                            <strong>Step 14 -</strong> Unmount UEFI winpe_plain ISO
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#unmountalllink">
+                            <strong>Step 15 -</strong> Unmount All (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cleanuefimountwinimgandwinpedirectorieslink">
+                            <strong>Step 16 -</strong> Clean uefi_mount winimg and winpe Directories (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cleanbuilddirectorylink">
+                            <strong>Step 17 -</strong> Clean Build Directory (link)
                         </a>
                     </p>
 
@@ -665,9 +705,9 @@ rmdir --verbose &quot;${DRIVERS}&quot;
 
 
                     <div class="row pt-5">
-                        <h3 id="deploywin2019uattendedconfigbiosgrouplink">
-                            <a href="#deploywin2019uattendedconfigbiosgrouplink">
-                                <strong>Step 6 -</strong> Deploy Win2019 Uattended Config BIOS - Group (link)
+                        <h3 id="deploywin2019unattendedconfigbiosfordriversonxdrivelink">
+                            <a href="#deploywin2019unattendedconfigbiosfordriversonxdrivelink">
+                                <strong>Step 6 -</strong> Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
                             </a>
                         </h3>
                     </div>
@@ -965,13 +1005,229 @@ cp -rv &quot;winpe_plain/efi&quot; &quot;winpe_staging&quot;
 
 
                     <div class="row pt-5">
-                        <h3 id="createuefidiskfromwinpestaginglink">
-                            <a href="#createuefidiskfromwinpestaginglink">
-                                <strong>Step 12 -</strong> Create UEFI Disk from winpe_staging (link)
+                        <h3 id="copyplainwinpefilesformkwinpeimgcompatibilitytowinpestaging">
+                            <a href="#copyplainwinpefilesformkwinpeimgcompatibilitytowinpestaging">
+                                <strong>Step 12 -</strong> Copy Plain WinPE  Files for mkwinpeimg Compatibility to WinPE Staging
                             </a>
                         </h3>
                     </div>
 
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+cp -rv &quot;winpe_plain/boot/etfsboot.com&quot; &quot;winpe_staging/boot&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="createuefidiskfromwinpestaginglink">
+                            <a href="#createuefidiskfromwinpestaginglink">
+                                <strong>Step 13 -</strong> Create UEFI Disk from winpe_staging (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="unmountuefiwinpeplainiso">
+                            <a href="#unmountuefiwinpeplainiso">
+                                <strong>Step 14 -</strong> Unmount UEFI winpe_plain ISO
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+MOUNT_FOLDER=&quot;winpe_plain&quot;
+MOUNT_PATH=&quot;{ksAttuneBaseDir}/build-{targetServer.fqn}/${MOUNT_FOLDER}&quot;
+
+if df -h | grep --ignore-case \
+    --quiet \
+    &quot;${MOUNT_PATH}&quot;
+then
+
+    cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+    
+    umount --verbose &quot;${MOUNT_FOLDER}&quot;
+else
+    echo &quot;${MOUNT_PATH} is not mounted. Skipping.&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="unmountalllink">
+                            <a href="#unmountalllink">
+                                <strong>Step 15 -</strong> Unmount All (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="cleanuefimountwinimgandwinpedirectorieslink">
+                            <a href="#cleanuefimountwinimgandwinpedirectorieslink">
+                                <strong>Step 16 -</strong> Clean uefi_mount winimg and winpe Directories (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="cleanbuilddirectorylink">
+                            <a href="#cleanbuilddirectorylink">
+                                <strong>Step 17 -</strong> Clean Build Directory (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 

@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "cf823d6e-a282-44ba-b293-47624aa0c99b", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "2c073d38-8f0f-45eb-8214-4d0d94bd45c3", 
+    "key": "cleanuefimountwinimgandwinpedirectorieslink", 
+    "name": "Clean uefi_mount winimg and winpe Directories (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

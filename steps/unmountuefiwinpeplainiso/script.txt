@@ -1,0 +1,14 @@
+MOUNT_FOLDER="winpe_plain"
+MOUNT_PATH="{ksAttuneBaseDir}/build-{targetServer.fqn}/${MOUNT_FOLDER}"
+
+if df -h | grep --ignore-case \
+    --quiet \
+    "${MOUNT_PATH}"
+then
+
+    cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
+    
+    umount --verbose "${MOUNT_FOLDER}"
+else
+    echo "${MOUNT_PATH} is not mounted. Skipping."
+fi
