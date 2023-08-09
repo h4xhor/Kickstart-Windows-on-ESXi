@@ -4,7 +4,7 @@
     "enabled": true, 
     "externalUuid4": "f8a47fea-de55-4fbf-b321-add84a7501f0", 
     "isBlueprint": true, 
-    "key": "winpekickstartwin2019esxiwithmkwinpeimg", 
+    "key": "winpekickstartuefiwin2019esxiwithmkwinpeimg", 
     "links": [
         {
             "order": 0, 
@@ -87,6 +87,6 @@
             "stepKey": "esxiwinperecreatevirtualmachinelink"
         }
     ], 
-    "name": "WinPE Kickstart Win 2019+ESXi with mkwinpeimg", 
+    "name": "WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg", 
     "type": "com.servertribe.attune.tuples.StepGroupTuple"
 }

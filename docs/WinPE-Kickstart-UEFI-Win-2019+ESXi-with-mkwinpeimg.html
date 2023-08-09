@@ -1,0 +1,1581 @@
+
+<!doctype html>
+<html lang="en">
+
+
+
+
+<head>
+    <title>How to WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg - Attune Automation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title"
+          content="How to WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg - Attune Automation">
+    <meta name="description"
+          content="">
+    <meta name="robots"
+          content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title"
+          content="HowTo WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg - Attune Automation" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Attune Automation" />
+    <meta property="article:section" content="IT Instruction" />
+
+    <meta name="twitter:title"
+          content="How to WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg - Attune Automation" />
+    <meta name="twitter:description" content="" />
+
+    <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-180x180.png">
+    <meta name="msapplication-TileImage" content="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-270x270.png">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-5TZQZNDJCD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-5TZQZNDJCD');
+    </script>
+</head>
+
+
+<body>
+
+<!-- Project NavBar -->
+
+<div class="bg-white border-bottom box-shadow sticky-top mb-3">
+<div class="container px-0">
+    <div class="row px-0">
+        <div class="col d-flex flex-column flex-lg-row align-items-center px-0
+            py-3">
+            <a class="navbar-brand my-0 mr-lg-auto"
+                  href="https://www.servertribe.com/"
+                  target="_blank">
+                    <img
+                        src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                        alt="Attune - Powered by ServerTribe"
+                        class="img-fluid navbar-img">
+            </a>
+            <nav class="my-2 my-lg-0 mr-lg-3">
+                <a class="p-2 text-dark" href="http://doc.servertribe.com/"
+                   target="_blank">
+                    Documentation
+                </a>
+                <a class="p-2 text-dark"
+                   href="https://discord.com/invite/3YpJsagqUn"
+                   target="_blank">
+                    Discord
+                </a>
+                <a class="p-2 text-dark" href="https://github.com/Attune-Automation"
+                   target="_blank">
+                    GitHub
+                </a>
+                <a class="p-2 text-dark" href="https://www.servertribe.com/learn/"
+                   target="_blank">
+                    Learn
+                </a>
+            </nav>
+            <a class="btn btn-outline-primary"
+               href="https://www.servertribe.com/download-attune-registration/"
+               target="_blank">
+                Download NOW!
+            </a>
+        </div>
+    </div>
+</div></div>
+
+<!-- Project breadcrumbs -->
+
+<!-- Project breadcrumbs -->
+<div class="container px-0">
+    <div class="row">
+        <nav class="col px-0" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">
+                    Kickstart-Windows-on-ESXi
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <strong>WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg</strong>
+                </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!-- Blueprint Header -->
+
+<div class="container px-0">
+    <!-- Blueprint name and description -->
+    <div class="row">
+        <div class="col px-0">
+            <h1 class="text-left">
+                How to WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg
+            </h1>
+        </div>
+    </div>
+
+<!-- Blueprint Description -->
+    <div class="row pt-4">
+        <div class="col-6 px-0">
+            <h6 class="text-left">
+                This documentation is generated by
+                <a href="https://www.servertribe.com/"
+                    class="badge badge-primary"
+                    target="_blank">
+                    Attune
+                </a>
+            </h6>
+        </div>
+        <div class="col-6 align-self-end text-right px-0">
+            <h6 class="text-right">
+                <a href="https://www.youtube.com/@servertribe"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    YouTube
+                </a>
+                <a href="https://github.com/Attune-Automation"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    GitHub
+                </a>
+                <a href="https://discord.com/invite/3YpJsagqUn"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    Discord
+                </a>
+                <a href="https://www.linkedin.com/company/servertribe/"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    LinkedIn
+                </a>
+                <a href="http://doc.servertribe.com/"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    Documentation
+                </a>
+            </h6>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<div class="documentation">
+    <div class="container px-0">
+        <div class="row">
+
+<!-- Blueprint ToC -->
+
+
+            <div class="toc col-lg-2 px-0 pr-5">
+                <div class="container px-0 pt-3">
+                    <p class="pb-2">
+                        <strong>Contents</strong>
+                    </p>
+                    <p class="text-muted">
+                        <a href="#top">
+                            <strong>WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg</strong>
+                        </a>
+                    </p>
+
+
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#renameplainwinpeiso">
+                            <strong>Step 1 -</strong> Rename Plain WinPE ISO
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#mountplainwinpeiso">
+                            <strong>Step 2 -</strong> Mount Plain WinPE ISO
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#esxideployvmwaredriverslink">
+                            <strong>Step 3 -</strong> ESXi Deploy VMWare Drivers (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#moveesxidriverstooverlay">
+                            <strong>Step 4 -</strong> Move ESXi Drivers to Overlay
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#deploystartnetcmdforwinpeonesxiforwin2019linkk">
+                            <strong>Step 5 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (linkk)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#deploywin2019unattendedconfigbiosfordriversonxdrivelink">
+                            <strong>Step 6 -</strong> Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#moveautounattendxmltooverlay">
+                            <strong>Step 7 -</strong> Move autounattend.xml to Overlay
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#addwritepermissionstobootwim">
+                            <strong>Step 8 -</strong> Add Write Permissions to boot.wim
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#createbioswinpeisowithoverlayusingwinpeplainbootwim">
+                            <strong>Step 9 -</strong> Create BIOS WinPE ISO with Overlay using WinPE Plain boot.wim
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#mountwinpeisoandcopytowinpestaginglink">
+                            <strong>Step 10 -</strong> Mount WinPE ISO and Copy to WinPE Staging (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#copywinpeplainefifilestowinpestaging">
+                            <strong>Step 11 -</strong> Copy WinPE Plain EFI Files to WinPE Staging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#copyplainwinpefilesformkwinpeimgcompatibilitytowinpestaging">
+                            <strong>Step 12 -</strong> Copy Plain WinPE  Files for mkwinpeimg Compatibility to WinPE Staging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#extractplainwinpebootimgtowinpestaging">
+                            <strong>Step 13 -</strong> Extract Plain WinPE boot.img to winpe_staging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#winpecreatebiosbootiso">
+                            <strong>Step 14 -</strong> WinPE Create BIOS Boot ISO
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#createuefidiskfromwinpestaginglink">
+                            <strong>Step 15 -</strong> Create UEFI Disk from winpe_staging (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#unmountuefiwinpeplainiso">
+                            <strong>Step 16 -</strong> Unmount UEFI winpe_plain ISO
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#unmountalllink">
+                            <strong>Step 17 -</strong> Unmount All (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cleanuefimountwinimgandwinpedirectorieslink">
+                            <strong>Step 18 -</strong> Clean uefi_mount winimg and winpe Directories (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cleanbuilddirectorylink">
+                            <strong>Step 19 -</strong> Clean Build Directory (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#esxiwinperecreatevirtualmachinelink">
+                            <strong>Step 20 -</strong> ESXi WinPE Recreate Virtual Machine (link)
+                        </a>
+                    </p>
+
+
+                </div>
+            </div>
+
+<!-- Blueprint Contents -->
+            <div class="col-lg-8 pt-3">
+                <div class="container">
+
+
+        <div class="jumbotron">
+            <p class="display-3 text-center">
+                <strong>Automate This</strong>
+            </p>
+            <p class="lead text-center">
+                Use the <strong>Attune GUI</strong> for your Scripts
+            </p>
+            <p class="lead">
+                <ol>
+                    <a href="https://www.servertribe.com/download-attune-registration/"
+                        target="_blank">
+                        <span class="badge badge-primary">1</span>
+                        Download Attune
+                        <i class="fa-solid fa-download fa-beat-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://github.com/attune-Automation/"
+                        target="_blank">
+                        <span class="badge badge-primary">2</span>
+                         Copy the Attune Project URL
+                         <i class="fa-brands fa-github fa-fade"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://servertribe-attune.readthedocs.io/en/latest/howto/design_workspace/clone_project.html"
+                        target="_blank">
+                        <span class="badge badge-primary">3</span>
+                        Clone the Project in Attune
+                         <i class="fa-solid fa-book fa-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://www.youtube.com/watch?v=GCWDI29rDV0"
+                        target="_blank">
+                        <span class="badge badge-primary">4</span>
+                        Plan your Job(s)
+                        <i class="fa-brands fa-youtube fa-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+                <ol>
+                    <a href="https://www.youtube.com/watch?v=b7DhFcURkZg"
+                        target="_blank">
+                        <span class="badge badge-primary">5</span>
+                        Run your Job(s)
+                        <i class="fa-brands fa-youtube fa-fade" style="color: #0197ff;"></i>
+                    </a>
+                </ol>
+            </p>
+            <p class="lead text-center">
+                You've automated: <strong>WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg</strong>
+            </p>
+            <hr class="my-4 text-center">
+            <div class="col px-0">
+                <p class="text-center">
+                    Get the most out of automation with our get started
+                    videos, product demonstrations, and more.
+                </p>
+                <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg"
+                       href="https://www.servertribe.com/learn/"
+                       target="_blank"
+                       role="button">
+                        Learn Attune Automation
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>The following steps will guide you through the manual process.</p>
+        </div>
+
+<!-- Blueprint Steps -->
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="renameplainwinpeiso">
+                            <a href="#renameplainwinpeiso">
+                                <strong>Step 1 -</strong> Rename Plain WinPE ISO
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+mkdir --parents &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+mv --verbose &quot;../kickstart_{targetServer.fqn}.iso&quot; &quot;winpe_plain.iso&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="mountplainwinpeiso">
+                            <a href="#mountplainwinpeiso">
+                                <strong>Step 2 -</strong> Mount Plain WinPE ISO
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+MOUNT_FOLDER=&quot;winpe_plain&quot;
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+mkdir -p &quot;${MOUNT_FOLDER}&quot;
+
+ISO=&quot;winpe_plain.iso&quot;
+
+mount --options &quot;uid={linuxAttuneUser.user}&quot; \
+    --options &quot;gid={linuxAttuneUser.user}&quot; \
+    &quot;${ISO}&quot; &quot;${MOUNT_FOLDER}&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="esxideployvmwaredriverslink">
+                            <a href="#esxideployvmwaredriverslink">
+                                <strong>Step 3 -</strong> ESXi Deploy VMWare Drivers (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Deploys VMWare ESXi drivers to the {ksAttuneBaseDir}/build-{targetServer.fqn} folder.</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="moveesxidriverstooverlay">
+                            <a href="#moveesxidriverstooverlay">
+                                <strong>Step 4 -</strong> Move ESXi Drivers to Overlay
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+ATTUNE_DRIVERS=&quot;overlay/attune_drivers&quot;
+
+mkdir --parents --verbose &quot;${ATTUNE_DRIVERS}&quot;
+
+DRIVERS=&quot;Drivers&quot;
+mv --verbose ${DRIVERS}/* &quot;${ATTUNE_DRIVERS}&quot;
+
+rmdir --verbose &quot;${DRIVERS}&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="deploystartnetcmdforwinpeonesxiforwin2019linkk">
+                            <a href="#deploystartnetcmdforwinpeonesxiforwin2019linkk">
+                                <strong>Step 5 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (linkk)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="deploywin2019unattendedconfigbiosfordriversonxdrivelink">
+                            <a href="#deploywin2019unattendedconfigbiosfordriversonxdrivelink">
+                                <strong>Step 6 -</strong> Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="moveautounattendxmltooverlay">
+                            <a href="#moveautounattendxmltooverlay">
+                                <strong>Step 7 -</strong> Move autounattend.xml to Overlay
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+mv --verbose autounattend.xml &quot;overlay&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="addwritepermissionstobootwim">
+                            <a href="#addwritepermissionstobootwim">
+                                <strong>Step 8 -</strong> Add Write Permissions to boot.wim
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+chmod a+w &quot;winpe_plain/sources/boot.wim&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="createbioswinpeisowithoverlayusingwinpeplainbootwim">
+                            <a href="#createbioswinpeisowithoverlayusingwinpeplainbootwim">
+                                <strong>Step 9 -</strong> Create BIOS WinPE ISO with Overlay using WinPE Plain boot.wim
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+    
+mkwinpeimg --iso --windows-dir=&quot;winpe_plain&quot; \
+    --wim=&quot;winpe_plain/sources/boot.wim&quot; \
+    --overlay=&quot;overlay&quot; \
+    &quot;winpe.iso&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="mountwinpeisoandcopytowinpestaginglink">
+                            <a href="#mountwinpeisoandcopytowinpestaginglink">
+                                <strong>Step 10 -</strong> Mount WinPE ISO and Copy to WinPE Staging (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="copywinpeplainefifilestowinpestaging">
+                            <a href="#copywinpeplainefifilestowinpestaging">
+                                <strong>Step 11 -</strong> Copy WinPE Plain EFI Files to WinPE Staging
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+# Copy EFI Files from WinPE Plain ISO
+cp -rv &quot;winpe_plain/efi&quot; &quot;winpe_staging&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="copyplainwinpefilesformkwinpeimgcompatibilitytowinpestaging">
+                            <a href="#copyplainwinpefilesformkwinpeimgcompatibilitytowinpestaging">
+                                <strong>Step 12 -</strong> Copy Plain WinPE  Files for mkwinpeimg Compatibility to WinPE Staging
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+cp -rv &quot;winpe_plain/boot/etfsboot.com&quot; &quot;winpe_staging/boot&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="extractplainwinpebootimgtowinpestaging">
+                            <a href="#extractplainwinpebootimgtowinpestaging">
+                                <strong>Step 13 -</strong> Extract Plain WinPE boot.img to winpe_staging
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Extract the boot.img out of the WinPE ISO
+
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+
+# Set the filename of the ISO
+F=&quot;winpe_plain.iso&quot;
+
+# Get the Boot image offset
+OFFSET=`isoinfo -d -i $F | grep Bootoff | cut  -c21-`
+
+# Extract the boot.img.
+dd if=$F of=boot.img bs=2048 count=8 skip=$OFFSET
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="winpecreatebiosbootiso">
+                            <a href="#winpecreatebiosbootiso">
+                                <strong>Step 14 -</strong> WinPE Create BIOS Boot ISO
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}/winpe_staging
+
+# Create new ISO with answer file
+mkisofs -o {ksAttuneBaseDir}/kickstart_{targetServer.fqn}.iso \
+    -b boot.img -no-emul-boot -c BOOT.CAT \
+    -iso-level 2 -udf -joliet-long -relaxed-filenames -allow-limited-size \
+    -J -l -D -N -V &quot;KS_WIN&quot; .
+
+# # Create new ISO with answer file
+# mkisofs  -o {ksAttuneBaseDir}/kickstart_{targetServer.fqn}.iso \
+# 	-iso-level 4 -udf -R -D -U -b boot.img -no-emul-boot -boot-load-size 8 -boot-load-seg 1984 \
+# 	-joliet-long -relaxed-filenames -allow-limited-size \
+# 	-eltorito-alt-boot -b efi/boot/bootx64.efi -no-emul-boot .
+
+# Create new ISO with answer file
+# mkisofs  -o {ksAttuneBaseDir}/kickstart_{targetServer.fqn}.iso \
+# 	-iso-level 4 -udf -R -D -U -b boot.img -no-emul-boot \
+# 	-joliet-long -relaxed-filenames -allow-limited-size \
+# 	-eltorito-alt-boot -b efi/boot/bootx64.efi -no-emul-boot .
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="createuefidiskfromwinpestaginglink">
+                            <a href="#createuefidiskfromwinpestaginglink">
+                                <strong>Step 15 -</strong> Create UEFI Disk from winpe_staging (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="unmountuefiwinpeplainiso">
+                            <a href="#unmountuefiwinpeplainiso">
+                                <strong>Step 16 -</strong> Unmount UEFI winpe_plain ISO
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+MOUNT_FOLDER=&quot;winpe_plain&quot;
+MOUNT_PATH=&quot;{ksAttuneBaseDir}/build-{targetServer.fqn}/${MOUNT_FOLDER}&quot;
+
+if df -h | grep --ignore-case \
+    --quiet \
+    &quot;${MOUNT_PATH}&quot;
+then
+
+    cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+    
+    umount --verbose &quot;${MOUNT_FOLDER}&quot;
+else
+    echo &quot;${MOUNT_PATH} is not mounted. Skipping.&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="unmountalllink">
+                            <a href="#unmountalllink">
+                                <strong>Step 17 -</strong> Unmount All (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="cleanuefimountwinimgandwinpedirectorieslink">
+                            <a href="#cleanuefimountwinimgandwinpedirectorieslink">
+                                <strong>Step 18 -</strong> Clean uefi_mount winimg and winpe Directories (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="cleanbuilddirectorylink">
+                            <a href="#cleanbuilddirectorylink">
+                                <strong>Step 19 -</strong> Clean Build Directory (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="esxiwinperecreatevirtualmachinelink">
+                            <a href="#esxiwinperecreatevirtualmachinelink">
+                                <strong>Step 20 -</strong> ESXi WinPE Recreate Virtual Machine (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+                    <div class="row pt-5">
+                        <div class="col">
+                            <h2>Completed</h2>
+                            <p>
+                                You have completed this instruction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Download Attune Ad -->
+
+            <div class="toc col-lg-2 px-0">
+                <div class="container px-0 pt-3 pl-5">
+                    <div class="card border-light mb-3" style="max-width: 18rem;">
+                        <div class="card-body attune-ad">
+                            <img
+                                src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                                alt="Attune - Powered by ServerTribe"
+                                class="img-fluid">
+                            <p class="card-title mt-3 text-center">
+                                <strong>Automate with Attune</strong>
+                            </p>
+                            <p class="card-text text-center">
+                                Download the Attune Community Edition.
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.servertribe.com/download-attune-registration/"
+                                   class="btn btn-primary mt-3">
+                                    DOWNLOAD!!!
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+<!-- Join Discord -->
+
+        <div class="row py-5">
+            <div class="jumbotron">
+              <h1 class="display-4 text-center">
+                  Discuss this Project in Discord
+              </h1>
+              <p class="lead">
+
+                  Join our Discord channel and connect with like-minded individuals who
+                  share your passion. Engage in lively discussions, gain valuable insights,
+                  and stay updated on the latest trends in our industry. Don't miss out on
+                  this opportunity to network, learn, and grow together.
+              </p>
+              <hr class="my-4 text-center">
+                <div class="col px-0">
+                  <p class="text-center">
+                      Click the link below and become a part of our vibrant community on
+                      Discord today!
+                  </p>
+                  <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg"
+                       href="https://discord.com/invite/3YpJsagqUn"
+                       role="button">
+                        Join NOW!!!
+                    </a>
+                  </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Project Footer -->
+
+<footer class="footer fixed-bottom bg-white border-top box-shadow">
+      <div class="container px-0">
+          <div class="row">
+              <div class="col px-0">
+                  <a class="my-0 mr-lg-auto"
+                     href="https://www.servertribe.com/"
+                     target="_blank">
+                      <img
+                          src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                          alt="Attune - Powered by ServerTribe"
+                          class="img-fluid navbar-img">
+                  </a>
+              </div>
+          </div>
+      </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+</body>
+</html>

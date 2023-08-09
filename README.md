@@ -78,7 +78,7 @@ Kickstarts Windows Server 2019 from a single ISO.
 
 Kickstarts a Windows Server 2019 virtual machine on ESXi.
 
-### WinPE Kickstart Win 2019+ESXi with mkwinpeimg
+### WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg
 
 
 
