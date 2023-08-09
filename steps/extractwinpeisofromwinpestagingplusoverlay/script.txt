@@ -1,0 +1,9 @@
+cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
+
+# As winpe_staging is a WinPE ISO, we need to specify the
+# boot.wim file explicity otherwise mkwinpeimg will look
+# at index 2 by default in boot.wim
+mkwinpeimg --iso --windows-dir="winpe_staging" \
+    --wim="winpe_staging/sources/boot.wim" \
+    --overlay="overlay" \
+    "winpe.iso"

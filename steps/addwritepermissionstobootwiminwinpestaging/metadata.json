@@ -1,10 +1,10 @@
 {
     "actionOnStepFail": null, 
     "enabled": true, 
-    "externalUuid4": "6e125f3f-7dcf-44b2-be2b-8b0ce0c6b71d", 
+    "externalUuid4": "94c24338-84e5-4e9d-bf57-6570e435c491", 
     "interpreter": 1, 
-    "key": "createbioswinpeisowithoverlayusingwinpeplainbootwim", 
-    "name": "Create BIOS WinPE ISO with Overlay using WinPE Plain boot.wim", 
+    "key": "addwritepermissionstobootwiminwinpestaging", 
+    "name": "Add Write Permissions to boot.wim in winpe_staging", 
     "osCredKey": "linuxattuneuser", 
     "serverKey": "attuneosbuildserver", 
     "successExitCode": 0, 

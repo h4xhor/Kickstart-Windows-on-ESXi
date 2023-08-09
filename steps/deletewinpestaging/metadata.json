@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "c5057e41-66da-4c51-8441-1cf8fa8342d4", 
+    "interpreter": 1, 
+    "key": "deletewinpestaging", 
+    "name": "Delete winpe_staging", 
+    "osCredKey": "linuxrootuser", 
+    "serverKey": "attuneosbuildserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

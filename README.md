@@ -81,6 +81,9 @@ Kickstarts a Windows Server 2019 virtual machine on ESXi.
 ### WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg
 
 
+### WinPE Kickstart BIOS Win 2019+ESXi with mkwinpeimg
+
+
 
 
 

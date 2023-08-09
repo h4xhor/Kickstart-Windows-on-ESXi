@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "6e125f3f-7dcf-44b2-be2b-8b0ce0c6b71d", 
+    "interpreter": 1, 
+    "key": "extractwinpeisofromwinpestagingplusoverlay", 
+    "name": "Extract WinPE ISO from winpe_staging Plus Overlay", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneosbuildserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

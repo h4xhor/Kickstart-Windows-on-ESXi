@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "0fbf0132-2992-45c3-bd02-02a90df67d42", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "02ae534f-2695-4eff-9cfd-0251b545677a", 
+    "key": "deployunattendpexmllink", 
+    "name": "Deploy Unattend-PE.xml (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

@@ -1,6 +1,0 @@
-cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
-    
-mkwinpeimg --iso --windows-dir="winpe_plain" \
-    --wim="winpe_plain/sources/boot.wim" \
-    --overlay="overlay" \
-    "winpe.iso"

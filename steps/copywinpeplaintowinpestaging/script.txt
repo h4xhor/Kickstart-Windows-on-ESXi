@@ -1,0 +1,6 @@
+cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
+
+WINPE_STAGING="winpe_staging"
+mkdir --parents --verbose "${WINPE_STAGING}"
+
+cp --recursive --verbose winpe_plain/* "${WINPE_STAGING}"

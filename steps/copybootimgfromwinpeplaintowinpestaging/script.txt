@@ -1,0 +1,3 @@
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+
+cp --verbose winpe_plain/boot.img winpe_staging

@@ -6,13 +6,13 @@
 
 
 <head>
-    <title>How to WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg - Attune Automation</title>
+    <title>How to WinPE Kickstart BIOS Win 2019+ESXi with mkwinpeimg - Attune Automation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title"
-          content="How to WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg - Attune Automation">
+          content="How to WinPE Kickstart BIOS Win 2019+ESXi with mkwinpeimg - Attune Automation">
     <meta name="description"
           content="">
     <meta name="robots"
@@ -21,13 +21,13 @@
     <meta property="og:locale" content="en_AU" />
     <meta property="og:type" content="article" />
     <meta property="og:title"
-          content="HowTo WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg - Attune Automation" />
+          content="HowTo WinPE Kickstart BIOS Win 2019+ESXi with mkwinpeimg - Attune Automation" />
     <meta property="og:description" content="" />
     <meta property="og:site_name" content="Attune Automation" />
     <meta property="article:section" content="IT Instruction" />
 
     <meta name="twitter:title"
-          content="How to WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg - Attune Automation" />
+          content="How to WinPE Kickstart BIOS Win 2019+ESXi with mkwinpeimg - Attune Automation" />
     <meta name="twitter:description" content="" />
 
     <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
@@ -119,7 +119,7 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                    <strong>WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg</strong>
+                    <strong>WinPE Kickstart BIOS Win 2019+ESXi with mkwinpeimg</strong>
                 </li>
             </ol>
         </nav>
@@ -133,7 +133,7 @@
     <div class="row">
         <div class="col px-0">
             <h1 class="text-left">
-                How to WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg
+                How to WinPE Kickstart BIOS Win 2019+ESXi with mkwinpeimg
             </h1>
         </div>
     </div>
@@ -197,7 +197,7 @@
                     </p>
                     <p class="text-muted">
                         <a href="#top">
-                            <strong>WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg</strong>
+                            <strong>WinPE Kickstart BIOS Win 2019+ESXi with mkwinpeimg</strong>
                         </a>
                     </p>
 
@@ -206,128 +206,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#renameandmoveplainwinpeiso">
-                            <strong>Step 1 -</strong> Rename and Move Plain WinPE ISO
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#mountplainwinpeiso">
-                            <strong>Step 2 -</strong> Mount Plain WinPE ISO
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#esxideployvmwaredriverslink">
-                            <strong>Step 3 -</strong> ESXi Deploy VMWare Drivers (link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#moveesxidriverstooverlay">
-                            <strong>Step 4 -</strong> Move ESXi Drivers to Overlay
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#deploystartnetcmdforwinpeonesxiforwin2019linkk">
-                            <strong>Step 5 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (linkk)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#deploywin2019unattendedconfigbiosfordriversonxdrivelink">
-                            <strong>Step 6 -</strong> Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#moveautounattendxmltooverlay">
-                            <strong>Step 7 -</strong> Move autounattend.xml to Overlay
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#addwritepermissionstobootwiminwinpestaging">
-                            <strong>Step 8 -</strong> Add Write Permissions to boot.wim in winpe_staging
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#extractwinpeisofromwinpestagingplusoverlay">
-                            <strong>Step 9 -</strong> Extract WinPE ISO from winpe_staging Plus Overlay
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#mountwinpeisoandcopytowinpestaginglink">
-                            <strong>Step 10 -</strong> Mount WinPE ISO and Copy to WinPE Staging (link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#copywinpeplainefifilestowinpestaging">
-                            <strong>Step 11 -</strong> Copy WinPE Plain EFI Files to WinPE Staging
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#copyplainwinpefilesformkwinpeimgcompatibilitytowinpestaging">
-                            <strong>Step 12 -</strong> Copy Plain WinPE  Files for mkwinpeimg Compatibility to WinPE Staging
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#extractplainwinpebootimgtowinpestaging">
-                            <strong>Step 13 -</strong> Extract Plain WinPE boot.img to winpe_staging
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#winpecreatebiosbootiso">
-                            <strong>Step 14 -</strong> WinPE Create BIOS Boot ISO
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#createuefidiskfromwinpestaginglink">
-                            <strong>Step 15 -</strong> Create UEFI Disk from winpe_staging (link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
                         <a href="#unmountwinpeplainiso">
-                            <strong>Step 16 -</strong> Unmount winpe_plain ISO
+                            <strong>Step 1 -</strong> Unmount winpe_plain ISO
                         </a>
                     </p>
 
@@ -335,15 +215,23 @@
 
                     <p class="text-muted pt-2">
                         <a href="#unmountalllink">
-                            <strong>Step 17 -</strong> Unmount All (link)
+                            <strong>Step 2 -</strong> Unmount All (link)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#cleanuefimountwinimgandwinpedirectorieslink">
-                            <strong>Step 18 -</strong> Clean uefi_mount winimg and winpe Directories (link)
+                        <a href="#cleanwinpeplaindirectory">
+                            <strong>Step 3 -</strong> Clean winpe_plain Directory
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#deletewinpestaginglink">
+                            <strong>Step 4 -</strong> Delete winpe_staging (link)
                         </a>
                     </p>
 
@@ -351,7 +239,135 @@
 
                     <p class="text-muted pt-2">
                         <a href="#cleanbuilddirectorylink">
-                            <strong>Step 19 -</strong> Clean Build Directory (link)
+                            <strong>Step 5 -</strong> Clean Build Directory (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#renameandmoveplainwinpeiso">
+                            <strong>Step 6 -</strong> Rename and Move Plain WinPE ISO
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#mountplainwinpeiso">
+                            <strong>Step 7 -</strong> Mount Plain WinPE ISO
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#esxideployvmwaredriverslink">
+                            <strong>Step 8 -</strong> ESXi Deploy VMWare Drivers (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#moveesxidriverstooverlay">
+                            <strong>Step 9 -</strong> Move ESXi Drivers to Overlay
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#deploystartnetcmdforwinpeonesxiforwin2019linkk">
+                            <strong>Step 10 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (linkk)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#deployunattendpexmllink">
+                            <strong>Step 11 -</strong> Deploy Unattend-PE.xml (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#deploywin2019unattendedconfigbiosfordriversonxdrivelink">
+                            <strong>Step 12 -</strong> Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#moveautounattendxmltooverlay">
+                            <strong>Step 13 -</strong> Move autounattend.xml to Overlay
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#copywinpeplaintowinpestaging">
+                            <strong>Step 14 -</strong> Copy winpe_plain to winpe_staging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#addwritepermissionstobootwiminwinpestaging">
+                            <strong>Step 15 -</strong> Add Write Permissions to boot.wim in winpe_staging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#extractwinpeisofromwinpestagingplusoverlay">
+                            <strong>Step 16 -</strong> Extract WinPE ISO from winpe_staging Plus Overlay
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#deletewinpestaging">
+                            <strong>Step 17 -</strong> Delete winpe_staging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#mountwinpeiso">
+                            <strong>Step 18 -</strong> Mount winpe.iso
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#copywinpefilestowinpestaging">
+                            <strong>Step 19 -</strong> Copy winpe Files to winpe_staging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#copybootimgfromwinpeplaintowinpestaging">
+                            <strong>Step 20 -</strong> Copy boot.img from winpe_plain to winpe_staging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#createwinpebiosbootisofromwinpestaginglink">
+                            <strong>Step 21 -</strong> Create WinPE BIOS Boot ISO from winpe_staging (link)
                         </a>
                     </p>
 
@@ -359,7 +375,31 @@
 
                     <p class="text-muted pt-2">
                         <a href="#esxiwinperecreatevirtualmachinelink">
-                            <strong>Step 20 -</strong> ESXi WinPE Recreate Virtual Machine (link)
+                            <strong>Step 22 -</strong> ESXi WinPE Recreate Virtual Machine (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#unmountwinpeplainiso">
+                            <strong>Step 23 -</strong> Unmount winpe_plain ISO
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#unmountalllink">
+                            <strong>Step 24 -</strong> Unmount All (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cleanwinpeplaindirectory">
+                            <strong>Step 25 -</strong> Clean winpe_plain Directory
                         </a>
                     </p>
 
@@ -422,7 +462,7 @@
                 </ol>
             </p>
             <p class="lead text-center">
-                You've automated: <strong>WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg</strong>
+                You've automated: <strong>WinPE Kickstart BIOS Win 2019+ESXi with mkwinpeimg</strong>
             </p>
             <hr class="my-4 text-center">
             <div class="col px-0">
@@ -453,823 +493,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="renameandmoveplainwinpeiso">
-                            <a href="#renameandmoveplainwinpeiso">
-                                <strong>Step 1 -</strong> Rename and Move Plain WinPE ISO
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-                        <div class="row">
-                            <p>
-                                Connect via ssh:
-                            </p>
-                        </div>
-                        <div class="row py-1">
-                            <code class="language-sql">
-ssh {linuxattuneuser}@{attuneosbuildserver}
-                            </code>
-                        </div>
-
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-mkdir --parents &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-mv --verbose &quot;../kickstart_{targetServer.fqn}.iso&quot; &quot;winpe_plain.iso&quot;
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="mountplainwinpeiso">
-                            <a href="#mountplainwinpeiso">
-                                <strong>Step 2 -</strong> Mount Plain WinPE ISO
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-                        <div class="row">
-                            <p>
-                                Connect via ssh:
-                            </p>
-                        </div>
-                        <div class="row py-1">
-                            <code class="language-sql">
-ssh {linuxrootuser}@{attuneosbuildserver}
-                            </code>
-                        </div>
-
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-MOUNT_FOLDER=&quot;winpe_plain&quot;
-cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-mkdir -p &quot;${MOUNT_FOLDER}&quot;
-
-ISO=&quot;winpe_plain.iso&quot;
-
-mount --options &quot;uid={linuxAttuneUser.user}&quot; \
-    --options &quot;gid={linuxAttuneUser.user}&quot; \
-    &quot;${ISO}&quot; &quot;${MOUNT_FOLDER}&quot;
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="esxideployvmwaredriverslink">
-                            <a href="#esxideployvmwaredriverslink">
-                                <strong>Step 3 -</strong> ESXi Deploy VMWare Drivers (link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Deploys VMWare ESXi drivers to the {ksAttuneBaseDir}/build-{targetServer.fqn} folder.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="moveesxidriverstooverlay">
-                            <a href="#moveesxidriverstooverlay">
-                                <strong>Step 4 -</strong> Move ESXi Drivers to Overlay
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-                        <div class="row">
-                            <p>
-                                Connect via ssh:
-                            </p>
-                        </div>
-                        <div class="row py-1">
-                            <code class="language-sql">
-ssh {linuxattuneuser}@{attuneosbuildserver}
-                            </code>
-                        </div>
-
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-
-ATTUNE_DRIVERS=&quot;overlay/attune_drivers&quot;
-
-mkdir --parents --verbose &quot;${ATTUNE_DRIVERS}&quot;
-
-DRIVERS=&quot;Drivers&quot;
-mv --verbose ${DRIVERS}/* &quot;${ATTUNE_DRIVERS}&quot;
-
-rmdir --verbose &quot;${DRIVERS}&quot;
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="deploystartnetcmdforwinpeonesxiforwin2019linkk">
-                            <a href="#deploystartnetcmdforwinpeonesxiforwin2019linkk">
-                                <strong>Step 5 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (linkk)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="deploywin2019unattendedconfigbiosfordriversonxdrivelink">
-                            <a href="#deploywin2019unattendedconfigbiosfordriversonxdrivelink">
-                                <strong>Step 6 -</strong> Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="moveautounattendxmltooverlay">
-                            <a href="#moveautounattendxmltooverlay">
-                                <strong>Step 7 -</strong> Move autounattend.xml to Overlay
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-    
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-
-# mv --verbose autounattend.xml &quot;overlay&quot;
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="addwritepermissionstobootwiminwinpestaging">
-                            <a href="#addwritepermissionstobootwiminwinpestaging">
-                                <strong>Step 8 -</strong> Add Write Permissions to boot.wim in winpe_staging
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-    
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-chmod a+w &quot;winpe_staging/sources/boot.wim&quot;
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="extractwinpeisofromwinpestagingplusoverlay">
-                            <a href="#extractwinpeisofromwinpestagingplusoverlay">
-                                <strong>Step 9 -</strong> Extract WinPE ISO from winpe_staging Plus Overlay
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-    
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-
-# As winpe_staging is a WinPE ISO, we need to specify the
-# boot.wim file explicity otherwise mkwinpeimg will look
-# at index 2 by default in boot.wim
-mkwinpeimg --iso --windows-dir=&quot;winpe_staging&quot; \
-    --wim=&quot;winpe_staging/sources/boot.wim&quot; \
-    --overlay=&quot;overlay&quot; \
-    &quot;winpe.iso&quot;
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="mountwinpeisoandcopytowinpestaginglink">
-                            <a href="#mountwinpeisoandcopytowinpestaginglink">
-                                <strong>Step 10 -</strong> Mount WinPE ISO and Copy to WinPE Staging (link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="copywinpeplainefifilestowinpestaging">
-                            <a href="#copywinpeplainefifilestowinpestaging">
-                                <strong>Step 11 -</strong> Copy WinPE Plain EFI Files to WinPE Staging
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-                        <div class="row">
-                            <p>
-                                Connect via ssh:
-                            </p>
-                        </div>
-                        <div class="row py-1">
-                            <code class="language-sql">
-ssh {linuxrootuser}@{attuneosbuildserver}
-                            </code>
-                        </div>
-
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-
-# Copy EFI Files from WinPE Plain ISO
-cp -rv &quot;winpe_plain/efi&quot; &quot;winpe_staging&quot;
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="copyplainwinpefilesformkwinpeimgcompatibilitytowinpestaging">
-                            <a href="#copyplainwinpefilesformkwinpeimgcompatibilitytowinpestaging">
-                                <strong>Step 12 -</strong> Copy Plain WinPE  Files for mkwinpeimg Compatibility to WinPE Staging
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-    
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-
-cp -rv &quot;winpe_plain/boot/etfsboot.com&quot; &quot;winpe_staging/boot&quot;
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="extractplainwinpebootimgtowinpestaging">
-                            <a href="#extractplainwinpebootimgtowinpestaging">
-                                <strong>Step 13 -</strong> Extract Plain WinPE boot.img to winpe_staging
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-                        <div class="row">
-                            <p>
-                                Connect via ssh:
-                            </p>
-                        </div>
-                        <div class="row py-1">
-                            <code class="language-sql">
-ssh {linuxattuneuser}@{attuneosbuildserver}
-                            </code>
-                        </div>
-
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-# Extract the boot.img out of the WinPE ISO
-
-cd {ksAttuneBaseDir}/build-{targetServer.fqn}
-
-# Set the filename of the ISO
-F=&quot;winpe_plain.iso&quot;
-
-# Get the Boot image offset
-OFFSET=`isoinfo -d -i $F | grep Bootoff | cut  -c21-`
-
-# Extract the boot.img.
-dd if=$F of=boot.img bs=2048 count=8 skip=$OFFSET
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="winpecreatebiosbootiso">
-                            <a href="#winpecreatebiosbootiso">
-                                <strong>Step 14 -</strong> WinPE Create BIOS Boot ISO
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-    
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-cd {ksAttuneBaseDir}/build-{targetServer.fqn}/winpe_staging
-
-# Create new ISO with answer file
-mkisofs -o {ksAttuneBaseDir}/kickstart_{targetServer.fqn}.iso \
-    -b boot.img -no-emul-boot -c BOOT.CAT \
-    -iso-level 2 -udf -joliet-long -relaxed-filenames -allow-limited-size \
-    -J -l -D -N -V &quot;KS_WIN&quot; .
-
-# # Create new ISO with answer file
-# mkisofs  -o {ksAttuneBaseDir}/kickstart_{targetServer.fqn}.iso \
-# 	-iso-level 4 -udf -R -D -U -b boot.img -no-emul-boot -boot-load-size 8 -boot-load-seg 1984 \
-# 	-joliet-long -relaxed-filenames -allow-limited-size \
-# 	-eltorito-alt-boot -b efi/boot/bootx64.efi -no-emul-boot .
-
-# Create new ISO with answer file
-# mkisofs  -o {ksAttuneBaseDir}/kickstart_{targetServer.fqn}.iso \
-# 	-iso-level 4 -udf -R -D -U -b boot.img -no-emul-boot \
-# 	-joliet-long -relaxed-filenames -allow-limited-size \
-# 	-eltorito-alt-boot -b efi/boot/bootx64.efi -no-emul-boot .
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="createuefidiskfromwinpestaginglink">
-                            <a href="#createuefidiskfromwinpestaginglink">
-                                <strong>Step 15 -</strong> Create UEFI Disk from winpe_staging (link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
                         <h3 id="unmountwinpeplainiso">
                             <a href="#unmountwinpeplainiso">
-                                <strong>Step 16 -</strong> Unmount winpe_plain ISO
+                                <strong>Step 1 -</strong> Unmount winpe_plain ISO
                             </a>
                         </h3>
                     </div>
@@ -1347,7 +573,7 @@ fi
                     <div class="row pt-5">
                         <h3 id="unmountalllink">
                             <a href="#unmountalllink">
-                                <strong>Step 17 -</strong> Unmount All (link)
+                                <strong>Step 2 -</strong> Unmount All (link)
                             </a>
                         </h3>
                     </div>
@@ -1376,20 +602,70 @@ fi
 
 
                     <div class="row pt-5">
-                        <h3 id="cleanuefimountwinimgandwinpedirectorieslink">
-                            <a href="#cleanuefimountwinimgandwinpedirectorieslink">
-                                <strong>Step 18 -</strong> Clean uefi_mount winimg and winpe Directories (link)
+                        <h3 id="cleanwinpeplaindirectory">
+                            <a href="#cleanwinpeplaindirectory">
+                                <strong>Step 3 -</strong> Clean winpe_plain Directory
                             </a>
                         </h3>
                     </div>
 
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+DIR=&quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+if [ ! -d ${DIR} ]
+then
+    echo &quot;Directory ${DIR} does not exist. Skipping.&quot;
+else
+    cd &quot;${DIR}&quot;
+    
+    DIR=&quot;winpe_plain&quot;
+    [[ -d ${DIR} ]] &amp;&amp; rm -rf ${DIR} &amp;&amp; echo &quot;Removed ${DIR}&quot; || \
+        echo &quot;No directory to remove.&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="deletewinpestaginglink">
+                            <a href="#deletewinpestaginglink">
+                                <strong>Step 4 -</strong> Delete winpe_staging (link)
+                            </a>
+                        </h3>
                     </div>
+
 
 
 
@@ -1409,7 +685,7 @@ fi
                     <div class="row pt-5">
                         <h3 id="cleanbuilddirectorylink">
                             <a href="#cleanbuilddirectorylink">
-                                <strong>Step 19 -</strong> Clean Build Directory (link)
+                                <strong>Step 5 -</strong> Clean Build Directory (link)
                             </a>
                         </h3>
                     </div>
@@ -1438,9 +714,254 @@ fi
 
 
                     <div class="row pt-5">
-                        <h3 id="esxiwinperecreatevirtualmachinelink">
-                            <a href="#esxiwinperecreatevirtualmachinelink">
-                                <strong>Step 20 -</strong> ESXi WinPE Recreate Virtual Machine (link)
+                        <h3 id="renameandmoveplainwinpeiso">
+                            <a href="#renameandmoveplainwinpeiso">
+                                <strong>Step 6 -</strong> Rename and Move Plain WinPE ISO
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+mkdir --parents &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+mv --verbose &quot;../kickstart_{targetServer.fqn}.iso&quot; &quot;winpe_plain.iso&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="mountplainwinpeiso">
+                            <a href="#mountplainwinpeiso">
+                                <strong>Step 7 -</strong> Mount Plain WinPE ISO
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+MOUNT_FOLDER=&quot;winpe_plain&quot;
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+mkdir -p &quot;${MOUNT_FOLDER}&quot;
+
+ISO=&quot;winpe_plain.iso&quot;
+
+mount --options &quot;uid={linuxAttuneUser.user}&quot; \
+    --options &quot;gid={linuxAttuneUser.user}&quot; \
+    &quot;${ISO}&quot; &quot;${MOUNT_FOLDER}&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="esxideployvmwaredriverslink">
+                            <a href="#esxideployvmwaredriverslink">
+                                <strong>Step 8 -</strong> ESXi Deploy VMWare Drivers (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Deploys VMWare ESXi drivers to the {ksAttuneBaseDir}/build-{targetServer.fqn} folder.</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="moveesxidriverstooverlay">
+                            <a href="#moveesxidriverstooverlay">
+                                <strong>Step 9 -</strong> Move ESXi Drivers to Overlay
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+ATTUNE_DRIVERS=&quot;overlay/attune_drivers&quot;
+
+mkdir --parents --verbose &quot;${ATTUNE_DRIVERS}&quot;
+
+DRIVERS=&quot;Drivers&quot;
+mv --verbose ${DRIVERS}/* &quot;${ATTUNE_DRIVERS}&quot;
+
+rmdir --verbose &quot;${DRIVERS}&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="deploystartnetcmdforwinpeonesxiforwin2019linkk">
+                            <a href="#deploystartnetcmdforwinpeonesxiforwin2019linkk">
+                                <strong>Step 10 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (linkk)
                             </a>
                         </h3>
                     </div>
@@ -1459,6 +980,734 @@ fi
 
 
     
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="deployunattendpexmllink">
+                            <a href="#deployunattendpexmllink">
+                                <strong>Step 11 -</strong> Deploy Unattend-PE.xml (link)
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="deploywin2019unattendedconfigbiosfordriversonxdrivelink">
+                            <a href="#deploywin2019unattendedconfigbiosfordriversonxdrivelink">
+                                <strong>Step 12 -</strong> Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="moveautounattendxmltooverlay">
+                            <a href="#moveautounattendxmltooverlay">
+                                <strong>Step 13 -</strong> Move autounattend.xml to Overlay
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+# mv --verbose autounattend.xml &quot;overlay&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="copywinpeplaintowinpestaging">
+                            <a href="#copywinpeplaintowinpestaging">
+                                <strong>Step 14 -</strong> Copy winpe_plain to winpe_staging
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+WINPE_STAGING=&quot;winpe_staging&quot;
+mkdir --parents --verbose &quot;${WINPE_STAGING}&quot;
+
+cp --recursive --verbose winpe_plain/* &quot;${WINPE_STAGING}&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="addwritepermissionstobootwiminwinpestaging">
+                            <a href="#addwritepermissionstobootwiminwinpestaging">
+                                <strong>Step 15 -</strong> Add Write Permissions to boot.wim in winpe_staging
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+chmod a+w &quot;winpe_staging/sources/boot.wim&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="extractwinpeisofromwinpestagingplusoverlay">
+                            <a href="#extractwinpeisofromwinpestagingplusoverlay">
+                                <strong>Step 16 -</strong> Extract WinPE ISO from winpe_staging Plus Overlay
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+# As winpe_staging is a WinPE ISO, we need to specify the
+# boot.wim file explicity otherwise mkwinpeimg will look
+# at index 2 by default in boot.wim
+mkwinpeimg --iso --windows-dir=&quot;winpe_staging&quot; \
+    --wim=&quot;winpe_staging/sources/boot.wim&quot; \
+    --overlay=&quot;overlay&quot; \
+    &quot;winpe.iso&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="deletewinpestaging">
+                            <a href="#deletewinpestaging">
+                                <strong>Step 17 -</strong> Delete winpe_staging
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+
+rm --recursive --verbose winpe_staging
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="mountwinpeiso">
+                            <a href="#mountwinpeiso">
+                                <strong>Step 18 -</strong> Mount winpe.iso
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+MOUNT_FOLDER=&quot;winpe&quot;
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+mkdir -p &quot;${MOUNT_FOLDER}&quot;
+
+ISO=&quot;winpe.iso&quot;
+
+mount --options &quot;uid={linuxAttuneUser.user}&quot; \
+    --options &quot;gid={linuxAttuneUser.user}&quot; \
+    &quot;${ISO}&quot; &quot;${MOUNT_FOLDER}&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="copywinpefilestowinpestaging">
+                            <a href="#copywinpefilestowinpestaging">
+                                <strong>Step 19 -</strong> Copy winpe Files to winpe_staging
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+mkdir --parents --verbose &quot;winpe_staging&quot;
+
+# Copy WinPE Files from WinPE ISO
+cp --recursive --verbose winpe/* &quot;winpe_staging&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="copybootimgfromwinpeplaintowinpestaging">
+                            <a href="#copybootimgfromwinpeplaintowinpestaging">
+                                <strong>Step 20 -</strong> Copy boot.img from winpe_plain to winpe_staging
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+
+cp --verbose winpe_plain/boot.img winpe_staging
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="createwinpebiosbootisofromwinpestaginglink">
+                            <a href="#createwinpebiosbootisofromwinpestaginglink">
+                                <strong>Step 21 -</strong> Create WinPE BIOS Boot ISO from winpe_staging (link)
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="esxiwinperecreatevirtualmachinelink">
+                            <a href="#esxiwinperecreatevirtualmachinelink">
+                                <strong>Step 22 -</strong> ESXi WinPE Recreate Virtual Machine (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="unmountwinpeplainiso">
+                            <a href="#unmountwinpeplainiso">
+                                <strong>Step 23 -</strong> Unmount winpe_plain ISO
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+MOUNT_FOLDER=&quot;winpe_plain&quot;
+MOUNT_PATH=&quot;{ksAttuneBaseDir}/build-{targetServer.fqn}/${MOUNT_FOLDER}&quot;
+
+if df -h | grep --ignore-case \
+    --quiet \
+    &quot;${MOUNT_PATH}&quot;
+then
+
+    cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+    
+    umount --verbose &quot;${MOUNT_FOLDER}&quot;
+else
+    echo &quot;${MOUNT_PATH} is not mounted. Skipping.&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="unmountalllink">
+                            <a href="#unmountalllink">
+                                <strong>Step 24 -</strong> Unmount All (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="cleanwinpeplaindirectory">
+                            <a href="#cleanwinpeplaindirectory">
+                                <strong>Step 25 -</strong> Clean winpe_plain Directory
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+DIR=&quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+if [ ! -d ${DIR} ]
+then
+    echo &quot;Directory ${DIR} does not exist. Skipping.&quot;
+else
+    cd &quot;${DIR}&quot;
+    
+    DIR=&quot;winpe_plain&quot;
+    [[ -d ${DIR} ]] &amp;&amp; rm -rf ${DIR} &amp;&amp; echo &quot;Removed ${DIR}&quot; || \
+        echo &quot;No directory to remove.&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
 
 
 

@@ -1,0 +1,7 @@
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+    
+ISO="winpe.iso"
+
+7z x "${ISO}" -owinpe_staging
+
+

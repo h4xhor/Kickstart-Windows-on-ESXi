@@ -8,7 +8,7 @@
     "links": [
         {
             "order": 0, 
-            "stepKey": "renameplainwinpeiso"
+            "stepKey": "renameandmoveplainwinpeiso"
         }, 
         {
             "order": 50, 
@@ -36,11 +36,11 @@
         }, 
         {
             "order": 450, 
-            "stepKey": "addwritepermissionstobootwim"
+            "stepKey": "addwritepermissionstobootwiminwinpestaging"
         }, 
         {
             "order": 500, 
-            "stepKey": "createbioswinpeisowithoverlayusingwinpeplainbootwim"
+            "stepKey": "extractwinpeisofromwinpestagingplusoverlay"
         }, 
         {
             "order": 550, 
@@ -68,7 +68,7 @@
         }, 
         {
             "order": 850, 
-            "stepKey": "unmountuefiwinpeplainiso"
+            "stepKey": "unmountwinpeplainiso"
         }, 
         {
             "order": 900, 

@@ -1,10 +1,10 @@
 {
     "actionOnStepFail": null, 
     "enabled": true, 
-    "externalUuid4": "08857934-489e-4f84-a35e-2a0f304e3a41", 
+    "externalUuid4": "bd1bcfe0-3757-484e-987d-1cb8321e05a6", 
     "interpreter": 1, 
-    "key": "unmountuefiwinpeplainiso", 
-    "name": "Unmount UEFI winpe_plain ISO", 
+    "key": "mountwinpeiso", 
+    "name": "Mount winpe.iso", 
     "osCredKey": "linuxrootuser", 
     "serverKey": "attuneosbuildserver", 
     "successExitCode": 0, 

@@ -1,10 +1,10 @@
 {
     "actionOnStepFail": null, 
     "enabled": true, 
-    "externalUuid4": "ad636271-d2d5-4426-8837-be7f3df5eb7e", 
+    "externalUuid4": "8b1e98e0-3695-4d0d-9b6b-33dc5f023fe6", 
     "interpreter": 1, 
-    "key": "renameplainwinpeiso", 
-    "name": "Rename Plain WinPE ISO", 
+    "key": "extractwinpeisotowinpestagingdelete", 
+    "name": "Extract winpe.iso to winpe_staging - DELETE", 
     "osCredKey": "linuxattuneuser", 
     "serverKey": "attuneosbuildserver", 
     "successExitCode": 0, 

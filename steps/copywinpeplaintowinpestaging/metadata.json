@@ -1,10 +1,10 @@
 {
     "actionOnStepFail": null, 
     "enabled": true, 
-    "externalUuid4": "94c24338-84e5-4e9d-bf57-6570e435c491", 
+    "externalUuid4": "21bd917e-f6d0-439a-918f-29720b8fdcff", 
     "interpreter": 1, 
-    "key": "addwritepermissionstobootwim", 
-    "name": "Add Write Permissions to boot.wim", 
+    "key": "copywinpeplaintowinpestaging", 
+    "name": "Copy winpe_plain to winpe_staging", 
     "osCredKey": "linuxattuneuser", 
     "serverKey": "attuneosbuildserver", 
     "successExitCode": 0, 
