@@ -1,0 +1,17 @@
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+
+# Case insensitve globbing
+shopt -s nocaseglob
+
+if ls | grep -q *iso
+then
+    
+    ISO="$(echo *iso)"
+    echo "ISO is $ISO"
+    
+    7z x "${ISO}" -owinpe_staging
+    
+    rm -v "${ISO}"
+else
+    echo "ISO is already extracted."
+fi

@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "1bba6bca-585a-46ff-b013-7af6876eb44b", 
+    "interpreter": 1, 
+    "key": "removebootcatfromwinpestaging", 
+    "name": "Remove BOOT.CAT from winpe_staging", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneosbuildserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

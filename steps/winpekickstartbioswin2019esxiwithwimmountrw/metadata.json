@@ -1,0 +1,56 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "6788c5a8-c3e7-4cbc-b48f-aa9ab981894c", 
+    "isBlueprint": true, 
+    "key": "winpekickstartbioswin2019esxiwithwimmountrw", 
+    "links": [
+        {
+            "order": 100, 
+            "stepKey": "cleanwinpeplaindirectory"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "cleanbuilddirectorylink"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "renameandmoveplainwinpeiso"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "extractwinpeplainisotowinpestagingfolder"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "esxideployvmwaredriverslink"
+        }, 
+        {
+            "order": 350, 
+            "stepKey": "deploystartnetcmdforwinpeonesxiforwin2019linkk"
+        }, 
+        {
+            "order": 400, 
+            "stepKey": "deploywin2019unattendedconfigbiosfordriversonxdrivelink"
+        }, 
+        {
+            "order": 450, 
+            "stepKey": "modifywinpebootwimfor2019esxi"
+        }, 
+        {
+            "order": 500, 
+            "stepKey": "removebootcatfromwinpestaging"
+        }, 
+        {
+            "order": 550, 
+            "stepKey": "createwinpebiosbootisofromwinpestaginglink"
+        }, 
+        {
+            "order": 600, 
+            "stepKey": "esxiwinperecreatevirtualmachinelink"
+        }
+    ], 
+    "name": "WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

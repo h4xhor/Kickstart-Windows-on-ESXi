@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "ae837d87-b4d9-4361-9325-8b3bb9505eeb", 
+    "interpreter": 1, 
+    "key": "moveunattendpexmltobootwim", 
+    "name": "Move Unattend-PE.xml to boot.wim", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneosbuildserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

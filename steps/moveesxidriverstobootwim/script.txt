@@ -1,0 +1,10 @@
+cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
+
+ATTUNE_DRIVERS="WinPE_BootImageDir/attune_drivers"
+
+mkdir --parents --verbose "${ATTUNE_DRIVERS}"
+
+DRIVERS="Drivers"
+mv --verbose ${DRIVERS}/* "${ATTUNE_DRIVERS}"
+
+rmdir --verbose "${DRIVERS}"

@@ -1,0 +1,3 @@
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}/WinPE_BootImageDir
+
+rm --verbose setup.exe

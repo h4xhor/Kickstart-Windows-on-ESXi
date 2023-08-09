@@ -1,0 +1,4 @@
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+
+mv --verbose startnet.cmd \
+    "WinPE_BootImageDir/Windows/System32"
