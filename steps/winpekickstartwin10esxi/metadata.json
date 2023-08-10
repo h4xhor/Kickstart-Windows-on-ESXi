@@ -24,7 +24,7 @@
         }, 
         {
             "order": 300, 
-            "stepKey": "winpecreatebootisolink"
+            "stepKey": "createbioswinpebootisogroupfromwinpestaginglink"
         }, 
         {
             "order": 350, 

@@ -1,10 +1,10 @@
 {
     "actionOnStepFail": null, 
     "enabled": true, 
-    "externalUuid4": "fb5a8768-96ac-46ec-8fbb-e8c326bb6cc5", 
+    "externalUuid4": "ad636271-d2d5-4426-8837-be7f3df5eb7e", 
     "interpreter": 1, 
-    "key": "deletesetupexefrombootwim", 
-    "name": "Delete setup.exe from boot.wim", 
+    "key": "copywinpeplainbiosiso", 
+    "name": "Copy winpe_plain_bios.iso", 
     "osCredKey": "linuxattuneuser", 
     "serverKey": "attuneosbuildserver", 
     "successExitCode": 0, 

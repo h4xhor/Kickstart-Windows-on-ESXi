@@ -246,8 +246,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#renameandmoveplainwinpeiso">
-                            <strong>Step 6 -</strong> Rename and Move Plain WinPE ISO
+                        <a href="#copywinpeplainbiosiso">
+                            <strong>Step 6 -</strong> Copy winpe_plain_bios.iso
                         </a>
                     </p>
 
@@ -278,8 +278,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#deploystartnetcmdforwinpeonesxiforwin2019linkk">
-                            <strong>Step 10 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (linkk)
+                        <a href="#deploystartnetcmdforwinpeonesxiforwin2019link">
+                            <strong>Step 10 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)
                         </a>
                     </p>
 
@@ -366,8 +366,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#createwinpebiosbootisofromwinpestaginglink">
-                            <strong>Step 21 -</strong> Create WinPE BIOS Boot ISO from winpe_staging (link)
+                        <a href="#createwinpebiosbootisofromwinpestaginglinkdelete">
+                            <strong>Step 21 -</strong> Create WinPE BIOS Boot ISO from winpe_staging (link) - DELETE
                         </a>
                     </p>
 
@@ -728,9 +728,9 @@ fi
 
 
                     <div class="row pt-5">
-                        <h3 id="renameandmoveplainwinpeiso">
-                            <a href="#renameandmoveplainwinpeiso">
-                                <strong>Step 6 -</strong> Rename and Move Plain WinPE ISO
+                        <h3 id="copywinpeplainbiosiso">
+                            <a href="#copywinpeplainbiosiso">
+                                <strong>Step 6 -</strong> Copy winpe_plain_bios.iso
                             </a>
                         </h3>
                     </div>
@@ -780,7 +780,7 @@ ssh {linuxattuneuser}@{attuneosbuildserver}
                 <code class="language-sql py-0">
 mkdir --parents &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
 cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-mv --verbose &quot;../kickstart_{targetServer.fqn}.iso&quot; &quot;winpe_plain.iso&quot;
+cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
                 </code>
             </pre>
         </div>
@@ -973,9 +973,9 @@ rmdir --verbose &quot;${DRIVERS}&quot;
 
 
                     <div class="row pt-5">
-                        <h3 id="deploystartnetcmdforwinpeonesxiforwin2019linkk">
-                            <a href="#deploystartnetcmdforwinpeonesxiforwin2019linkk">
-                                <strong>Step 10 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (linkk)
+                        <h3 id="deploystartnetcmdforwinpeonesxiforwin2019link">
+                            <a href="#deploystartnetcmdforwinpeonesxiforwin2019link">
+                                <strong>Step 10 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)
                             </a>
                         </h3>
                     </div>
@@ -1553,9 +1553,9 @@ cp --verbose winpe_plain/boot.img winpe_staging
 
 
                     <div class="row pt-5">
-                        <h3 id="createwinpebiosbootisofromwinpestaginglink">
-                            <a href="#createwinpebiosbootisofromwinpestaginglink">
-                                <strong>Step 21 -</strong> Create WinPE BIOS Boot ISO from winpe_staging (link)
+                        <h3 id="createwinpebiosbootisofromwinpestaginglinkdelete">
+                            <a href="#createwinpebiosbootisofromwinpestaginglinkdelete">
+                                <strong>Step 21 -</strong> Create WinPE BIOS Boot ISO from winpe_staging (link) - DELETE
                             </a>
                         </h3>
                     </div>

@@ -206,8 +206,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#renameandmoveplainwinpeiso">
-                            <strong>Step 1 -</strong> Rename and Move Plain WinPE ISO
+                        <a href="#copywinpeplainbiosiso">
+                            <strong>Step 1 -</strong> Copy winpe_plain_bios.iso
                         </a>
                     </p>
 
@@ -238,8 +238,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#deploystartnetcmdforwinpeonesxiforwin2019linkk">
-                            <strong>Step 5 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (linkk)
+                        <a href="#deploystartnetcmdforwinpeonesxiforwin2019link">
+                            <strong>Step 5 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)
                         </a>
                     </p>
 
@@ -453,9 +453,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="renameandmoveplainwinpeiso">
-                            <a href="#renameandmoveplainwinpeiso">
-                                <strong>Step 1 -</strong> Rename and Move Plain WinPE ISO
+                        <h3 id="copywinpeplainbiosiso">
+                            <a href="#copywinpeplainbiosiso">
+                                <strong>Step 1 -</strong> Copy winpe_plain_bios.iso
                             </a>
                         </h3>
                     </div>
@@ -505,7 +505,7 @@ ssh {linuxattuneuser}@{attuneosbuildserver}
                 <code class="language-sql py-0">
 mkdir --parents &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
 cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-mv --verbose &quot;../kickstart_{targetServer.fqn}.iso&quot; &quot;winpe_plain.iso&quot;
+cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
                 </code>
             </pre>
         </div>
@@ -698,9 +698,9 @@ rmdir --verbose &quot;${DRIVERS}&quot;
 
 
                     <div class="row pt-5">
-                        <h3 id="deploystartnetcmdforwinpeonesxiforwin2019linkk">
-                            <a href="#deploystartnetcmdforwinpeonesxiforwin2019linkk">
-                                <strong>Step 5 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (linkk)
+                        <h3 id="deploystartnetcmdforwinpeonesxiforwin2019link">
+                            <a href="#deploystartnetcmdforwinpeonesxiforwin2019link">
+                                <strong>Step 5 -</strong> Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)
                             </a>
                         </h3>
                     </div>

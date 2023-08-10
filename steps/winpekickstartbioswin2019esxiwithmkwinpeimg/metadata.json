@@ -28,7 +28,7 @@
         }, 
         {
             "order": 250, 
-            "stepKey": "renameandmoveplainwinpeiso"
+            "stepKey": "copywinpeplainbiosiso"
         }, 
         {
             "order": 300, 
@@ -44,7 +44,7 @@
         }, 
         {
             "order": 450, 
-            "stepKey": "deploystartnetcmdforwinpeonesxiforwin2019linkk"
+            "stepKey": "deploystartnetcmdforwinpeonesxiforwin2019link"
         }, 
         {
             "order": 500, 
@@ -88,7 +88,7 @@
         }, 
         {
             "order": 1000, 
-            "stepKey": "createwinpebiosbootisofromwinpestaginglink"
+            "stepKey": "createwinpebiosbootisofromwinpestaginglinkdelete"
         }, 
         {
             "order": 1150, 

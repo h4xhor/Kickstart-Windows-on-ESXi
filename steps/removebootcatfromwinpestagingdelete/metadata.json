@@ -1,10 +1,10 @@
 {
     "actionOnStepFail": null, 
     "enabled": true, 
-    "externalUuid4": "5bff2e27-8185-4935-aa20-8a43d3bf2d21", 
+    "externalUuid4": "1bba6bca-585a-46ff-b013-7af6876eb44b", 
     "interpreter": 1, 
-    "key": "extractwinpeplainisotowinpestagingfolder", 
-    "name": "Extract winpe_plain.iso to winpe_staging Folder", 
+    "key": "removebootcatfromwinpestagingdelete", 
+    "name": "Remove BOOT.CAT from winpe_staging - DELETE", 
     "osCredKey": "linuxattuneuser", 
     "serverKey": "attuneosbuildserver", 
     "successExitCode": 0, 

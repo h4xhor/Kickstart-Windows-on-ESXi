@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": "stop", 
+    "blueprintName": "Delete setup.exe from boot.wim - Group", 
+    "blueprintUuid": "db574b8c-4bda-4ee5-8253-8ac3564c43d8", 
+    "cloneUrl": null, 
+    "enabled": true, 
+    "externalUuid4": "db574b8c-4bda-4ee5-8253-8ac3564c43d8", 
+    "key": "deletesetupexefrombootwimgrouplinkdelete", 
+    "name": "Delete setup.exe from boot.wim - Group (Link) - DELETE", 
+    "parameterMap": [], 
+    "projectName": "Kickstart-Windows", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "master", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

@@ -7,48 +7,44 @@
     "key": "winpekickstartbioswin2019esxiwithwimmountrw", 
     "links": [
         {
-            "order": 100, 
-            "stepKey": "cleanwinpeplaindirectory"
-        }, 
-        {
             "order": 150, 
             "stepKey": "cleanbuilddirectorylink"
         }, 
         {
             "order": 200, 
-            "stepKey": "renameandmoveplainwinpeiso"
-        }, 
-        {
-            "order": 250, 
-            "stepKey": "extractwinpeplainisotowinpestagingfolder"
+            "stepKey": "copywinpeplainbiosiso"
         }, 
         {
             "order": 300, 
-            "stepKey": "esxideployvmwaredriverslink"
+            "stepKey": "extractwinpeisotowinpestaginglink"
         }, 
         {
             "order": 350, 
-            "stepKey": "deploystartnetcmdforwinpeonesxiforwin2019linkk"
+            "stepKey": "esxideployvmwaredriverslink"
         }, 
         {
             "order": 400, 
-            "stepKey": "deploywin2019unattendedconfigbiosfordriversonxdrivelink"
+            "stepKey": "deploystartnetcmdforwinpeonesxiforwin2019link"
         }, 
         {
             "order": 450, 
-            "stepKey": "modifywinpebootwimfor2019esxi"
+            "stepKey": "deploywin2019unattendedconfigbiosfordriversonxdrivelink"
         }, 
         {
             "order": 500, 
-            "stepKey": "removebootcatfromwinpestaging"
+            "stepKey": "modifywinpebootwimfor2019esxi"
         }, 
         {
-            "order": 550, 
-            "stepKey": "createwinpebiosbootisofromwinpestaginglink"
+            "order": 650, 
+            "stepKey": "createbioswinpebootisogroupfromwinpestaginglink"
         }, 
         {
-            "order": 600, 
+            "order": 700, 
             "stepKey": "esxiwinperecreatevirtualmachinelink"
+        }, 
+        {
+            "order": 750, 
+            "stepKey": "cleanbuilddirectorylink"
         }
     ], 
     "name": "WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw", 

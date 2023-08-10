@@ -1,2 +1,0 @@
-cd {ksAttuneBaseDir}/build-{targetServer.fqn}
-wimmountrw winpe_staging/sources/boot.wim WinPE_BootImageDir

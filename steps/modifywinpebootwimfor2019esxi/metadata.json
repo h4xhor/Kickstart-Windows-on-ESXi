@@ -11,15 +11,11 @@
             "stepKey": "createbootwimmountdirectorylink"
         }, 
         {
-            "order": 50, 
-            "stepKey": "wimlibmountwinpestagingbootwim"
-        }, 
-        {
             "order": 100, 
-            "stepKey": "deletesetupexefrombootwim"
+            "stepKey": "wimlibmountwinpestagingbootwimlink"
         }, 
         {
-            "order": 150, 
+            "order": 250, 
             "stepKey": "moveesxidriverstobootwim"
         }, 
         {
