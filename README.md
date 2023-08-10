@@ -74,9 +74,6 @@ Kickstarts Windows Server 2019 from a single ISO.
 ### WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw
 
 
-### WinPE Kickstart UEFI Win 2019+ESXi with mkwinpeimg
-
-
 ### WinPE Kickstart Win10+ESXi
 
 

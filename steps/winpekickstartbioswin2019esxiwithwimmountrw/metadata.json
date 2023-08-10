@@ -43,8 +43,8 @@
             "stepKey": "esxiwinperecreatevirtualmachinelink"
         }, 
         {
-            "order": 750, 
-            "stepKey": "cleanbuilddirectorylink"
+            "order": 800, 
+            "stepKey": "kscleanbuildfileslink"
         }
     ], 
     "name": "WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw", 

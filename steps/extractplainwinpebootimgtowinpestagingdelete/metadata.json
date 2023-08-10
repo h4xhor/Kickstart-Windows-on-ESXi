@@ -1,10 +1,10 @@
 {
     "actionOnStepFail": null, 
     "enabled": true, 
-    "externalUuid4": "611a7d54-165b-4ce0-aa71-4d0d6d9b1597", 
+    "externalUuid4": "458738e1-63a1-4a64-9da8-e9c3a23a06a6", 
     "interpreter": 1, 
-    "key": "winpecreatebiosbootiso", 
-    "name": "WinPE Create BIOS Boot ISO", 
+    "key": "extractplainwinpebootimgtowinpestagingdelete", 
+    "name": "Extract Plain WinPE boot.img to winpe_staging - DELETE", 
     "osCredKey": "linuxattuneuser", 
     "serverKey": "attuneosbuildserver", 
     "successExitCode": 0, 
