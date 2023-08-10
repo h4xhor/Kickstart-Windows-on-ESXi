@@ -1,3 +1,0 @@
-cd {ksAttuneBaseDir}/build-{targetServer.fqn}
-
-rm --recursive --verbose winpe_staging

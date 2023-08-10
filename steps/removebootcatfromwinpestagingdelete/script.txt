@@ -1,3 +1,0 @@
-cd {ksAttuneBaseDir}/build-{targetServer.fqn}/winpe_staging
-
-rm --verbose BOOT.CAT

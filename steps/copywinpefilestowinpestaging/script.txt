@@ -1,6 +1,0 @@
-cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
-
-mkdir --parents --verbose "winpe_staging"
-
-# Copy WinPE Files from WinPE ISO
-cp --recursive --verbose winpe/* "winpe_staging"

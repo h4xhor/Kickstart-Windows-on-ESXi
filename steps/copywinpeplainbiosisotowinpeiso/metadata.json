@@ -1,11 +1,11 @@
 {
     "actionOnStepFail": null, 
     "enabled": true, 
-    "externalUuid4": "bd1bcfe0-3757-484e-987d-1cb8321e05a6", 
+    "externalUuid4": "ad636271-d2d5-4426-8837-be7f3df5eb7e", 
     "interpreter": 1, 
-    "key": "mountwinpeiso", 
-    "name": "Mount winpe.iso", 
-    "osCredKey": "linuxrootuser", 
+    "key": "copywinpeplainbiosisotowinpeiso", 
+    "name": "Copy winpe_plain_bios.iso to winpe.iso", 
+    "osCredKey": "linuxattuneuser", 
     "serverKey": "attuneosbuildserver", 
     "successExitCode": 0, 
     "type": "com.servertribe.attune.tuples.StepSshTuple"

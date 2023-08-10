@@ -1,3 +1,0 @@
-cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
-
-cp --verbose winpe.iso ../kickstart_{targetServer.fqn}.iso
