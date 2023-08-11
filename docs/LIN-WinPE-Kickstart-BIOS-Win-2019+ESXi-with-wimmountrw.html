@@ -6,29 +6,29 @@
 
 
 <head>
-    <title>How to WinPE Kickstart Win 2019+ESXi - Attune Automation</title>
+    <title>How to LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw - Attune Automation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title"
-          content="How to WinPE Kickstart Win 2019+ESXi - Attune Automation">
+          content="How to LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw - Attune Automation">
     <meta name="description"
-          content="Kickstarts a Windows Server 2019 virtual machine on ESXi.">
+          content="">
     <meta name="robots"
           content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
 
     <meta property="og:locale" content="en_AU" />
     <meta property="og:type" content="article" />
     <meta property="og:title"
-          content="HowTo WinPE Kickstart Win 2019+ESXi - Attune Automation" />
-    <meta property="og:description" content="Kickstarts a Windows Server 2019 virtual machine on ESXi." />
+          content="HowTo LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw - Attune Automation" />
+    <meta property="og:description" content="" />
     <meta property="og:site_name" content="Attune Automation" />
     <meta property="article:section" content="IT Instruction" />
 
     <meta name="twitter:title"
-          content="How to WinPE Kickstart Win 2019+ESXi - Attune Automation" />
-    <meta name="twitter:description" content="Kickstarts a Windows Server 2019 virtual machine on ESXi." />
+          content="How to LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw - Attune Automation" />
+    <meta name="twitter:description" content="" />
 
     <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
     <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-192x192.png" sizes="192x192">
@@ -119,7 +119,7 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                    <strong>WinPE Kickstart Win 2019+ESXi</strong>
+                    <strong>LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw</strong>
                 </li>
             </ol>
         </nav>
@@ -133,19 +133,12 @@
     <div class="row">
         <div class="col px-0">
             <h1 class="text-left">
-                How to WinPE Kickstart Win 2019+ESXi
+                How to LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw
             </h1>
         </div>
     </div>
 
 <!-- Blueprint Description -->
-    <div class="row">
-        <div class="description col px-0">
-            <p class="text-left">
-                <p>Kickstarts a Windows Server 2019 virtual machine on ESXi.</p>
-            </p>
-        </div>
-    </div>
     <div class="row pt-4">
         <div class="col-6 px-0">
             <h6 class="text-left">
@@ -204,7 +197,7 @@
                     </p>
                     <p class="text-muted">
                         <a href="#top">
-                            <strong>WinPE Kickstart Win 2019+ESXi</strong>
+                            <strong>LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw</strong>
                         </a>
                     </p>
 
@@ -213,72 +206,129 @@
         
 
                     <p class="text-muted pt-2">
+                        <a href="#lincleanbuilddirectorylink">
+                            <strong>Step 1 -</strong> LIN Clean Build Directory (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#lincopywinpeplainbiosisotowinpeiso">
+                            <strong>Step 2 -</strong> LIN Copy winpe_plain_bios.iso to winpe.iso
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#linextractwinpeisotowinpestaginglink">
+                            <strong>Step 3 -</strong> LIN Extract winpe.iso to winpe_staging (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#lindeployvmwaredriverslink">
+                            <strong>Step 4 -</strong> LIN Deploy VMWare Drivers (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#lindeploystartnetcmdforwinpeonesxiforwin2019link">
+                            <strong>Step 5 -</strong> LIN Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#lindeploywin2019unattendedconfigbiosfordriversonxdrivelink">
+                            <strong>Step 6 -</strong> LIN Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#linmodifywinpebootwimfor2019esxi">
+                            <strong>Step 7 -</strong> LIN Modify WinPE boot.wim for 2019 ESXi
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#lincreatebootwimmountdirectorylink">
+                            <strong>Step 7.1 -</strong> LIN Create boot.wim Mount Directory (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#linwimlibmountwinpestagingbootwimlink">
+                            <strong>Step 7.2 -</strong> LIN wimlib Mount winpe_staging BOOT.WIM (Link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#linmoveesxidriverstobootwim">
+                            <strong>Step 7.3 -</strong> LIN Move ESXi Drivers to boot.wim
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#linmovestartnetcmdtobootwim">
+                            <strong>Step 7.4 -</strong> LIN Move startnet.cmd to boot.wim
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#linmoveautounattendxmltobootwim">
+                            <strong>Step 7.5 -</strong> LIN Move autounattend.xml to boot.wim
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#linwimlibunmountbootwimlink">
+                            <strong>Step 7.6 -</strong> LIN wimlib Unmount boot.wim (link)
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#lincreatebioswinpebootisogroupfromwinpestaginglink">
+                            <strong>Step 8 -</strong> LIN Create BIOS WinPE Boot ISO Group from winpe_staging (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#linesxiwinperecreatevirtualmachinelink">
+                            <strong>Step 9 -</strong> LIN ESXi WinPE Recreate Virtual Machine (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
                         <a href="#lincleanbuildfileslink">
-                            <strong>Step 1 -</strong> LIN Clean Build Files (Link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#deployplainwinpeisolink">
-                            <strong>Step 2 -</strong> Deploy Plain WinPE ISO  (Link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#ksdeploywindowsserverunattendedconfiglink">
-                            <strong>Step 3 -</strong> KS Deploy Windows Server Unattended Config (link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#modifywinpebootwimfor2019link">
-                            <strong>Step 4 -</strong> Modify WinPE boot.wim for 2019 (Link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#createwindowsbootisolinkdelete">
-                            <strong>Step 5 -</strong> Create Windows Boot ISO (Link) - DELETE
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#ksesxibootwinperecreatevirtualmachineserverlink">
-                            <strong>Step 6 -</strong> KS ESXi Boot WinPE Recreate Virtual Machine Server (Link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#kswinwinrmhttpswait120s">
-                            <strong>Step 7 -</strong> KS Win WinRM HTTPS Wait 120s
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#winrebootlink">
-                            <strong>Step 8 -</strong> WIN Reboot (Link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#lincleanbuildfileslink">
-                            <strong>Step 9 -</strong> LIN Clean Build Files (Link)
+                            <strong>Step 10 -</strong> LIN Clean Build Files (Link)
                         </a>
                     </p>
 
@@ -341,7 +391,7 @@
                 </ol>
             </p>
             <p class="lead text-center">
-                You've automated: <strong>WinPE Kickstart Win 2019+ESXi</strong>
+                You've automated: <strong>LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw</strong>
             </p>
             <hr class="my-4 text-center">
             <div class="col px-0">
@@ -372,9 +422,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="lincleanbuildfileslink">
-                            <a href="#lincleanbuildfileslink">
-                                <strong>Step 1 -</strong> LIN Clean Build Files (Link)
+                        <h3 id="lincleanbuilddirectorylink">
+                            <a href="#lincleanbuilddirectorylink">
+                                <strong>Step 1 -</strong> LIN Clean Build Directory (link)
                             </a>
                         </h3>
                     </div>
@@ -382,7 +432,7 @@
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                <p>Removes the directory <code>{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}</code> and ISO file at <code>{ksVmwareAttuneBaseDir}/kickstart_{targetServer.fqn}.iso</code>. </p>
+                                
                             </p>
                         </div>
                     </div>
@@ -403,9 +453,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="deployplainwinpeisolink">
-                            <a href="#deployplainwinpeisolink">
-                                <strong>Step 2 -</strong> Deploy Plain WinPE ISO  (Link)
+                        <h3 id="lincopywinpeplainbiosisotowinpeiso">
+                            <a href="#lincopywinpeplainbiosisotowinpeiso">
+                                <strong>Step 2 -</strong> LIN Copy winpe_plain_bios.iso to winpe.iso
                             </a>
                         </h3>
                     </div>
@@ -413,165 +463,7 @@
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                <p>Deploys Plain WinPE ISO.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="ksdeploywindowsserverunattendedconfiglink">
-                            <a href="#ksdeploywindowsserverunattendedconfiglink">
-                                <strong>Step 3 -</strong> KS Deploy Windows Server Unattended Config (link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Deploys a <code>autounattend.xml</code> file compatible with Windows Server 2016, 2019 and 2022.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="modifywinpebootwimfor2019link">
-                            <a href="#modifywinpebootwimfor2019link">
-                                <strong>Step 4 -</strong> Modify WinPE boot.wim for 2019 (Link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Modifies <code>startnet.cmd</code> that's inside <code>boot.wim</code>.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="createwindowsbootisolinkdelete">
-                            <a href="#createwindowsbootisolinkdelete">
-                                <strong>Step 5 -</strong> Create Windows Boot ISO (Link) - DELETE
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Recreates the bootable WinPE ISO.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="ksesxibootwinperecreatevirtualmachineserverlink">
-                            <a href="#ksesxibootwinperecreatevirtualmachineserverlink">
-                                <strong>Step 6 -</strong> KS ESXi Boot WinPE Recreate Virtual Machine Server (Link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Uploads the modified WinPE ISO to ESXi.</p>
-<p>Creates a virtual machine.</p>
-<p>Boots the virtual machine from the WinPE ISO for Windows Server.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="kswinwinrmhttpswait120s">
-                            <a href="#kswinwinrmhttpswait120s">
-                                <strong>Step 7 -</strong> KS Win WinRM HTTPS Wait 120s
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Waits until we get WinRM access to the target Windows virtual machine.</p>
-<p>Then waits 120 seconds to allow time for remaining PowerShell scripts in <code>autounattend.xml</code> to complete.</p>
+                                
                             </p>
                         </div>
                     </div>
@@ -585,17 +477,38 @@
 
 
 
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attuneosbuildserver}
+                            </code>
+                        </div>
+
 
 
     
+
+
 
     <div class="row">
-        <p class="mb-0">
-            Check if TCP Port <strong>0</strong> is listening.
-            When the TCP Port is up, wait <strong>120</strong>
-            seconds.
+        <p>
+            Execute the following script:
         </p>
-        <p>Use Telnet to check if the TCP Service is accepting connections.</p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+mkdir --parents &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
+                </code>
+            </pre>
+        </div>
     </div>
 
 
@@ -607,9 +520,9 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="winrebootlink">
-                            <a href="#winrebootlink">
-                                <strong>Step 8 -</strong> WIN Reboot (Link)
+                        <h3 id="linextractwinpeisotowinpestaginglink">
+                            <a href="#linextractwinpeisotowinpestaginglink">
+                                <strong>Step 3 -</strong> LIN Extract winpe.iso to winpe_staging (link)
                             </a>
                         </h3>
                     </div>
@@ -617,7 +530,460 @@
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                <p>Reboots the target Windows virtual machine.</p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="lindeployvmwaredriverslink">
+                            <a href="#lindeployvmwaredriverslink">
+                                <strong>Step 4 -</strong> LIN Deploy VMWare Drivers (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Deploys VMWare ESXi drivers to the {ksAttuneBaseDir}/build-{targetServer.fqn} folder.</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="lindeploystartnetcmdforwinpeonesxiforwin2019link">
+                            <a href="#lindeploystartnetcmdforwinpeonesxiforwin2019link">
+                                <strong>Step 5 -</strong> LIN Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="lindeploywin2019unattendedconfigbiosfordriversonxdrivelink">
+                            <a href="#lindeploywin2019unattendedconfigbiosfordriversonxdrivelink">
+                                <strong>Step 6 -</strong> LIN Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="linmodifywinpebootwimfor2019esxi">
+                            <a href="#linmodifywinpebootwimfor2019esxi">
+                                <strong>Step 7 -</strong> LIN Modify WinPE boot.wim for 2019 ESXi
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="lincreatebootwimmountdirectorylink">
+                            <a href="#lincreatebootwimmountdirectorylink">
+                                <strong>Step 7.1 -</strong> LIN Create boot.wim Mount Directory (link)
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="linwimlibmountwinpestagingbootwimlink">
+                            <a href="#linwimlibmountwinpestagingbootwimlink">
+                                <strong>Step 7.2 -</strong> LIN wimlib Mount winpe_staging BOOT.WIM (Link)
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="linmoveesxidriverstobootwim">
+                            <a href="#linmoveesxidriverstobootwim">
+                                <strong>Step 7.3 -</strong> LIN Move ESXi Drivers to boot.wim
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+
+ATTUNE_DRIVERS=&quot;WinPE_BootImageDir/attune_drivers&quot;
+
+mkdir --parents --verbose &quot;${ATTUNE_DRIVERS}&quot;
+
+DRIVERS=&quot;Drivers&quot;
+mv --verbose ${DRIVERS}/* &quot;${ATTUNE_DRIVERS}&quot;
+
+rmdir --verbose &quot;${DRIVERS}&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="linmovestartnetcmdtobootwim">
+                            <a href="#linmovestartnetcmdtobootwim">
+                                <strong>Step 7.4 -</strong> LIN Move startnet.cmd to boot.wim
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+
+mv --verbose startnet.cmd \
+    &quot;WinPE_BootImageDir/Windows/System32&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="linmoveautounattendxmltobootwim">
+                            <a href="#linmoveautounattendxmltobootwim">
+                                <strong>Step 7.5 -</strong> LIN Move autounattend.xml to boot.wim
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+mv --verbose autounattend.xml WinPE_BootImageDir
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="linwimlibunmountbootwimlink">
+                            <a href="#linwimlibunmountbootwimlink">
+                                <strong>Step 7.6 -</strong> LIN wimlib Unmount boot.wim (link)
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="lincreatebioswinpebootisogroupfromwinpestaginglink">
+                            <a href="#lincreatebioswinpebootisogroupfromwinpestaginglink">
+                                <strong>Step 8 -</strong> LIN Create BIOS WinPE Boot ISO Group from winpe_staging (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="linesxiwinperecreatevirtualmachinelink">
+                            <a href="#linesxiwinperecreatevirtualmachinelink">
+                                <strong>Step 9 -</strong> LIN ESXi WinPE Recreate Virtual Machine (link)
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
                             </p>
                         </div>
                     </div>
@@ -640,7 +1006,7 @@
                     <div class="row pt-5">
                         <h3 id="lincleanbuildfileslink">
                             <a href="#lincleanbuildfileslink">
-                                <strong>Step 9 -</strong> LIN Clean Build Files (Link)
+                                <strong>Step 10 -</strong> LIN Clean Build Files (Link)
                             </a>
                         </h3>
                     </div>

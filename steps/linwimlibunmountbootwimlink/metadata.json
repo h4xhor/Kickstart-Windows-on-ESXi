@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "56fd49de-f04d-45b1-85e7-b958e3efded4", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "3877e746-c83b-4302-b323-9078e44f93ed", 
+    "key": "linwimlibunmountbootwimlink", 
+    "name": "LIN wimlib Unmount boot.wim (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

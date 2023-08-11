@@ -8,7 +8,7 @@
     "links": [
         {
             "order": 0, 
-            "stepKey": "kscleanbuildfileslink"
+            "stepKey": "lincleanbuildfileslink"
         }, 
         {
             "order": 50, 
@@ -24,7 +24,7 @@
         }, 
         {
             "order": 300, 
-            "stepKey": "createbioswinpebootisogroupfromwinpestaginglink"
+            "stepKey": "lincreatebioswinpebootisogroupfromwinpestaginglink"
         }, 
         {
             "order": 350, 

@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "d8c61000-62a5-4f21-a28f-3735bf284d8e", 
+    "interpreter": 1, 
+    "key": "linmoveesxidriverstobootwim", 
+    "name": "LIN Move ESXi Drivers to boot.wim", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attuneosbuildserver", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

@@ -12,7 +12,7 @@
         }, 
         {
             "order": 50, 
-            "stepKey": "esxideployvmwaredriverslink"
+            "stepKey": "lindeployvmwaredriverslink"
         }, 
         {
             "order": 100, 
@@ -24,7 +24,7 @@
         }, 
         {
             "order": 200, 
-            "stepKey": "kscleanbuildfileslink"
+            "stepKey": "lincleanbuildfileslink"
         }
     ], 
     "name": "Kickstart Windows 10 DVD on ESXi with 2 ISOs", 

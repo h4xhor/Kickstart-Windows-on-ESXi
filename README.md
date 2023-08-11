@@ -68,9 +68,6 @@ Kickstarts Windows Desktop 10 from a single ISO.
 
 Kickstarts Windows Server 2019 from a single ISO.
 
-### WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw
-
-
 ### WinPE Kickstart Win10+ESXi
 
 
@@ -80,6 +77,9 @@ Kickstarts Windows Server 2019 from a single ISO.
 ### WinPE Kickstart Win 2019+ESXi
 
 Kickstarts a Windows Server 2019 virtual machine on ESXi.
+
+### LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw
+
 
 
 

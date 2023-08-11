@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "9f4b7f06-79ea-4dde-bf65-6c0ff352357f", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "0f65ce09-4d8e-47c4-85ff-8520d045d919", 
+    "key": "lincreatebootwimmountdirectorylink", 
+    "name": "LIN Create boot.wim Mount Directory (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

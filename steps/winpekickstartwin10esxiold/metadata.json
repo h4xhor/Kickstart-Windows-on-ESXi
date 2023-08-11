@@ -8,7 +8,7 @@
     "links": [
         {
             "order": 0, 
-            "stepKey": "kscleanbuildfileslink"
+            "stepKey": "lincleanbuildfileslink"
         }, 
         {
             "order": 50, 
@@ -40,7 +40,7 @@
         }, 
         {
             "order": 450, 
-            "stepKey": "kscleanbuildfileslink"
+            "stepKey": "lincleanbuildfileslink"
         }
     ], 
     "name": "WinPE Kickstart Win10+ESXi - Old", 
