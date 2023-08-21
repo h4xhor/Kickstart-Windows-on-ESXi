@@ -7,7 +7,17 @@
     "externalUuid4": "6bdb6290-a9d6-4ec9-966b-19cc296581fd", 
     "key": "lindeploystartnetcmdforwinpeonesxiforwin2019link", 
     "name": "LIN Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)", 
-    "parameterMap": [], 
+    "parameterMap": [
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "6942c5d9-c0a5-4dd8-a8b8-d43c0dc75654", 
+            "childProjectName": null, 
+            "childProjectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "Ethernet0"
+        }
+    ], 
     "projectName": "", 
     "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
     "projectVersion": "", 
