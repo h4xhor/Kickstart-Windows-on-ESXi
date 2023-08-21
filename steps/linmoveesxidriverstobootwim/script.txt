@@ -1,4 +1,4 @@
-cd "{ksAttuneBaseDir}/build-{targetServer.fqn}"
+cd "{ksAttuneBaseDir}/build-{kickstartedNode.fqn}"
 
 ATTUNE_DRIVERS="WinPE_BootImageDir/attune_drivers"
 

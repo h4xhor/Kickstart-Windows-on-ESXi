@@ -1,2 +1,2 @@
-cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+cd {ksAttuneBaseDir}/build-{kickstartedNode.fqn}
 mv --verbose autounattend.xml WinPE_BootImageDir

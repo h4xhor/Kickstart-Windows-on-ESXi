@@ -238,8 +238,16 @@
         
 
                     <p class="text-muted pt-2">
+                        <a href="#lincopyesxinetworkdriverdropindirectory">
+                            <strong>Step 5 -</strong> LIN Copy ESXi Network Driver Drop In Directory
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
                         <a href="#lindeploystartnetcmdforwinpeonesxiforwin2019link">
-                            <strong>Step 5 -</strong> LIN Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)
+                            <strong>Step 6 -</strong> LIN Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)
                         </a>
                     </p>
 
@@ -247,7 +255,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#lindeploywin2019unattendedconfigbiosfordriversonxdrivelink">
-                            <strong>Step 6 -</strong> LIN Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
+                            <strong>Step 7 -</strong> LIN Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
                         </a>
                     </p>
 
@@ -255,7 +263,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#linmodifywinpebootwimfor2019esxi">
-                            <strong>Step 7 -</strong> LIN Modify WinPE boot.wim for 2019 ESXi
+                            <strong>Step 8 -</strong> LIN Modify WinPE boot.wim for 2019 ESXi
                         </a>
                     </p>
     
@@ -263,7 +271,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#lincreatebootwimmountdirectorylink">
-                            <strong>Step 7.1 -</strong> LIN Create boot.wim Mount Directory (link)
+                            <strong>Step 8.1 -</strong> LIN Create boot.wim Mount Directory (link)
                         </a>
                     </p>
 
@@ -271,7 +279,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#linwimlibmountwinpestagingbootwimlink">
-                            <strong>Step 7.2 -</strong> LIN wimlib Mount winpe_staging BOOT.WIM (Link)
+                            <strong>Step 8.2 -</strong> LIN wimlib Mount winpe_staging BOOT.WIM (Link)
                         </a>
                     </p>
 
@@ -279,7 +287,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#linmoveesxidriverstobootwim">
-                            <strong>Step 7.3 -</strong> LIN Move ESXi Drivers to boot.wim
+                            <strong>Step 8.3 -</strong> LIN Move ESXi Drivers to boot.wim
                         </a>
                     </p>
 
@@ -287,7 +295,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#linmovestartnetcmdtobootwim">
-                            <strong>Step 7.4 -</strong> LIN Move startnet.cmd to boot.wim
+                            <strong>Step 8.4 -</strong> LIN Move startnet.cmd to boot.wim
                         </a>
                     </p>
 
@@ -295,7 +303,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#linmoveautounattendxmltobootwim">
-                            <strong>Step 7.5 -</strong> LIN Move autounattend.xml to boot.wim
+                            <strong>Step 8.5 -</strong> LIN Move autounattend.xml to boot.wim
                         </a>
                     </p>
 
@@ -303,7 +311,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#linwimlibunmountbootwimlink">
-                            <strong>Step 7.6 -</strong> LIN wimlib Unmount boot.wim (link)
+                            <strong>Step 8.6 -</strong> LIN wimlib Unmount boot.wim (link)
                         </a>
                     </p>
 
@@ -312,7 +320,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#lincreatebioswinpebootisogroupfromwinpestaginglink">
-                            <strong>Step 8 -</strong> LIN Create BIOS WinPE Boot ISO Group from winpe_staging (link)
+                            <strong>Step 9 -</strong> LIN Create BIOS WinPE Boot ISO Group from winpe_staging (link)
                         </a>
                     </p>
 
@@ -320,7 +328,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#linesxiwinperecreatevirtualmachinelink">
-                            <strong>Step 9 -</strong> LIN ESXi WinPE Recreate Virtual Machine (link)
+                            <strong>Step 10 -</strong> LIN ESXi WinPE Recreate Virtual Machine (link)
                         </a>
                     </p>
 
@@ -328,7 +336,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#lincleanbuildfileslink">
-                            <strong>Step 10 -</strong> LIN Clean Build Files (Link)
+                            <strong>Step 11 -</strong> LIN Clean Build Files (Link)
                         </a>
                     </p>
 
@@ -503,8 +511,8 @@ ssh {linuxattuneuser}@{attuneosbuildserver}
         <div class="col px-0">
             <pre>
                 <code class="language-sql py-0">
-mkdir --parents &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+mkdir --parents &quot;{ksAttuneBaseDir}/build-{kickstartedNode.fqn}&quot;
+cd &quot;{ksAttuneBaseDir}/build-{kickstartedNode.fqn}&quot;
 cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
                 </code>
             </pre>
@@ -582,9 +590,74 @@ cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
 
 
                     <div class="row pt-5">
+                        <h3 id="lincopyesxinetworkdriverdropindirectory">
+                            <a href="#lincopyesxinetworkdriverdropindirectory">
+                                <strong>Step 5 -</strong> LIN Copy ESXi Network Driver Drop In Directory
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd {ksAttuneBaseDir}/build-{kickstartedNode.fqn}
+
+echo &quot;We are in {ksAttuneBaseDir}/build-{kickstartedNode.fqn}.&quot;
+
+if [ ! -d &quot;{driversDropDirectory}&quot; ]
+then
+    echo &quot;{driversDropDirectory} does not exist, skipping.&quot;
+else
+    cd &quot;{driversDropDirectory}&quot;
+    NUMBER_FILES=$(ls -1q | wc -l)
+    echo &quot;NUMBER_FILES=${NUMBER_FILES}&quot;
+    if [ &quot;${NUMBER_FILES}&quot; -eq &quot;0&quot; ]
+    then
+        echo &quot;no files.&quot;
+    else
+        echo &quot;{driversDropDirectory} exists, copying it&#x27;s contents to Drivers.&quot;
+        cp --verbose --recursive {driversDropDirectory}/* Drivers
+    fi
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
                         <h3 id="lindeploystartnetcmdforwinpeonesxiforwin2019link">
                             <a href="#lindeploystartnetcmdforwinpeonesxiforwin2019link">
-                                <strong>Step 5 -</strong> LIN Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)
+                                <strong>Step 6 -</strong> LIN Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)
                             </a>
                         </h3>
                     </div>
@@ -615,7 +688,7 @@ cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
                     <div class="row pt-5">
                         <h3 id="lindeploywin2019unattendedconfigbiosfordriversonxdrivelink">
                             <a href="#lindeploywin2019unattendedconfigbiosfordriversonxdrivelink">
-                                <strong>Step 6 -</strong> LIN Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
+                                <strong>Step 7 -</strong> LIN Deploy Win2019 Unattended Config BIOS for Drivers on X Drive (link)
                             </a>
                         </h3>
                     </div>
@@ -646,7 +719,7 @@ cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
                     <div class="row pt-5">
                         <h3 id="linmodifywinpebootwimfor2019esxi">
                             <a href="#linmodifywinpebootwimfor2019esxi">
-                                <strong>Step 7 -</strong> LIN Modify WinPE boot.wim for 2019 ESXi
+                                <strong>Step 8 -</strong> LIN Modify WinPE boot.wim for 2019 ESXi
                             </a>
                         </h3>
                     </div>
@@ -675,7 +748,7 @@ cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
                     <div class="row pt-5">
                         <h4 id="lincreatebootwimmountdirectorylink">
                             <a href="#lincreatebootwimmountdirectorylink">
-                                <strong>Step 7.1 -</strong> LIN Create boot.wim Mount Directory (link)
+                                <strong>Step 8.1 -</strong> LIN Create boot.wim Mount Directory (link)
                             </a>
                         </h4>
                     </div>
@@ -706,7 +779,7 @@ cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
                     <div class="row pt-5">
                         <h4 id="linwimlibmountwinpestagingbootwimlink">
                             <a href="#linwimlibmountwinpestagingbootwimlink">
-                                <strong>Step 7.2 -</strong> LIN wimlib Mount winpe_staging BOOT.WIM (Link)
+                                <strong>Step 8.2 -</strong> LIN wimlib Mount winpe_staging BOOT.WIM (Link)
                             </a>
                         </h4>
                     </div>
@@ -737,7 +810,7 @@ cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
                     <div class="row pt-5">
                         <h4 id="linmoveesxidriverstobootwim">
                             <a href="#linmoveesxidriverstobootwim">
-                                <strong>Step 7.3 -</strong> LIN Move ESXi Drivers to boot.wim
+                                <strong>Step 8.3 -</strong> LIN Move ESXi Drivers to boot.wim
                             </a>
                         </h4>
                     </div>
@@ -774,7 +847,7 @@ cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
         <div class="col px-0">
             <pre>
                 <code class="language-sql py-0">
-cd &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
+cd &quot;{ksAttuneBaseDir}/build-{kickstartedNode.fqn}&quot;
 
 ATTUNE_DRIVERS=&quot;WinPE_BootImageDir/attune_drivers&quot;
 
@@ -800,7 +873,7 @@ rmdir --verbose &quot;${DRIVERS}&quot;
                     <div class="row pt-5">
                         <h4 id="linmovestartnetcmdtobootwim">
                             <a href="#linmovestartnetcmdtobootwim">
-                                <strong>Step 7.4 -</strong> LIN Move startnet.cmd to boot.wim
+                                <strong>Step 8.4 -</strong> LIN Move startnet.cmd to boot.wim
                             </a>
                         </h4>
                     </div>
@@ -837,7 +910,7 @@ rmdir --verbose &quot;${DRIVERS}&quot;
         <div class="col px-0">
             <pre>
                 <code class="language-sql py-0">
-cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+cd {ksAttuneBaseDir}/build-{kickstartedNode.fqn}
 
 mv --verbose startnet.cmd \
     &quot;WinPE_BootImageDir/Windows/System32&quot;
@@ -857,7 +930,7 @@ mv --verbose startnet.cmd \
                     <div class="row pt-5">
                         <h4 id="linmoveautounattendxmltobootwim">
                             <a href="#linmoveautounattendxmltobootwim">
-                                <strong>Step 7.5 -</strong> LIN Move autounattend.xml to boot.wim
+                                <strong>Step 8.5 -</strong> LIN Move autounattend.xml to boot.wim
                             </a>
                         </h4>
                     </div>
@@ -894,7 +967,7 @@ mv --verbose startnet.cmd \
         <div class="col px-0">
             <pre>
                 <code class="language-sql py-0">
-cd {ksAttuneBaseDir}/build-{targetServer.fqn}
+cd {ksAttuneBaseDir}/build-{kickstartedNode.fqn}
 mv --verbose autounattend.xml WinPE_BootImageDir
                 </code>
             </pre>
@@ -912,7 +985,7 @@ mv --verbose autounattend.xml WinPE_BootImageDir
                     <div class="row pt-5">
                         <h4 id="linwimlibunmountbootwimlink">
                             <a href="#linwimlibunmountbootwimlink">
-                                <strong>Step 7.6 -</strong> LIN wimlib Unmount boot.wim (link)
+                                <strong>Step 8.6 -</strong> LIN wimlib Unmount boot.wim (link)
                             </a>
                         </h4>
                     </div>
@@ -944,7 +1017,7 @@ mv --verbose autounattend.xml WinPE_BootImageDir
                     <div class="row pt-5">
                         <h3 id="lincreatebioswinpebootisogroupfromwinpestaginglink">
                             <a href="#lincreatebioswinpebootisogroupfromwinpestaginglink">
-                                <strong>Step 8 -</strong> LIN Create BIOS WinPE Boot ISO Group from winpe_staging (link)
+                                <strong>Step 9 -</strong> LIN Create BIOS WinPE Boot ISO Group from winpe_staging (link)
                             </a>
                         </h3>
                     </div>
@@ -975,7 +1048,7 @@ mv --verbose autounattend.xml WinPE_BootImageDir
                     <div class="row pt-5">
                         <h3 id="linesxiwinperecreatevirtualmachinelink">
                             <a href="#linesxiwinperecreatevirtualmachinelink">
-                                <strong>Step 9 -</strong> LIN ESXi WinPE Recreate Virtual Machine (link)
+                                <strong>Step 10 -</strong> LIN ESXi WinPE Recreate Virtual Machine (link)
                             </a>
                         </h3>
                     </div>
@@ -1006,7 +1079,7 @@ mv --verbose autounattend.xml WinPE_BootImageDir
                     <div class="row pt-5">
                         <h3 id="lincleanbuildfileslink">
                             <a href="#lincleanbuildfileslink">
-                                <strong>Step 10 -</strong> LIN Clean Build Files (Link)
+                                <strong>Step 11 -</strong> LIN Clean Build Files (Link)
                             </a>
                         </h3>
                     </div>
@@ -1014,7 +1087,7 @@ mv --verbose autounattend.xml WinPE_BootImageDir
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                <p>Removes the directory <code>{ksVmwareAttuneBaseDir}/build-{targetServer.fqn}</code> and ISO file at <code>{ksVmwareAttuneBaseDir}/kickstart_{targetServer.fqn}.iso</code>. </p>
+                                <p>Removes the directory <code>{ksVmwareAttuneBaseDir}/build-{kickstartedNode.fqn}</code> and ISO file at <code>{ksVmwareAttuneBaseDir}/kickstart_{kickstartedNode.fqn}.iso</code>. </p>
                             </p>
                         </div>
                     </div>

@@ -24,14 +24,18 @@
         }, 
         {
             "order": 400, 
-            "stepKey": "lindeploystartnetcmdforwinpeonesxiforwin2019link"
+            "stepKey": "lincopyesxinetworkdriverdropindirectory"
         }, 
         {
             "order": 450, 
-            "stepKey": "lindeploywin2019unattendedconfigbiosfordriversonxdrivelink"
+            "stepKey": "lindeploystartnetcmdforwinpeonesxiforwin2019link"
         }, 
         {
             "order": 500, 
+            "stepKey": "lindeploywin2019unattendedconfigbiosfordriversonxdrivelink"
+        }, 
+        {
+            "order": 550, 
             "stepKey": "linmodifywinpebootwimfor2019esxi"
         }, 
         {
