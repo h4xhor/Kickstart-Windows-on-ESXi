@@ -5,7 +5,7 @@
     "interpreter": 1, 
     "key": "linmoveautounattendxmltobootwim", 
     "name": "LIN Move autounattend.xml to boot.wim", 
-    "osCredKey": "linuxattuneuser", 
+    "osCredKey": "kickstartworkerbuildlinuxuser", 
     "serverKey": "attuneosbuildserver", 
     "successExitCode": 0, 
     "type": "com.servertribe.attune.tuples.StepSshTuple"

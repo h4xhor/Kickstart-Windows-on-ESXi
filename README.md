@@ -91,13 +91,14 @@ Kickstarts a Windows Server 2019 virtual machine on ESXi.
 | ---- | ---- | ---------------- | ------- |
 | Attune OS Build Server | Linux/Unix Node | `attuneosbuildserver` |  |
 | Drivers Drop Directory | Text | `driversdropdirectory` | Put any extra drivers you want used by WinPE and the Windows installer here.<br><br>This can contain subfolders.<br><br>These are the "*.inf" files.<br><br>WinPE's startnet.cmd will recursively search for the "*.inf" files to install.<br><br>autounattend.xml will do the same.<br><br>This folder path relative to "{ksAttuneBaseDir}/build-{targetServer.fqn}".<br><br>Example: Setting this as "drop_in_drivers" will mean the drivers drop in directory will be at "{ksAttuneBaseDir}/build-{targetServer.fqn}/drop_in_drivers".<br><br>If "drop_in_drivers" exists, it's contents will be copied to "Drivers" folder.<br><br>If "drop_in_drivers" does not exist, it is ignored.<br><br>The contents of the Drivers folder will eventually seen at "X:\attune_drivers" by WinPE and the Windows installer. |
+| Kickstarted Node | Basic Node | `kickstartednode` |  |
 | KS: Attune Base Dir | Text | `ksattunebasedir` |  |
 | Linux: Attune User | Linux/Unix Credential | `linuxattuneuser` |  |
 | Linux: Root User | Linux/Unix Credential | `linuxrootuser` |  |
 | Target Server: Win | Windows Node | `targetserverwin` |  |
 | Windows Build Server | Windows Node | `windowsbuildserver` |  |
 | Windows Build User | Windows Credential | `windowsbuilduser` |  |
-| Kickstarted Node | Basic Node | `kickstartednode` |  |
+| Kickstart Worker Build Linux User | Linux/Unix Credential | `kickstartworkerbuildlinuxuser` |  |
 
 
 

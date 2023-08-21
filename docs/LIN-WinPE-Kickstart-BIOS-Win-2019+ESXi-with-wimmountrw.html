@@ -492,7 +492,7 @@
                         </div>
                         <div class="row py-1">
                             <code class="language-sql">
-ssh {linuxattuneuser}@{attuneosbuildserver}
+ssh {kickstartworkerbuildlinuxuser}@{attuneosbuildserver}
                             </code>
                         </div>
 
@@ -569,7 +569,7 @@ cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                <p>Deploys VMWare ESXi drivers to the {ksAttuneBaseDir}/build-{targetServer.fqn} folder.</p>
+                                <p>Deploys VMWare ESXi drivers to the {ksAttuneBaseDir}/build-{kickstartedNode.fqn} folder.</p>
                             </p>
                         </div>
                     </div>
@@ -662,6 +662,13 @@ fi
                         </h3>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 
