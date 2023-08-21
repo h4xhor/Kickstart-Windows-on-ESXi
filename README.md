@@ -99,6 +99,7 @@ Kickstarts a Windows Server 2019 virtual machine on ESXi.
 | Windows Build Server | Windows Node | `windowsbuildserver` |  |
 | Windows Build User | Windows Credential | `windowsbuilduser` |  |
 | Kickstart Worker Build Linux User | Linux/Unix Credential | `kickstartworkerbuildlinuxuser` |  |
+| Kickstart Worker Linux Node | Linux/Unix Node | `kickstartworkerlinuxnode` |  |
 
 
 

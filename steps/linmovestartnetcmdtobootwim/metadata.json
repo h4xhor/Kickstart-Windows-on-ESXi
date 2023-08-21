@@ -6,7 +6,7 @@
     "key": "linmovestartnetcmdtobootwim", 
     "name": "LIN Move startnet.cmd to boot.wim", 
     "osCredKey": "kickstartworkerbuildlinuxuser", 
-    "serverKey": "attuneosbuildserver", 
+    "serverKey": "kickstartworkerlinuxnode", 
     "successExitCode": 0, 
     "type": "com.servertribe.attune.tuples.StepSshTuple"
 }

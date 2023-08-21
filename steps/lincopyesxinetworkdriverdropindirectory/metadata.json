@@ -6,7 +6,7 @@
     "key": "lincopyesxinetworkdriverdropindirectory", 
     "name": "LIN Copy ESXi Network Driver Drop In Directory", 
     "osCredKey": "kickstartworkerbuildlinuxuser", 
-    "serverKey": "attuneosbuildserver", 
+    "serverKey": "kickstartworkerlinuxnode", 
     "successExitCode": 0, 
     "type": "com.servertribe.attune.tuples.StepSshTuple"
 }

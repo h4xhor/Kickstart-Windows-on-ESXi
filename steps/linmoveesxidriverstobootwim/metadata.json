@@ -6,7 +6,7 @@
     "key": "linmoveesxidriverstobootwim", 
     "name": "LIN Move ESXi Drivers to boot.wim", 
     "osCredKey": "kickstartworkerbuildlinuxuser", 
-    "serverKey": "attuneosbuildserver", 
+    "serverKey": "kickstartworkerlinuxnode", 
     "successExitCode": 0, 
     "type": "com.servertribe.attune.tuples.StepSshTuple"
 }
