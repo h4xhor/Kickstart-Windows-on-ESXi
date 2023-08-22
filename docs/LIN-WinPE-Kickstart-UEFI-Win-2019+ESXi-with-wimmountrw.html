@@ -6,32 +6,29 @@
 
 
 <head>
-    <title>How to LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw - Attune Automation</title>
+    <title>How to LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw - Attune Automation</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title"
-          content="How to LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw - Attune Automation">
+          content="How to LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw - Attune Automation">
     <meta name="description"
-          content="1. `boot.wim` is seen as `X:` drive and is available when WinPE runs.
-2.  winpe_staging will be used as the DVD root directory for `mkisofs`. This will be seen as `D:` drive during the Windows installation and when the `autounattend.xml` PowerShell scripts runs. ">
+          content="">
     <meta name="robots"
           content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
 
     <meta property="og:locale" content="en_AU" />
     <meta property="og:type" content="article" />
     <meta property="og:title"
-          content="HowTo LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw - Attune Automation" />
-    <meta property="og:description" content="1. `boot.wim` is seen as `X:` drive and is available when WinPE runs.
-2.  winpe_staging will be used as the DVD root directory for `mkisofs`. This will be seen as `D:` drive during the Windows installation and when the `autounattend.xml` PowerShell scripts runs. " />
+          content="HowTo LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw - Attune Automation" />
+    <meta property="og:description" content="" />
     <meta property="og:site_name" content="Attune Automation" />
     <meta property="article:section" content="IT Instruction" />
 
     <meta name="twitter:title"
-          content="How to LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw - Attune Automation" />
-    <meta name="twitter:description" content="1. `boot.wim` is seen as `X:` drive and is available when WinPE runs.
-2.  winpe_staging will be used as the DVD root directory for `mkisofs`. This will be seen as `D:` drive during the Windows installation and when the `autounattend.xml` PowerShell scripts runs. " />
+          content="How to LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw - Attune Automation" />
+    <meta name="twitter:description" content="" />
 
     <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
     <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-192x192.png" sizes="192x192">
@@ -122,7 +119,7 @@
                     </a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                    <strong>LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw</strong>
+                    <strong>LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw</strong>
                 </li>
             </ol>
         </nav>
@@ -136,22 +133,12 @@
     <div class="row">
         <div class="col px-0">
             <h1 class="text-left">
-                How to LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw
+                How to LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw
             </h1>
         </div>
     </div>
 
 <!-- Blueprint Description -->
-    <div class="row">
-        <div class="description col px-0">
-            <p class="text-left">
-                <ol>
-<li><code>boot.wim</code> is seen as <code>X:</code> drive and is available when WinPE runs.</li>
-<li>winpe_staging will be used as the DVD root directory for <code>mkisofs</code>. This will be seen as <code>D:</code> drive during the Windows installation and when the <code>autounattend.xml</code> PowerShell scripts runs. </li>
-</ol>
-            </p>
-        </div>
-    </div>
     <div class="row pt-4">
         <div class="col-6 px-0">
             <h6 class="text-left">
@@ -210,7 +197,7 @@
                     </p>
                     <p class="text-muted">
                         <a href="#top">
-                            <strong>LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw</strong>
+                            <strong>LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw</strong>
                         </a>
                     </p>
 
@@ -227,8 +214,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#lincopywinpeplainbiosisotowinpeiso">
-                            <strong>Step 2 -</strong> LIN Copy winpe_plain_bios.iso to winpe.iso
+                        <a href="#lincopywinpeplainuefiisotowinpeiso">
+                            <strong>Step 2 -</strong> LIN Copy winpe_plain_uefi.iso to winpe.iso
                         </a>
                     </p>
 
@@ -283,8 +270,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink">
-                            <strong>Step 9 -</strong> LIN Deploy Win2019 Unattended Config ESXi BIOS for Drivers on X Drive (link)
+                        <a href="#lindeploywin2019unattendedconfiguefifordriversonxdrivelink">
+                            <strong>Step 9 -</strong> LIN Deploy Win2019 Unattended Config UEFI for Drivers on X Drive (link)
                         </a>
                     </p>
 
@@ -348,16 +335,24 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#lincreatebioswinpebootisogroupfromwinpestaginglink">
-                            <strong>Step 11 -</strong> LIN Create BIOS WinPE Boot ISO Group from winpe_staging (link)
+                        <a href="#createuefidiskfromwinpestaginglink">
+                            <strong>Step 11 -</strong> Create UEFI Disk from winpe_staging (link)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#esxiwinperecreatewinbiosvirtualmachinelink">
-                            <strong>Step 12 -</strong> ESXi WinPE Recreate Win BIOS Virtual Machine (link)
+                        <a href="#esxiuefirecreatevirtualmachinelink">
+                            <strong>Step 12 -</strong> ESXi UEFI Recreate Virtual Machine (link)
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#winwinrmhttpswait0s">
+                            <strong>Step 13 -</strong> WIN WinRM HTTPS Wait 0s
                         </a>
                     </p>
 
@@ -365,7 +360,7 @@
 
                     <p class="text-muted pt-2">
                         <a href="#lincleanbuildfileslink">
-                            <strong>Step 13 -</strong> LIN Clean Build Files (Link)
+                            <strong>Step 14 -</strong> LIN Clean Build Files (Link)
                         </a>
                     </p>
 
@@ -428,7 +423,7 @@
                 </ol>
             </p>
             <p class="lead text-center">
-                You've automated: <strong>LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw</strong>
+                You've automated: <strong>LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw</strong>
             </p>
             <hr class="my-4 text-center">
             <div class="col px-0">
@@ -490,20 +485,13 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="lincopywinpeplainbiosisotowinpeiso">
-                            <a href="#lincopywinpeplainbiosisotowinpeiso">
-                                <strong>Step 2 -</strong> LIN Copy winpe_plain_bios.iso to winpe.iso
+                        <h3 id="lincopywinpeplainuefiisotowinpeiso">
+                            <a href="#lincopywinpeplainuefiisotowinpeiso">
+                                <strong>Step 2 -</strong> LIN Copy winpe_plain_uefi.iso to winpe.iso
                             </a>
                         </h3>
                     </div>
 
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
 
 
 
@@ -542,7 +530,7 @@ ssh {kickstartworkerbuildlinuxuser}@{kickstartworkerlinuxnode}
                 <code class="language-sql py-0">
 mkdir --parents &quot;{ksAttuneBaseDir}/build-{kickstartedNode.fqn}&quot;
 cd &quot;{ksAttuneBaseDir}/build-{kickstartedNode.fqn}&quot;
-cp --verbose &quot;../winpe_plain_bios.iso&quot; &quot;winpe.iso&quot;
+cp --verbose &quot;../winpe_plain_uefi.iso&quot; &quot;winpe.iso&quot;
                 </code>
             </pre>
         </div>
@@ -808,20 +796,13 @@ mv --verbose setupHTTPSWinRMListener.ps1 winpe_staging
 
 
                     <div class="row pt-5">
-                        <h3 id="lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink">
-                            <a href="#lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink">
-                                <strong>Step 9 -</strong> LIN Deploy Win2019 Unattended Config ESXi BIOS for Drivers on X Drive (link)
+                        <h3 id="lindeploywin2019unattendedconfiguefifordriversonxdrivelink">
+                            <a href="#lindeploywin2019unattendedconfiguefifordriversonxdrivelink">
+                                <strong>Step 9 -</strong> LIN Deploy Win2019 Unattended Config UEFI for Drivers on X Drive (link)
                             </a>
                         </h3>
                     </div>
 
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
 
 
 
@@ -1137,20 +1118,13 @@ mv --verbose autounattend.xml WinPE_BootImageDir
 
 
                     <div class="row pt-5">
-                        <h3 id="lincreatebioswinpebootisogroupfromwinpestaginglink">
-                            <a href="#lincreatebioswinpebootisogroupfromwinpestaginglink">
-                                <strong>Step 11 -</strong> LIN Create BIOS WinPE Boot ISO Group from winpe_staging (link)
+                        <h3 id="createuefidiskfromwinpestaginglink">
+                            <a href="#createuefidiskfromwinpestaginglink">
+                                <strong>Step 11 -</strong> Create UEFI Disk from winpe_staging (link)
                             </a>
                         </h3>
                     </div>
 
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
 
 
 
@@ -1168,20 +1142,13 @@ mv --verbose autounattend.xml WinPE_BootImageDir
 
 
                     <div class="row pt-5">
-                        <h3 id="esxiwinperecreatewinbiosvirtualmachinelink">
-                            <a href="#esxiwinperecreatewinbiosvirtualmachinelink">
-                                <strong>Step 12 -</strong> ESXi WinPE Recreate Win BIOS Virtual Machine (link)
+                        <h3 id="esxiuefirecreatevirtualmachinelink">
+                            <a href="#esxiuefirecreatevirtualmachinelink">
+                                <strong>Step 12 -</strong> ESXi UEFI Recreate Virtual Machine (link)
                             </a>
                         </h3>
                     </div>
 
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
 
 
 
@@ -1189,6 +1156,43 @@ mv --verbose autounattend.xml WinPE_BootImageDir
 
 
     
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="winwinrmhttpswait0s">
+                            <a href="#winwinrmhttpswait0s">
+                                <strong>Step 13 -</strong> WIN WinRM HTTPS Wait 0s
+                            </a>
+                        </h3>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <div class="row">
+        <p class="mb-0">
+            Check if TCP Port <strong>0</strong> is listening.
+        </p>
+        <p>Use Telnet to check if the TCP Service is accepting connections.</p>
+    </div>
 
 
 
@@ -1201,7 +1205,7 @@ mv --verbose autounattend.xml WinPE_BootImageDir
                     <div class="row pt-5">
                         <h3 id="lincleanbuildfileslink">
                             <a href="#lincleanbuildfileslink">
-                                <strong>Step 13 -</strong> LIN Clean Build Files (Link)
+                                <strong>Step 14 -</strong> LIN Clean Build Files (Link)
                             </a>
                         </h3>
                     </div>

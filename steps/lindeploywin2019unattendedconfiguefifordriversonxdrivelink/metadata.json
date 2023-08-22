@@ -1,0 +1,25 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "9dd7834f-51dc-4c6d-87cd-c92a68bf8fb4", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "66e84c63-c197-45b1-ac70-e113b9d0b015", 
+    "key": "lindeploywin2019unattendedconfiguefifordriversonxdrivelink", 
+    "name": "LIN Deploy Win2019 Unattended Config UEFI for Drivers on X Drive (link)", 
+    "parameterMap": [
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "6942c5d9-c0a5-4dd8-a8b8-d43c0dc75654", 
+            "childProjectName": null, 
+            "childProjectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "Ethernet0"
+        }
+    ], 
+    "projectName": "", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

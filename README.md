@@ -86,6 +86,9 @@ Kickstarts a Windows Server 2019 virtual machine on ESXi.
 ### Check ESXi Drivers Installed - Group
 
 
+### LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw
+
+
 
 
 

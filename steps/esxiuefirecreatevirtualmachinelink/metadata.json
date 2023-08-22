@@ -1,12 +1,12 @@
 {
     "actionOnStepFail": null, 
     "blueprintName": "", 
-    "blueprintUuid": "7eac3284-9e7d-41e1-96dc-acf098416045", 
+    "blueprintUuid": "18af1c16-5ee0-4a2d-ae12-5e52aeb25287", 
     "cloneUrl": "", 
     "enabled": true, 
-    "externalUuid4": "eb147750-01d0-4fbd-a50f-65b1f4e0ef5d", 
-    "key": "linesxiwinperecreatevirtualmachinelink", 
-    "name": "LIN ESXi WinPE Recreate Virtual Machine (link)", 
+    "externalUuid4": "b66a5ed0-a7ef-40f9-9a28-8dc94d2f3574", 
+    "key": "esxiuefirecreatevirtualmachinelink", 
+    "name": "ESXi UEFI Recreate Virtual Machine (link)", 
     "parameterMap": [
         {
             "childParameterName": null, 
