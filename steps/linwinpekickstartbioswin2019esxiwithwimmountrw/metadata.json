@@ -32,18 +32,26 @@
         }, 
         {
             "order": 500, 
-            "stepKey": "lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink"
+            "stepKey": "lindeploywindowssetupscriptforwinrmhttpslink"
         }, 
         {
             "order": 550, 
-            "stepKey": "linmodifywinpebootwimfor2019esxi"
+            "stepKey": "linmovewinrmhttpsscripttowinpestaging"
+        }, 
+        {
+            "order": 600, 
+            "stepKey": "lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink"
         }, 
         {
             "order": 650, 
-            "stepKey": "lincreatebioswinpebootisogroupfromwinpestaginglink"
+            "stepKey": "linmodifywinpebootwimfor2019esxi"
         }, 
         {
             "order": 700, 
+            "stepKey": "lincreatebioswinpebootisogroupfromwinpestaginglink"
+        }, 
+        {
+            "order": 750, 
             "stepKey": "linesxiwinperecreatevirtualmachinelink"
         }, 
         {

@@ -233,19 +233,6 @@
 
                         <div class="col-12 pt-3 pl-0">
                             <div class="card"
-                                 id="LIN-WinPE-Kickstart-BIOS-Win-2019+ESXi-with-wimmountrw">
-                                <div class="card-body">
-                                    <a href="LIN-WinPE-Kickstart-BIOS-Win-2019+ESXi-with-wimmountrw.html">
-                                        <h3 class="card-title">
-                                            LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw
-                                        </h3>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 pt-3 pl-0">
-                            <div class="card"
                                  id="WinPE-Kickstart-Win10+ESXi">
                                 <div class="card-body">
                                     <a href="WinPE-Kickstart-Win10+ESXi.html">
@@ -282,6 +269,27 @@
                                     <div class="description">
                                         <p class="card-text">
                                             <p>Kickstarts a Windows Server 2019 virtual machine on ESXi.</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 pt-3 pl-0">
+                            <div class="card"
+                                 id="LIN-WinPE-Kickstart-BIOS-Win-2019+ESXi-with-wimmountrw">
+                                <div class="card-body">
+                                    <a href="LIN-WinPE-Kickstart-BIOS-Win-2019+ESXi-with-wimmountrw.html">
+                                        <h3 class="card-title">
+                                            LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw
+                                        </h3>
+                                    </a>
+                                    <div class="description">
+                                        <p class="card-text">
+                                            <ol>
+<li><code>boot.wim</code> is seen as <code>X:</code> drive and is available when WinPE runs.</li>
+<li>winpe_staging will be used as the DVD root directory for <code>mkisofs</code>. This will be seen as <code>D:</code> drive during the Windows installation and when the <code>autounattend.xml</code> PowerShell scripts runs. </li>
+</ol>
                                         </p>
                                     </div>
                                 </div>

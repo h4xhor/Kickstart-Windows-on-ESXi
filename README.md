@@ -68,9 +68,6 @@ Kickstarts Windows Desktop 10 from a single ISO.
 
 Kickstarts Windows Server 2019 from a single ISO.
 
-### LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw
-
-
 ### WinPE Kickstart Win10+ESXi
 
 
@@ -80,6 +77,11 @@ Kickstarts Windows Server 2019 from a single ISO.
 ### WinPE Kickstart Win 2019+ESXi
 
 Kickstarts a Windows Server 2019 virtual machine on ESXi.
+
+### LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw
+
+1. `boot.wim` is seen as `X:` drive and is available when WinPE runs.
+2.  winpe_staging will be used as the DVD root directory for `mkisofs`. This will be seen as `D:` drive during the Windows installation and when the `autounattend.xml` PowerShell scripts runs. 
 
 
 
