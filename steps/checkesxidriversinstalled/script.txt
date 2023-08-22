@@ -1,0 +1,8 @@
+if (Get-WmiObject Win32_PnPSignedDriver | `
+    select devicename | `
+    findstr "vmxnet3") {
+    Write-Host "ESXi drivers are installed."
+} else {
+    Write-Host "ESXi drivers are not installed"
+    exit 1
+}

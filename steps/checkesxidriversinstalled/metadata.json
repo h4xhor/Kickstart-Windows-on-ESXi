@@ -1,0 +1,16 @@
+{
+    "actionOnStepFail": null, 
+    "enabled": true, 
+    "externalUuid4": "958bc394-eaeb-4854-bd5e-56819db0c22c", 
+    "interpreter": 2, 
+    "interpreterCommand": "", 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "", 
+    "key": "checkesxidriversinstalled", 
+    "name": "Check ESXi Drivers Installed", 
+    "osCredKey": "windowsadministrator", 
+    "serverKey": "kickstartedwindowsnode", 
+    "successExitCode": 0, 
+    "timeout": 60, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

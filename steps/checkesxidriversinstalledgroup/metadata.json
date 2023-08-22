@@ -1,0 +1,16 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "54a06253-6f9e-4e69-afab-9865ab27f323", 
+    "isBlueprint": true, 
+    "key": "checkesxidriversinstalledgroup", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "checkesxidriversinstalled"
+        }
+    ], 
+    "name": "Check ESXi Drivers Installed - Group", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}
