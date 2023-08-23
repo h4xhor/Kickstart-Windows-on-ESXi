@@ -1,2 +1,0 @@
-cd {ksAttuneBaseDir}/build-{kickstartedNode.fqn}
-mv --verbose autounattend.xml WinPE_BootImageDir

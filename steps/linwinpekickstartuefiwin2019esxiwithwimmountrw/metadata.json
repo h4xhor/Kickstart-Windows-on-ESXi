@@ -12,7 +12,7 @@
         }, 
         {
             "order": 100, 
-            "stepKey": "lincopywinpeplainuefiisotowinpeisogroup"
+            "stepKey": "lincopywinpeplainuefiisotowinpeisogrouplink"
         }, 
         {
             "order": 200, 
@@ -32,11 +32,7 @@
         }, 
         {
             "order": 450, 
-            "stepKey": "lindeploywindowssetupscriptforwinrmhttpslink"
-        }, 
-        {
-            "order": 500, 
-            "stepKey": "lincreatecustomwimgroup"
+            "stepKey": "lincreatecustomwimcontainingscriptforwinrmhttpslink"
         }, 
         {
             "order": 550, 
@@ -44,7 +40,7 @@
         }, 
         {
             "order": 600, 
-            "stepKey": "linmodifywinpebootwimfor2019esxi"
+            "stepKey": "linmodifywinpebootwimfor2019esxidelete"
         }, 
         {
             "order": 650, 

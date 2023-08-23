@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": "stop", 
+    "blueprintName": "LIN Move Files to boot.wim", 
+    "blueprintUuid": "9c43ab67-733f-4344-8420-f8ae9e62ddfd", 
+    "cloneUrl": null, 
+    "enabled": true, 
+    "externalUuid4": "9c43ab67-733f-4344-8420-f8ae9e62ddfd", 
+    "key": "linmovefilestobootwimlinkdelete", 
+    "name": "LIN Move Files to boot.wim (Link) - DELETE", 
+    "parameterMap": [], 
+    "projectName": "Kickstart-Windows", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "master", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

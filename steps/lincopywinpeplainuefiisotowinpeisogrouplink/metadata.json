@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": "stop", 
+    "blueprintName": "LIN Copy winpe_plain_uefi.iso to winpe.iso - Group", 
+    "blueprintUuid": "9cc13710-6649-4498-a16b-de44a16f8994", 
+    "cloneUrl": null, 
+    "enabled": true, 
+    "externalUuid4": "9cc13710-6649-4498-a16b-de44a16f8994", 
+    "key": "lincopywinpeplainuefiisotowinpeisogrouplink", 
+    "name": "LIN Copy winpe_plain_uefi.iso to winpe.iso - Group (Link)", 
+    "parameterMap": [], 
+    "projectName": "Kickstart-Windows", 
+    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectVersion": "master", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

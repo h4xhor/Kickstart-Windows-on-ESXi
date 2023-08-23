@@ -1,3 +1,0 @@
-mkdir --parents "{ksAttuneBaseDir}/build-{kickstartedNode.fqn}"
-cd "{ksAttuneBaseDir}/build-{kickstartedNode.fqn}"
-cp --verbose "../winpe_plain_uefi.iso" "winpe.iso"

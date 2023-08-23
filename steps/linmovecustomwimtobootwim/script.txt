@@ -1,3 +1,0 @@
-cd {ksAttuneBaseDir}/build-{kickstartedNode.fqn}
-
-mv --verbose custom.wim WinPE_BootImageDir

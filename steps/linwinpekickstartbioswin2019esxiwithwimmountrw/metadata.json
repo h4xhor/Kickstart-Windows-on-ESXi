@@ -32,11 +32,7 @@
         }, 
         {
             "order": 600, 
-            "stepKey": "lindeploywindowssetupscriptforwinrmhttpslink"
-        }, 
-        {
-            "order": 650, 
-            "stepKey": "linmovewinrmhttpsscripttocustomwim"
+            "stepKey": "lincreatecustomwimcontainingscriptforwinrmhttpslink"
         }, 
         {
             "order": 700, 
@@ -44,18 +40,18 @@
         }, 
         {
             "order": 750, 
-            "stepKey": "linmodifywinpebootwimfor2019esxi"
-        }, 
-        {
-            "order": 800, 
-            "stepKey": "lincreatebioswinpebootisogroupfromwinpestaginglink"
+            "stepKey": "linmodifybootwimlink"
         }, 
         {
             "order": 850, 
-            "stepKey": "esxiwinperecreatewinbiosvirtualmachinelink"
+            "stepKey": "lincreatebioswinpebootisogroupfromwinpestaginglink"
         }, 
         {
             "order": 900, 
+            "stepKey": "esxiwinperecreatewinbiosvirtualmachinelink"
+        }, 
+        {
+            "order": 950, 
             "stepKey": "lincleanbuildfileslink"
         }
     ], 
