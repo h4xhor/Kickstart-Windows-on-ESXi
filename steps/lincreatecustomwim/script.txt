@@ -1,0 +1,10 @@
+cd {ksAttuneBaseDir}/build-{kickstartedNode.fqn}
+
+SOURCE="custom_wim"
+WIMFILE="custom.wim"
+#IMAGE_NAME="custom.wim"
+#IMAGE_DESC="Custom WIM"
+echo "SOURCE=${SOURCE}, WIMFILE=${WIMFILE}"
+#, IMAGE_NAME=${IMAGE_NAME}, IMAGE_DESC=${IMAGE_DESC}"
+
+wimcapture "${SOURCE}" "${WIMFILE}" --check

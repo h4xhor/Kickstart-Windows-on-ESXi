@@ -1,0 +1,3 @@
+cd {ksAttuneBaseDir}/build-{kickstartedNode.fqn}
+
+mkdir --parents custom_wim

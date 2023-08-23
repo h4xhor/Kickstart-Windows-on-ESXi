@@ -1,0 +1,24 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "f898ba70-e51d-4370-aa70-8f9e4daa5c0b", 
+    "isBlueprint": false, 
+    "key": "lincreatecustomwimgroup", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "lincreatecustomwimdirectory"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "linmovewinrmhttpsscripttocustomwim"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "lincreatecustomwim"
+        }
+    ], 
+    "name": "LIN Create custom.wim Group", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

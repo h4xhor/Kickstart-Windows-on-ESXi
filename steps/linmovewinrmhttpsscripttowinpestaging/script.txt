@@ -1,2 +1,0 @@
-cd {ksAttuneBaseDir}/build-{kickstartedNode.fqn}
-mv --verbose setupHTTPSWinRMListener.ps1 winpe_staging

@@ -1,10 +1,10 @@
 {
     "actionOnStepFail": null, 
     "enabled": true, 
-    "externalUuid4": "6a0cf51d-741b-4126-8757-1401fffecaa7", 
+    "externalUuid4": "1ce03213-c35d-4dad-99ed-1fb3353137bc", 
     "interpreter": 1, 
-    "key": "linmovewinrmhttpsscripttowinpestaging", 
-    "name": "LIN Move WinRM HTTPS Script to winpe_staging", 
+    "key": "lincreatecustomwim", 
+    "name": "LIN Create custom.wim", 
     "osCredKey": "kickstartworkerbuildlinuxuser", 
     "serverKey": "kickstartworkerlinuxnode", 
     "successExitCode": 0, 

@@ -36,7 +36,7 @@
         }, 
         {
             "order": 550, 
-            "stepKey": "linmovewinrmhttpsscripttowinpestaging"
+            "stepKey": "linmovewinrmhttpsscripttocustomwim"
         }, 
         {
             "order": 600, 
