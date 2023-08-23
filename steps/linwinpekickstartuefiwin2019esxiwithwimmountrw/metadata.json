@@ -40,14 +40,18 @@
         }, 
         {
             "order": 450, 
-            "stepKey": "lindeploywin2019unattendedconfiguefifordriversonxdrivelink"
+            "stepKey": "createcustomwimgroup"
         }, 
         {
             "order": 500, 
-            "stepKey": "linmodifywinpebootwimfor2019esxi"
+            "stepKey": "lindeploywin2019unattendedconfiguefifordriversonxdrivelink"
         }, 
         {
             "order": 550, 
+            "stepKey": "linmodifywinpebootwimfor2019esxi"
+        }, 
+        {
+            "order": 600, 
             "stepKey": "createuefidiskfromwinpestaginglink"
         }, 
         {

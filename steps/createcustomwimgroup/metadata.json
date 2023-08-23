@@ -1,0 +1,11 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "f898ba70-e51d-4370-aa70-8f9e4daa5c0b", 
+    "isBlueprint": false, 
+    "key": "createcustomwimgroup", 
+    "links": [], 
+    "name": "Create custom.wim Group", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}
