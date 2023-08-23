@@ -1,1 +1,1 @@
-Deploys VMWare ESXi drivers to the {ksAttuneBaseDir}/build-{kickstartedNode.fqn} folder.
+Deploys VMWare ESXi drivers to the `{ksAttuneBaseDir}/build-{kickstartedNode.fqn}` folder.

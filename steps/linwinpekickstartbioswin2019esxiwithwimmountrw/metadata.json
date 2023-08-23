@@ -12,50 +12,50 @@
         }, 
         {
             "order": 250, 
-            "stepKey": "lincopywinpeplainbiosisotowinpeiso"
-        }, 
-        {
-            "order": 300, 
-            "stepKey": "linextractwinpeisotowinpestaginglink"
+            "stepKey": "lincopywinpeplainbiosisotowinpeisolink"
         }, 
         {
             "order": 350, 
-            "stepKey": "lindeployvmwaredriverslink"
+            "stepKey": "linextractwinpeisotowinpestaginglink"
         }, 
         {
             "order": 400, 
-            "stepKey": "lincopyesxinetworkdriverdropindirectory"
-        }, 
-        {
-            "order": 450, 
-            "stepKey": "lindeploystartnetcmdforwinpeonesxiforwin2019link"
+            "stepKey": "lindeployvmwaredriverslink"
         }, 
         {
             "order": 500, 
-            "stepKey": "lindeploywindowssetupscriptforwinrmhttpslink"
+            "stepKey": "lincopynetworkdriverdropindirectorylink"
         }, 
         {
             "order": 550, 
-            "stepKey": "linmovewinrmhttpsscripttocustomwim"
+            "stepKey": "lindeploystartnetcmdforwinpeonesxiforwin2019link"
         }, 
         {
             "order": 600, 
-            "stepKey": "lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink"
+            "stepKey": "lindeploywindowssetupscriptforwinrmhttpslink"
         }, 
         {
             "order": 650, 
-            "stepKey": "linmodifywinpebootwimfor2019esxi"
+            "stepKey": "linmovewinrmhttpsscripttocustomwim"
         }, 
         {
             "order": 700, 
-            "stepKey": "lincreatebioswinpebootisogroupfromwinpestaginglink"
+            "stepKey": "lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelink"
         }, 
         {
             "order": 750, 
-            "stepKey": "esxiwinperecreatewinbiosvirtualmachinelink"
+            "stepKey": "linmodifywinpebootwimfor2019esxi"
         }, 
         {
             "order": 800, 
+            "stepKey": "lincreatebioswinpebootisogroupfromwinpestaginglink"
+        }, 
+        {
+            "order": 850, 
+            "stepKey": "esxiwinperecreatewinbiosvirtualmachinelink"
+        }, 
+        {
+            "order": 900, 
             "stepKey": "lincleanbuildfileslink"
         }
     ], 

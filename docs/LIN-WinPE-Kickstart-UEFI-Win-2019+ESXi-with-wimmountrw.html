@@ -214,10 +214,19 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#lincopywinpeplainuefiisotowinpeiso">
-                            <strong>Step 2 -</strong> LIN Copy winpe_plain_uefi.iso to winpe.iso
+                        <a href="#lincopywinpeplainuefiisotowinpeisogroup">
+                            <strong>Step 2 -</strong> LIN Copy winpe_plain_uefi.iso to winpe.iso - Group
                         </a>
                     </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#lincopywinpeplainuefiisotowinpeiso">
+                            <strong>Step 2.1 -</strong> LIN Copy winpe_plain_uefi.iso to winpe.iso
+                        </a>
+                    </p>
+
 
         
 
@@ -238,8 +247,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#lincopyesxinetworkdriverdropindirectory">
-                            <strong>Step 5 -</strong> LIN Copy ESXi Network Driver Drop In Directory
+                        <a href="#lincopynetworkdriverdropindirectorylink">
+                            <strong>Step 5 -</strong> LIN Copy Network Driver Drop In Directory (link)
                         </a>
                     </p>
 
@@ -518,13 +527,49 @@
 
 
                     <div class="row pt-5">
-                        <h3 id="lincopywinpeplainuefiisotowinpeiso">
-                            <a href="#lincopywinpeplainuefiisotowinpeiso">
-                                <strong>Step 2 -</strong> LIN Copy winpe_plain_uefi.iso to winpe.iso
+                        <h3 id="lincopywinpeplainuefiisotowinpeisogroup">
+                            <a href="#lincopywinpeplainuefiisotowinpeisogroup">
+                                <strong>Step 2 -</strong> LIN Copy winpe_plain_uefi.iso to winpe.iso - Group
                             </a>
                         </h3>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="lincopywinpeplainuefiisotowinpeiso">
+                            <a href="#lincopywinpeplainuefiisotowinpeiso">
+                                <strong>Step 2.1 -</strong> LIN Copy winpe_plain_uefi.iso to winpe.iso
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 
@@ -568,6 +613,7 @@ cp --verbose &quot;../winpe_plain_uefi.iso&quot; &quot;winpe.iso&quot;
             </pre>
         </div>
     </div>
+
 
 
 
@@ -619,7 +665,7 @@ cp --verbose &quot;../winpe_plain_uefi.iso&quot; &quot;winpe.iso&quot;
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                <p>Deploys VMWare ESXi drivers to the {ksAttuneBaseDir}/build-{kickstartedNode.fqn} folder.</p>
+                                <p>Deploys VMWare ESXi drivers to the <code>{ksAttuneBaseDir}/build-{kickstartedNode.fqn}</code> folder.</p>
                             </p>
                         </div>
                     </div>
@@ -640,23 +686,13 @@ cp --verbose &quot;../winpe_plain_uefi.iso&quot; &quot;winpe.iso&quot;
 
 
                     <div class="row pt-5">
-                        <h3 id="lincopyesxinetworkdriverdropindirectory">
-                            <a href="#lincopyesxinetworkdriverdropindirectory">
-                                <strong>Step 5 -</strong> LIN Copy ESXi Network Driver Drop In Directory
+                        <h3 id="lincopynetworkdriverdropindirectorylink">
+                            <a href="#lincopynetworkdriverdropindirectorylink">
+                                <strong>Step 5 -</strong> LIN Copy Network Driver Drop In Directory (link)
                             </a>
                         </h3>
                     </div>
 
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-
-
 
 
 
@@ -664,44 +700,6 @@ cp --verbose &quot;../winpe_plain_uefi.iso&quot; &quot;winpe.iso&quot;
 
 
     
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-cd {ksAttuneBaseDir}/build-{kickstartedNode.fqn}
-
-echo &quot;We are in {ksAttuneBaseDir}/build-{kickstartedNode.fqn}.&quot;
-
-if [ ! -d &quot;{driversDropDirectory}&quot; ]
-then
-    echo &quot;{driversDropDirectory} does not exist, skipping.&quot;
-else
-    cd &quot;{driversDropDirectory}&quot;
-    NUMBER_FILES=$(ls -1q | wc -l)
-    echo &quot;NUMBER_FILES=${NUMBER_FILES}&quot;
-    if [ &quot;${NUMBER_FILES}&quot; -eq &quot;0&quot; ]
-    then
-        echo &quot;no files.&quot;
-    else
-        echo &quot;{driversDropDirectory} exists, copying it&#x27;s contents to Drivers.&quot;
-        cp --verbose --recursive {driversDropDirectory}/* Drivers
-    fi
-fi
-                </code>
-            </pre>
-        </div>
-    </div>
 
 
 
@@ -781,6 +779,13 @@ fi
                         </h3>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 
@@ -803,6 +808,13 @@ fi
                         </h4>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 
@@ -907,6 +919,13 @@ mv --verbose setupHTTPSWinRMListener.ps1 custom_wim
                         </h4>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 
@@ -965,6 +984,13 @@ wimcapture &quot;${SOURCE}&quot; &quot;${WIMFILE}&quot; --check
                         </h3>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 
@@ -1255,6 +1281,13 @@ mv --verbose autounattend.xml WinPE_BootImageDir
                         </h4>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 
@@ -1336,6 +1369,13 @@ mv --verbose custom.wim WinPE_BootImageDir
                         </h3>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 
@@ -1360,6 +1400,13 @@ mv --verbose custom.wim WinPE_BootImageDir
                         </h3>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 
@@ -1384,6 +1431,13 @@ mv --verbose custom.wim WinPE_BootImageDir
                         </h3>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 

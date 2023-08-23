@@ -54,6 +54,9 @@ This Project contains the following Blueprints.
 
 
 
+### Check ESXi Drivers Installed - Group
+
+
 ### Kickstart Windows 10 DVD on ESXi with 2 ISOs
 
 Kickstarts a Windows virtual machine from two ISOs.
@@ -73,6 +76,9 @@ Kickstarts Windows Server 2019 from a single ISO.
 1. `boot.wim` is seen as `X:` drive and is available when WinPE runs.
 2.  winpe_staging will be used as the DVD root directory for `mkisofs`. This will be seen as `D:` drive during the Windows installation and when the `autounattend.xml` PowerShell scripts runs. 
 
+### LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw
+
+
 ### WinPE Kickstart Win10+ESXi
 
 
@@ -82,12 +88,6 @@ Kickstarts Windows Server 2019 from a single ISO.
 ### WinPE Kickstart Win 2019+ESXi - DELETE
 
 Kickstarts a Windows Server 2019 virtual machine on ESXi.
-
-### Check ESXi Drivers Installed - Group
-
-
-### LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw
-
 
 
 
@@ -100,16 +100,16 @@ Kickstarts a Windows Server 2019 virtual machine on ESXi.
 | Attune OS Build Server | Linux/Unix Node | `attuneosbuildserver` |  |
 | Drivers Drop Directory | Text | `driversdropdirectory` | Put any extra drivers you want used by WinPE and the Windows installer here.<br><br>This can contain subfolders.<br><br>These are the "*.inf" files.<br><br>WinPE's startnet.cmd will recursively search for the "*.inf" files to install.<br><br>autounattend.xml will do the same.<br><br>This folder path relative to "{ksAttuneBaseDir}/build-{targetServer.fqn}".<br><br>Example: Setting this as "drop_in_drivers" will mean the drivers drop in directory will be at "{ksAttuneBaseDir}/build-{targetServer.fqn}/drop_in_drivers".<br><br>If "drop_in_drivers" exists, it's contents will be copied to "Drivers" folder.<br><br>If "drop_in_drivers" does not exist, it is ignored.<br><br>The contents of the Drivers folder will eventually seen at "X:\attune_drivers" by WinPE and the Windows installer. |
 | Kickstarted Node | Basic Node | `kickstartednode` |  |
-| Kickstart Worker Build Linux User | Linux/Unix Credential | `kickstartworkerbuildlinuxuser` |  |
+| Kickstarted Windows Node | Windows Node | `kickstartedwindowsnode` |  |
+| Kickstart Worker Build Linux User | Linux/Unix Credential | `kickstartworkerbuildlinuxuser` | The user credentials for the node building the kickstart ISO.<br>Only for Kickstart Worker Linux Node. |
 | Kickstart Worker Linux Node | Linux/Unix Node | `kickstartworkerlinuxnode` |  |
 | KS: Attune Base Dir | Text | `ksattunebasedir` |  |
 | Linux: Attune User | Linux/Unix Credential | `linuxattuneuser` |  |
 | Linux: Root User | Linux/Unix Credential | `linuxrootuser` |  |
 | Target Server: Win | Windows Node | `targetserverwin` |  |
+| Windows: Administrator | Windows Credential | `windowsadministrator` | The windows administrator user |
 | Windows Build Server | Windows Node | `windowsbuildserver` |  |
 | Windows Build User | Windows Credential | `windowsbuilduser` |  |
-| Kickstarted Windows Node | Windows Node | `kickstartedwindowsnode` |  |
-| Windows: Administrator | Windows Credential | `windowsadministrator` | The windows administrator user |
 
 
 

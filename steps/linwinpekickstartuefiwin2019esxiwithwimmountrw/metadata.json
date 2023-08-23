@@ -12,54 +12,54 @@
         }, 
         {
             "order": 100, 
-            "stepKey": "lincopywinpeplainuefiisotowinpeiso"
-        }, 
-        {
-            "order": 150, 
-            "stepKey": "linextractwinpeisotowinpestaginglink"
+            "stepKey": "lincopywinpeplainuefiisotowinpeisogroup"
         }, 
         {
             "order": 200, 
-            "stepKey": "lindeployvmwaredriverslink"
+            "stepKey": "linextractwinpeisotowinpestaginglink"
         }, 
         {
             "order": 250, 
-            "stepKey": "lincopyesxinetworkdriverdropindirectory"
-        }, 
-        {
-            "order": 300, 
-            "stepKey": "lindeploystartnetcmdforwinpeonesxiforwin2019link"
+            "stepKey": "lindeployvmwaredriverslink"
         }, 
         {
             "order": 350, 
-            "stepKey": "lindeploywindowssetupscriptforwinrmhttpslink"
+            "stepKey": "lincopynetworkdriverdropindirectorylink"
         }, 
         {
             "order": 400, 
-            "stepKey": "lincreatecustomwimgroup"
+            "stepKey": "lindeploystartnetcmdforwinpeonesxiforwin2019link"
+        }, 
+        {
+            "order": 450, 
+            "stepKey": "lindeploywindowssetupscriptforwinrmhttpslink"
         }, 
         {
             "order": 500, 
-            "stepKey": "lindeploywin2019unattendedconfiguefifordriversonxdrivelink"
+            "stepKey": "lincreatecustomwimgroup"
         }, 
         {
             "order": 550, 
-            "stepKey": "linmodifywinpebootwimfor2019esxi"
+            "stepKey": "lindeploywin2019unattendedconfiguefifordriversonxdrivelink"
         }, 
         {
             "order": 600, 
-            "stepKey": "createuefidiskfromwinpestaginglink"
+            "stepKey": "linmodifywinpebootwimfor2019esxi"
         }, 
         {
             "order": 650, 
-            "stepKey": "esxiuefirecreatevirtualmachinelink"
+            "stepKey": "createuefidiskfromwinpestaginglink"
         }, 
         {
             "order": 700, 
-            "stepKey": "winwinrmhttpswait120s"
+            "stepKey": "esxiuefirecreatevirtualmachinelink"
         }, 
         {
             "order": 750, 
+            "stepKey": "winwinrmhttpswait120s"
+        }, 
+        {
+            "order": 800, 
             "stepKey": "lincleanbuildfileslink"
         }
     ], 
