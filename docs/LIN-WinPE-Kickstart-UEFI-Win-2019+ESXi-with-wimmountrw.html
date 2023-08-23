@@ -932,14 +932,15 @@ mv --verbose setupHTTPSWinRMListener.ps1 custom_wim
         <div class="col px-0">
             <pre>
                 <code class="language-sql py-0">
-cd {ksAttuneBaseDir}/build-{kickstartedNode.fqn}
+DIR=&quot;{ksAttuneBaseDir}/build-{kickstartedNode.fqn}&quot;
+cd &quot;${DIR}&quot;
+
+echo &quot;We are in ${DIR}&quot;
 
 SOURCE=&quot;custom_wim&quot;
 WIMFILE=&quot;custom.wim&quot;
-#IMAGE_NAME=&quot;custom.wim&quot;
-#IMAGE_DESC=&quot;Custom WIM&quot;
-echo &quot;SOURCE=${SOURCE}, WIMFILE=${WIMFILE}&quot;
-#, IMAGE_NAME=${IMAGE_NAME}, IMAGE_DESC=${IMAGE_DESC}&quot;
+
+echo &quot;Creating ${WIMFILE} from directory ${SOURCE}.&quot;
 
 wimcapture &quot;${SOURCE}&quot; &quot;${WIMFILE}&quot; --check
                 </code>

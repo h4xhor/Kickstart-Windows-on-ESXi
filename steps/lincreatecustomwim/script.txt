@@ -1,10 +1,11 @@
-cd {ksAttuneBaseDir}/build-{kickstartedNode.fqn}
+DIR="{ksAttuneBaseDir}/build-{kickstartedNode.fqn}"
+cd "${DIR}"
+
+echo "We are in ${DIR}"
 
 SOURCE="custom_wim"
 WIMFILE="custom.wim"
-#IMAGE_NAME="custom.wim"
-#IMAGE_DESC="Custom WIM"
-echo "SOURCE=${SOURCE}, WIMFILE=${WIMFILE}"
-#, IMAGE_NAME=${IMAGE_NAME}, IMAGE_DESC=${IMAGE_DESC}"
+
+echo "Creating ${WIMFILE} from directory ${SOURCE}."
 
 wimcapture "${SOURCE}" "${WIMFILE}" --check
