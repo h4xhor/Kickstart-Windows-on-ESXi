@@ -8,7 +8,7 @@
     "links": [
         {
             "order": 0, 
-            "stepKey": "lincleanbuildfileslink"
+            "stepKey": "performpostcleanuplink"
         }, 
         {
             "order": 50, 
@@ -24,7 +24,7 @@
         }, 
         {
             "order": 250, 
-            "stepKey": "createwindowsbootisolink"
+            "stepKey": "createwindowsbootisolinkdelete2"
         }, 
         {
             "order": 300, 
@@ -40,7 +40,7 @@
         }, 
         {
             "order": 450, 
-            "stepKey": "lincleanbuildfileslink"
+            "stepKey": "performpostcleanuplink"
         }
     ], 
     "name": "WinPE Kickstart Win10+ESXi - Old", 

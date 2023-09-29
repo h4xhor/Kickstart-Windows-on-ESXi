@@ -8,7 +8,7 @@
     "links": [
         {
             "order": 50, 
-            "stepKey": "lincleanbuildfileslink"
+            "stepKey": "performpostcleanuplink"
         }, 
         {
             "order": 100, 
@@ -20,7 +20,7 @@
         }, 
         {
             "order": 250, 
-            "stepKey": "lindeployvmwaredriverslink"
+            "stepKey": "lindeployvmwaredriverslinkdelete"
         }, 
         {
             "order": 350, 
@@ -56,7 +56,7 @@
         }, 
         {
             "order": 850, 
-            "stepKey": "lincleanbuildfileslink"
+            "stepKey": "performpostcleanuplink"
         }
     ], 
     "name": "LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw", 

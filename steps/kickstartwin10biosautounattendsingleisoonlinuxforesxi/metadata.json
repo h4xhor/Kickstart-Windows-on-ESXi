@@ -15,28 +15,16 @@
             "stepKey": "createwin10biosautounattendsingleisoonlinuxlink"
         }, 
         {
-            "order": 100, 
-            "stepKey": "moveisotobuilddirectory"
-        }, 
-        {
-            "order": 150, 
-            "stepKey": "extractwindowsisolink"
-        }, 
-        {
-            "order": 200, 
-            "stepKey": "lindeployvmwaredriverslink"
-        }, 
-        {
-            "order": 250, 
-            "stepKey": "createwindowsbootisolink"
-        }, 
-        {
             "order": 300, 
-            "stepKey": "esxirecreatevirtualmachinelink"
+            "stepKey": "buildvirtualmachineonesxilink"
         }, 
         {
             "order": 350, 
-            "stepKey": "lincleanbuildfileslink"
+            "stepKey": "winrmhttpswait60s"
+        }, 
+        {
+            "order": 400, 
+            "stepKey": "performpostcleanuplink"
         }
     ], 
     "name": "Kickstart Win10 BIOS autounattend Single ISO on Linux for ESXi", 

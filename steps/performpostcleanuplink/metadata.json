@@ -1,15 +1,15 @@
 {
     "actionOnStepFail": null, 
     "blueprintName": "", 
-    "blueprintUuid": "02a345a5-9788-4b17-b1dc-cc3fa7bf9fa7", 
+    "blueprintUuid": "87ff3764-59d7-4033-adce-c208a4d5bd2f", 
     "cloneUrl": "", 
     "enabled": true, 
     "externalUuid4": "ad914cdc-2655-499d-965d-b6f832b36e08", 
-    "key": "lincleanbuildfileslink", 
-    "name": "LIN Clean Build Files (Link)", 
+    "key": "performpostcleanuplink", 
+    "name": "Perform Post Cleanup (Link)", 
     "parameterMap": [], 
     "projectName": "", 
-    "projectUuid": "24a458c3-5025-400b-bb49-4eae2055a149", 
+    "projectUuid": "05c41adc-9b4e-49f9-b72c-aa4ee4a0cf27", 
     "projectVersion": "", 
     "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
 }

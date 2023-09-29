@@ -229,48 +229,24 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#moveisotobuilddirectory">
-                            <strong>Step 3 -</strong> Move ISO to Build Directory
+                        <a href="#buildvirtualmachineonesxilink">
+                            <strong>Step 3 -</strong> Build Virtual Machine on ESXi (link)
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#extractwindowsisolink">
-                            <strong>Step 4 -</strong> Extract Windows ISO (link)
+                        <a href="#winrmhttpswait60s">
+                            <strong>Step 4 -</strong> WinRM HTTPS Wait 60s
                         </a>
                     </p>
 
         
 
                     <p class="text-muted pt-2">
-                        <a href="#lindeployvmwaredriverslink">
-                            <strong>Step 5 -</strong> LIN Deploy VMWare Drivers (link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#createwindowsbootisolink">
-                            <strong>Step 6 -</strong> Create Windows Boot ISO (link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#esxirecreatevirtualmachinelink">
-                            <strong>Step 7 -</strong> ESXi Recreate Virtual Machine (link)
-                        </a>
-                    </p>
-
-        
-
-                    <p class="text-muted pt-2">
-                        <a href="#lincleanbuildfileslink">
-                            <strong>Step 8 -</strong> LIN Clean Build Files (Link)
+                        <a href="#performpostcleanuplink">
+                            <strong>Step 5 -</strong> Perform Post Cleanup (Link)
                         </a>
                     </p>
 
@@ -371,6 +347,13 @@
                         </h3>
                     </div>
 
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
 
 
 
@@ -395,103 +378,10 @@
                         </h3>
                     </div>
 
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="moveisotobuilddirectory">
-                            <a href="#moveisotobuilddirectory">
-                                <strong>Step 3 -</strong> Move ISO to Build Directory
-                            </a>
-                        </h3>
-                    </div>
-
                     <div class="row">
                         <div class="description col px-0">
                             <p>
-                                <p>Moves the ISO from "{ksAttuneBaseDir}" to "{ksAttuneBaseDir}/build-{targetServer.fqn}/".</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-                        <div class="row">
-                            <p>
-                                Connect via ssh:
-                            </p>
-                        </div>
-                        <div class="row py-1">
-                            <code class="language-sql">
-ssh {linuxattuneuser}@{attuneosbuildserver}
-                            </code>
-                        </div>
-
-
-
-    
-
-
-
-    <div class="row">
-        <p>
-            Execute the following script:
-        </p>
-    </div>
-    <div class="row">
-        <div class="col px-0">
-            <pre>
-                <code class="language-sql py-0">
-mkdir -vp &quot;{ksAttuneBaseDir}/build-{targetServer.fqn}&quot;
-
-cd &quot;{ksAttuneBaseDir}&quot;
-
-mv -v &quot;kickstart_{targetServer.fqn}.iso&quot; &quot;build-{targetServer.fqn}&quot;
-                </code>
-            </pre>
-        </div>
-    </div>
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="extractwindowsisolink">
-                            <a href="#extractwindowsisolink">
-                                <strong>Step 4 -</strong> Extract Windows ISO (link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Extracts the <code>boot.img</code> image file out of the WinPE ISO into the <code>WinPE_amd64Dir</code> directory.</p>
+                                
                             </p>
                         </div>
                     </div>
@@ -512,71 +402,9 @@ mv -v &quot;kickstart_{targetServer.fqn}.iso&quot; &quot;build-{targetServer.fqn
 
 
                     <div class="row pt-5">
-                        <h3 id="lindeployvmwaredriverslink">
-                            <a href="#lindeployvmwaredriverslink">
-                                <strong>Step 5 -</strong> LIN Deploy VMWare Drivers (link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Deploys VMWare ESXi drivers to the <code>{ksAttuneBaseDir}/build-{kickstartedNode.fqn}</code> folder.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="createwindowsbootisolink">
-                            <a href="#createwindowsbootisolink">
-                                <strong>Step 6 -</strong> Create Windows Boot ISO (link)
-                            </a>
-                        </h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="description col px-0">
-                            <p>
-                                <p>Recreates the Windows ISO.</p>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-
-    
-
-
-
-
-
-        
-
-
-
-                    <div class="row pt-5">
-                        <h3 id="esxirecreatevirtualmachinelink">
-                            <a href="#esxirecreatevirtualmachinelink">
-                                <strong>Step 7 -</strong> ESXi Recreate Virtual Machine (link)
+                        <h3 id="buildvirtualmachineonesxilink">
+                            <a href="#buildvirtualmachineonesxilink">
+                                <strong>Step 3 -</strong> Build Virtual Machine on ESXi (link)
                             </a>
                         </h3>
                     </div>
@@ -605,9 +433,55 @@ mv -v &quot;kickstart_{targetServer.fqn}.iso&quot; &quot;build-{targetServer.fqn
 
 
                     <div class="row pt-5">
-                        <h3 id="lincleanbuildfileslink">
-                            <a href="#lincleanbuildfileslink">
-                                <strong>Step 8 -</strong> LIN Clean Build Files (Link)
+                        <h3 id="winrmhttpswait60s">
+                            <a href="#winrmhttpswait60s">
+                                <strong>Step 4 -</strong> WinRM HTTPS Wait 60s
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <div class="row">
+        <p class="mb-0">
+            Check if TCP Port <strong>0</strong> is listening.
+            When the TCP Port is up, wait <strong>60</strong>
+            seconds.
+        </p>
+        <p>Use Telnet to check if the TCP Service is accepting connections.</p>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="performpostcleanuplink">
+                            <a href="#performpostcleanuplink">
+                                <strong>Step 5 -</strong> Perform Post Cleanup (Link)
                             </a>
                         </h3>
                     </div>

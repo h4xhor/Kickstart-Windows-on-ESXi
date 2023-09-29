@@ -12,27 +12,27 @@
         }, 
         {
             "order": 50, 
-            "stepKey": "moveisotobuilddirectory"
+            "stepKey": "moveisotobuilddirectorydelete"
         }, 
         {
             "order": 100, 
-            "stepKey": "extractwindowsisolink"
+            "stepKey": "extractwindowsisolinkdelete"
         }, 
         {
             "order": 150, 
-            "stepKey": "lindeployvmwaredriverslink"
+            "stepKey": "lindeployvmwaredriverslinkdelete"
         }, 
         {
             "order": 200, 
-            "stepKey": "createwindowsbootisolink"
+            "stepKey": "createwindowsbootisolinkdelete2"
         }, 
         {
             "order": 250, 
-            "stepKey": "esxirecreatevirtualmachinelink"
+            "stepKey": "buildvirtualmachineonesxilink"
         }, 
         {
             "order": 300, 
-            "stepKey": "lincleanbuildfileslink"
+            "stepKey": "performpostcleanuplink"
         }
     ], 
     "name": "Kickstart Windows Server 2019 DVD on ESXi with Single ISO", 
