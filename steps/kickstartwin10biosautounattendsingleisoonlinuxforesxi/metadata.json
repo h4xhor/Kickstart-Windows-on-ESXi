@@ -8,10 +8,14 @@
     "links": [
         {
             "order": 0, 
-            "stepKey": "performdeployesxidriverstoadropdirectorylink"
+            "stepKey": "performpostcleanuplink"
         }, 
         {
             "order": 50, 
+            "stepKey": "performdeployesxidriverstoadropdirectorylink"
+        }, 
+        {
+            "order": 100, 
             "stepKey": "createwin10biosautounattendsingleisoonlinuxlink"
         }, 
         {
