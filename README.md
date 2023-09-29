@@ -63,10 +63,6 @@ Kickstarts a Windows virtual machine from two ISOs.
 1. Unaltered Windows ISO.
 2. ESXi Drivers ISO.
 
-### Kickstart Windows 10 DVD on ESXi with Single ISO
-
-Kickstarts Windows Desktop 10 from a single ISO.
-
 ### Kickstart Windows Server 2019 DVD on ESXi with Single ISO
 
 Kickstarts Windows Server 2019 from a single ISO.
@@ -88,6 +84,10 @@ Kickstarts Windows Server 2019 from a single ISO.
 ### WinPE Kickstart Win 2019+ESXi - DELETE
 
 Kickstarts a Windows Server 2019 virtual machine on ESXi.
+
+### Kickstart Win10 BIOS autounattend Single ISO on Linux for ESXi
+
+Kickstarts Windows Desktop 10 from a single ISO.
 
 
 

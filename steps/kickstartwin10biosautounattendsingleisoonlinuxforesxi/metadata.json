@@ -4,37 +4,41 @@
     "enabled": true, 
     "externalUuid4": "4df07478-2df9-4573-87ea-1b9724d68342", 
     "isBlueprint": true, 
-    "key": "kickstartwindows10dvdonesxiwithsingleiso", 
+    "key": "kickstartwin10biosautounattendsingleisoonlinuxforesxi", 
     "links": [
         {
             "order": 0, 
-            "stepKey": "createwindowsdesktop10dvdkickstartisolink"
+            "stepKey": "performdeployesxidriverstoadropdirectorylink"
         }, 
         {
             "order": 50, 
-            "stepKey": "moveisotobuilddirectory"
+            "stepKey": "createwin10biosautounattendsingleisoonlinuxlink"
         }, 
         {
             "order": 100, 
-            "stepKey": "extractwindowsisolink"
+            "stepKey": "moveisotobuilddirectory"
         }, 
         {
             "order": 150, 
-            "stepKey": "lindeployvmwaredriverslink"
+            "stepKey": "extractwindowsisolink"
         }, 
         {
             "order": 200, 
-            "stepKey": "createwindowsbootisolink"
+            "stepKey": "lindeployvmwaredriverslink"
         }, 
         {
             "order": 250, 
-            "stepKey": "esxirecreatevirtualmachinelink"
+            "stepKey": "createwindowsbootisolink"
         }, 
         {
             "order": 300, 
+            "stepKey": "esxirecreatevirtualmachinelink"
+        }, 
+        {
+            "order": 350, 
             "stepKey": "lincleanbuildfileslink"
         }
     ], 
-    "name": "Kickstart Windows 10 DVD on ESXi with Single ISO", 
+    "name": "Kickstart Win10 BIOS autounattend Single ISO on Linux for ESXi", 
     "type": "com.servertribe.attune.tuples.StepGroupTuple"
 }

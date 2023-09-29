@@ -39,23 +39,23 @@
             "stepKey": "lindeploywin2019unattendedconfiguefifordriversonxdrivelink"
         }, 
         {
-            "order": 600, 
-            "stepKey": "linmodifywinpebootwimfor2019esxidelete"
-        }, 
-        {
             "order": 650, 
-            "stepKey": "createuefidiskfromwinpestaginglink"
+            "stepKey": "linmodifybootwimlink"
         }, 
         {
             "order": 700, 
-            "stepKey": "esxiuefirecreatevirtualmachinelink"
+            "stepKey": "createuefidiskfromwinpestaginglink"
         }, 
         {
             "order": 750, 
-            "stepKey": "winwinrmhttpswait120s"
+            "stepKey": "esxiuefirecreatevirtualmachinelink"
         }, 
         {
             "order": 800, 
+            "stepKey": "winwinrmhttpswait120s"
+        }, 
+        {
+            "order": 850, 
             "stepKey": "lincleanbuildfileslink"
         }
     ], 

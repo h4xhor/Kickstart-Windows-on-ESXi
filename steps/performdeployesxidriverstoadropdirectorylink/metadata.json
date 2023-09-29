@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "bdae660d-c0b7-4d7c-9835-9211cafa2f86", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "863975b0-4c0c-4330-8d49-38761951a4fe", 
+    "key": "performdeployesxidriverstoadropdirectorylink", 
+    "name": "Perform Deploy ESXi Drivers to a Drop Directory (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}
