@@ -1,0 +1,48 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "510e9516-e0c4-4bc7-bc37-5319c2565956", 
+    "isBlueprint": true, 
+    "key": "kickstartwin10uefiautounattendsingleisoonlinuxforesxi", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "performpostcleanuplink"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "performdeployesxidriverstoadropdirectorylink"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "createwin10uefiautounattendsingleisoonlinuxlink"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "buildwin10uefivirtualmachineonesxilink"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "winrmhttpswait60s"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "performpostcleanuplink"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "testwinuefinodelink"
+        }, 
+        {
+            "order": 350, 
+            "stepKey": "performtestwin10link"
+        }, 
+        {
+            "order": 400, 
+            "stepKey": "performtestifvmwaredriversinstalledlink"
+        }
+    ], 
+    "name": "Kickstart Win10 UEFI autounattend Single ISO on Linux for ESXi", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

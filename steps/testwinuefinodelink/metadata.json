@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "73f6937e-5d72-4544-a37b-cb54d92eae16", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "ac0cbe7d-4147-4a28-8556-688c8bf3d02e", 
+    "key": "testwinuefinodelink", 
+    "name": "Test Win UEFI Node (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "05c41adc-9b4e-49f9-b72c-aa4ee4a0cf27", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}
