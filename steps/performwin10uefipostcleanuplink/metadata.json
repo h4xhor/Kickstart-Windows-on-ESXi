@@ -1,0 +1,34 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "91f5b136-ad00-4198-8a01-89c3afd2bab2", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "a711415e-0b25-4728-ad56-cc6fa4920ddd", 
+    "key": "performwin10uefipostcleanuplink", 
+    "name": "Perform Win10 UEFI Post Cleanup (link)", 
+    "parameterMap": [
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "63988114-dfae-41ee-afc3-1f329fc54f31", 
+            "childProjectName": null, 
+            "childProjectUuid": "05c41adc-9b4e-49f9-b72c-aa4ee4a0cf27", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "false"
+        }, 
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "7ac710f8-3bc8-4555-9e28-c9ccb2763ec4", 
+            "childProjectName": null, 
+            "childProjectUuid": "05c41adc-9b4e-49f9-b72c-aa4ee4a0cf27", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "true"
+        }
+    ], 
+    "projectName": "", 
+    "projectUuid": "05c41adc-9b4e-49f9-b72c-aa4ee4a0cf27", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

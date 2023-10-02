@@ -61,9 +61,18 @@ This Project contains the following Blueprints.
 
 Kickstarts Windows Desktop 10 from a single ISO.
 
+### Kickstart Win10 UEFI autounattend Single ISO on Linux for ESXi
+
+
+### Kickstart Win2016 BIOS autounattend Single ISO on Linux for ESXi
+
+
 ### Kickstart Win2019 BIOS autounattend Single ISO on Linux for ESXi
 
 Kickstarts Windows Server 2019 from a single ISO.
+
+### Kickstart Win2022 BIOS autounattend Single ISO on Linux for ESXi
+
 
 ### Kickstart Windows 10 DVD on ESXi with 2 ISOs
 
@@ -88,15 +97,6 @@ Kickstarts a Windows virtual machine from two ISOs.
 ### WinPE Kickstart Win 2019+ESXi - DELETE
 
 Kickstarts a Windows Server 2019 virtual machine on ESXi.
-
-### Kickstart Win2022 BIOS autounattend Single ISO on Linux for ESXi
-
-
-### Kickstart Win2016 BIOS autounattend Single ISO on Linux for ESXi
-
-
-### Kickstart Win10 UEFI autounattend Single ISO on Linux for ESXi
-
 
 
 

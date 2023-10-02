@@ -12,34 +12,38 @@
         }, 
         {
             "order": 50, 
-            "stepKey": "performdeployesxidriverstoadropdirectorylink"
+            "stepKey": "performwin10uefipostcleanuplink"
         }, 
         {
             "order": 100, 
-            "stepKey": "createwin10uefiautounattendsingleisoonlinuxlink"
+            "stepKey": "performdeployesxidriverstoadropdirectorylink"
         }, 
         {
             "order": 150, 
-            "stepKey": "buildwin10uefivirtualmachineonesxilink"
+            "stepKey": "createwin10uefiautounattendsingleisoonlinuxlink"
         }, 
         {
             "order": 200, 
-            "stepKey": "winrmhttpswait60s"
+            "stepKey": "buildwin10uefivirtualmachineonesxilink"
         }, 
         {
             "order": 250, 
-            "stepKey": "performpostcleanuplink"
+            "stepKey": "winrmhttpswait60s"
         }, 
         {
             "order": 300, 
-            "stepKey": "testwinuefinodelink"
+            "stepKey": "performpostcleanuplink"
         }, 
         {
             "order": 350, 
-            "stepKey": "performtestwin10link"
+            "stepKey": "testwinuefinodelink"
         }, 
         {
             "order": 400, 
+            "stepKey": "performtestwin10link"
+        }, 
+        {
+            "order": 450, 
             "stepKey": "performtestifvmwaredriversinstalledlink"
         }
     ], 
