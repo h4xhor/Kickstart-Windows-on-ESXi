@@ -1,0 +1,34 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "2b9e822f-5b70-4352-b0b0-cdd8e7404d50", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "0e392e87-00f9-4e6e-adc2-cf92eb21c47d", 
+    "key": "performtestifvmwaredriversinstalledlink", 
+    "name": "Perform Test if VMWare Drivers Installed (link)", 
+    "parameterMap": [
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.WindowsServer", 
+            "childParameterUuid": "ea116fda-9035-42c4-a2f9-b53027045c35", 
+            "childProjectName": null, 
+            "childProjectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+            "parentParameterKey": "newoswindowsnode", 
+            "parentStaticTextValue": null
+        }, 
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.WinOsCred", 
+            "childParameterUuid": "8f86c95b-5b7c-4332-8707-d448578401b0", 
+            "childProjectName": null, 
+            "childProjectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+            "parentParameterKey": "newoswindowsuseradministrator", 
+            "parentStaticTextValue": null
+        }
+    ], 
+    "projectName": "", 
+    "projectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

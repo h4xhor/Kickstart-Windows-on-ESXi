@@ -4,9 +4,9 @@
     "blueprintUuid": "18af1c16-5ee0-4a2d-ae12-5e52aeb25287", 
     "cloneUrl": "", 
     "enabled": true, 
-    "externalUuid4": "403baff2-2a7a-47e2-bb27-322bdabf012a", 
-    "key": "buildvirtualmachineonesxilink", 
-    "name": "Build Virtual Machine on ESXi (link)", 
+    "externalUuid4": "c6a4057c-3e60-4c68-95d1-fe8b06834200", 
+    "key": "buildwin2019biosvirtualmachineonesxilink", 
+    "name": "Build Win2019 BIOS Virtual Machine on ESXi (link)", 
     "parameterMap": [
         {
             "childParameterName": null, 
@@ -15,7 +15,7 @@
             "childProjectName": null, 
             "childProjectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
             "parentParameterKey": null, 
-            "parentStaticTextValue": "windows9_64Guest"
+            "parentStaticTextValue": "windows9Server64Guest"
         }, 
         {
             "childParameterName": null, 

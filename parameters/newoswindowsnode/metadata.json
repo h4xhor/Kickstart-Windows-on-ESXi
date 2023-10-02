@@ -1,7 +1,7 @@
 {
     "externalUuid4": "7a3f05d8-883f-44da-8faf-d7e831efacfc", 
-    "key": "kickstartedwindowsnode", 
-    "name": "Kickstarted Windows Node", 
+    "key": "newoswindowsnode", 
+    "name": "New OS Windows Node", 
     "showInPlan": true, 
     "type": "c.s.s.b.phv.WindowsServer"
 }

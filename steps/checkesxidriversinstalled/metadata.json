@@ -8,8 +8,8 @@
     "interpreterScriptSyntax": "", 
     "key": "checkesxidriversinstalled", 
     "name": "Check ESXi Drivers Installed", 
-    "osCredKey": "windowsadministrator", 
-    "serverKey": "kickstartedwindowsnode", 
+    "osCredKey": "newoswindowsuseradministrator", 
+    "serverKey": "newoswindowsnode", 
     "successExitCode": 0, 
     "timeout": 60, 
     "type": "com.servertribe.attune.tuples.StepWinRmTuple"

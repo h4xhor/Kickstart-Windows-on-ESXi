@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "972589c0-aa6d-4174-bf31-c4d69f049e1a", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "e52ccc80-1e59-4475-87a7-9922470baa68", 
+    "key": "testwinbiosnodelink", 
+    "name": "Test Win BIOS Node (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "05c41adc-9b4e-49f9-b72c-aa4ee4a0cf27", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

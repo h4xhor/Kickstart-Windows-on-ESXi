@@ -2,9 +2,9 @@
     "actionOnStepFail": "stop", 
     "concurrency": 1, 
     "enabled": true, 
-    "externalUuid4": "4df07478-2df9-4573-87ea-1b9724d68342", 
+    "externalUuid4": "de2c92b7-e704-4c90-8d7a-cd393bc9885c", 
     "isBlueprint": true, 
-    "key": "kickstartwin10biosautounattendsingleisoonlinuxforesxi", 
+    "key": "kickstartwin2019biosautounattendsingleisoonlinuxforesxi", 
     "links": [
         {
             "order": 0, 
@@ -16,33 +16,33 @@
         }, 
         {
             "order": 100, 
-            "stepKey": "createwin10biosautounattendsingleisoonlinuxlink"
-        }, 
-        {
-            "order": 300, 
-            "stepKey": "buildwin10biosvirtualmachineonesxilink"
+            "stepKey": "createwin2019biosautounattendsingleisoonlinuxlink"
         }, 
         {
             "order": 400, 
-            "stepKey": "winrmhttpswait60s"
+            "stepKey": "buildwin2019biosvirtualmachineonesxilink"
         }, 
         {
             "order": 450, 
-            "stepKey": "performpostcleanuplink"
+            "stepKey": "winrmhttpswait60s"
         }, 
         {
             "order": 500, 
-            "stepKey": "testwinbiosnodelink"
+            "stepKey": "performpostcleanuplink"
         }, 
         {
             "order": 550, 
-            "stepKey": "performtestwin10link"
+            "stepKey": "testwinbiosnodelink"
         }, 
         {
             "order": 600, 
+            "stepKey": "performtestwin2019link"
+        }, 
+        {
+            "order": 650, 
             "stepKey": "performtestifvmwaredriversinstalledlink"
         }
     ], 
-    "name": "Kickstart Win10 BIOS autounattend Single ISO on Linux for ESXi", 
+    "name": "Kickstart Win2019 BIOS autounattend Single ISO on Linux for ESXi", 
     "type": "com.servertribe.attune.tuples.StepGroupTuple"
 }

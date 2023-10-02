@@ -1,0 +1,52 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "18af1c16-5ee0-4a2d-ae12-5e52aeb25287", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "403baff2-2a7a-47e2-bb27-322bdabf012a", 
+    "key": "buildwin10biosvirtualmachineonesxilink", 
+    "name": "Build Win10 BIOS Virtual Machine on ESXi (link)", 
+    "parameterMap": [
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "92d11185-28c3-4c1e-9f4e-bf3d4c31cd13", 
+            "childProjectName": null, 
+            "childProjectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "windows9_64Guest"
+        }, 
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "514a0374-2814-4ffb-b663-cb8099f2d302", 
+            "childProjectName": null, 
+            "childProjectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "false"
+        }, 
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "f07eeb0f-85dd-468d-969c-068de0f3d085", 
+            "childProjectName": null, 
+            "childProjectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "true"
+        }, 
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Server", 
+            "childParameterUuid": "7116171b-6cab-412b-b2c3-cdbf063a7ace", 
+            "childProjectName": null, 
+            "childProjectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+            "parentParameterKey": "newosnode", 
+            "parentStaticTextValue": null
+        }
+    ], 
+    "projectName": "", 
+    "projectUuid": "8140ab94-a4a9-481f-8ab1-9ee055ef78be", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}
