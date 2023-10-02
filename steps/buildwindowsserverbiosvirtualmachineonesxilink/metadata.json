@@ -5,8 +5,8 @@
     "cloneUrl": "", 
     "enabled": true, 
     "externalUuid4": "c6a4057c-3e60-4c68-95d1-fe8b06834200", 
-    "key": "buildwin2019biosvirtualmachineonesxilink", 
-    "name": "Build Win2019 BIOS Virtual Machine on ESXi (link)", 
+    "key": "buildwindowsserverbiosvirtualmachineonesxilink", 
+    "name": "Build Windows Server BIOS Virtual Machine on ESXi (link)", 
     "parameterMap": [
         {
             "childParameterName": null, 

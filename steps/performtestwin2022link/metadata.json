@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": null, 
+    "blueprintName": "", 
+    "blueprintUuid": "fd2bd149-64ee-4406-ad7c-e0c226948cb1", 
+    "cloneUrl": "", 
+    "enabled": true, 
+    "externalUuid4": "56b76f97-f2c9-4ddb-9c77-109925d4e4c4", 
+    "key": "performtestwin2022link", 
+    "name": "Perform Test Win2022 (link)", 
+    "parameterMap": [], 
+    "projectName": "", 
+    "projectUuid": "05c41adc-9b4e-49f9-b72c-aa4ee4a0cf27", 
+    "projectVersion": "", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}
