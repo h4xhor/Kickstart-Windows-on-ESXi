@@ -64,17 +64,44 @@ This Project contains the following Blueprints.
 
 Kickstarts Windows Desktop 10 from a single ISO.
 
+### Kickstart Win10 BIOS autounattend WinPE ISO on Linux for ESXi
+
+
+### Kickstart Win10 UEFI autounattend Dual ISO on Linux for ESXi
+
+
 ### Kickstart Win10 UEFI autounattend Single ISO on Linux for ESXi
 
 
+### Kickstart Win2016 BIOS autounattend Dual ISO on Linux for ESXi
+
+
 ### Kickstart Win2016 BIOS autounattend Single ISO on Linux for ESXi
+
+
+### Kickstart Win2016 BIOS autounattend WinPE ISO on Linux for ESXi
+
+
+### Kickstart Win2019 BIOS autounattend Dual ISO on Linux for ESXi
 
 
 ### Kickstart Win2019 BIOS autounattend Single ISO on Linux for ESXi
 
 Kickstarts Windows Server 2019 from a single ISO.
 
+### Kickstart Win2019 BIOS autounattend WinPE ISO on Linux for ESXi
+
+
+### Kickstart Win2022 BIOS autounattend Dual ISO on Linux for ESXi
+
+
 ### Kickstart Win2022 BIOS autounattend Single ISO on Linux for ESXi
+
+
+### Kickstart Win2022 BIOS autounattend WinPE ISO on Linux for ESXi
+
+
+### Kickstart Win2022 UEFI autounattend WinPE ISO on Linux for ESXi
 
 
 ### Kickstart Windows 10 DVD on ESXi with 2 ISOs
@@ -82,6 +109,14 @@ Kickstarts Windows Server 2019 from a single ISO.
 Kickstarts a Windows virtual machine from two ISOs.
 1. Unaltered Windows ISO.
 2. ESXi Drivers ISO.
+
+### LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw - DELETE
+
+1. `boot.wim` is seen as `X:` drive and is available when WinPE runs.
+2.  winpe_staging will be used as the DVD root directory for `mkisofs`. This will be seen as `D:` drive during the Windows installation and when the `autounattend.xml` PowerShell scripts runs. 
+
+### LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw - DELETE
+
 
 ### WinPE Kickstart Win10+ESXi
 
@@ -92,38 +127,6 @@ Kickstarts a Windows virtual machine from two ISOs.
 ### WinPE Kickstart Win 2019+ESXi - DELETE
 
 Kickstarts a Windows Server 2019 virtual machine on ESXi.
-
-### Kickstart Win2019 BIOS autounattend Dual ISO on Linux for ESXi
-
-
-### Kickstart Win2022 BIOS autounattend Dual ISO on Linux for ESXi
-
-
-### Kickstart Win2016 BIOS autounattend Dual ISO on Linux for ESXi
-
-
-### Kickstart Win10 UEFI autounattend Dual ISO on Linux for ESXi
-
-
-### LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw - DELETE
-
-
-### LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw - DELETE
-
-1. `boot.wim` is seen as `X:` drive and is available when WinPE runs.
-2.  winpe_staging will be used as the DVD root directory for `mkisofs`. This will be seen as `D:` drive during the Windows installation and when the `autounattend.xml` PowerShell scripts runs. 
-
-### Kickstart Win10 BIOS autounattend WinPE ISO on Linux for ESXi
-
-
-### Kickstart Win2019 BIOS autounattend WinPE ISO on Linux for ESXi
-
-
-### Kickstart Win2022 BIOS autounattend WinPE ISO on Linux for ESXi
-
-
-### Kickstart Win2016 BIOS autounattend WinPE ISO on Linux for ESXi
-
 
 
 
