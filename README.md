@@ -98,6 +98,9 @@ Kickstarts a Windows virtual machine from two ISOs.
 
 Kickstarts a Windows Server 2019 virtual machine on ESXi.
 
+### Kickstart Win10 BIOS autounattend Dual ISO on Linux for ESXi
+
+
 
 
 
