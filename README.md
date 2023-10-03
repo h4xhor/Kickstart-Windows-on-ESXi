@@ -57,6 +57,9 @@ This Project contains the following Blueprints.
 ### Check ESXi Drivers Installed - Group
 
 
+### Kickstart Win10 BIOS autounattend Dual ISO on Linux for ESXi
+
+
 ### Kickstart Win10 BIOS autounattend Single ISO on Linux for ESXi
 
 Kickstarts Windows Desktop 10 from a single ISO.
@@ -98,7 +101,7 @@ Kickstarts a Windows virtual machine from two ISOs.
 
 Kickstarts a Windows Server 2019 virtual machine on ESXi.
 
-### Kickstart Win10 BIOS autounattend Dual ISO on Linux for ESXi
+### Kickstart Win2019 BIOS autounattend Dual ISO on Linux for ESXi
 
 
 
