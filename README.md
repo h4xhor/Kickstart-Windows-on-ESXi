@@ -110,6 +110,9 @@ Kickstarts a Windows Server 2019 virtual machine on ESXi.
 ### Kickstart Win2016 BIOS autounattend Dual ISO on Linux for ESXi
 
 
+### Kickstart Win10 UEFI autounattend Dual ISO on Linux for ESXi
+
+
 
 
 
