@@ -19,27 +19,27 @@
             "stepKey": "createwin10biosautounattenddualisoonmacosorlinux"
         }, 
         {
-            "order": 150, 
+            "order": 200, 
             "stepKey": "buildwin10biosvirtualmachineonesxilink"
         }, 
         {
-            "order": 200, 
+            "order": 250, 
             "stepKey": "winrmhttpswait60s"
         }, 
         {
-            "order": 250, 
+            "order": 300, 
             "stepKey": "performpostcleanuplink"
         }, 
         {
-            "order": 300, 
+            "order": 350, 
             "stepKey": "testwinbiosnodelink"
         }, 
         {
-            "order": 350, 
+            "order": 400, 
             "stepKey": "performtestwin10link"
         }, 
         {
-            "order": 400, 
+            "order": 450, 
             "stepKey": "performtestifvmwaredriversinstalledlink"
         }
     ], 

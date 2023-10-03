@@ -13,6 +13,34 @@
         {
             "order": 50, 
             "stepKey": "performdeployesxidriverstoadropdirectorylink"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "createwin2019biosautounattenddualisoonmacosorlinux"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "buildwindowsserverbiosvirtualmachineonesxilink"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "winrmhttpswait60s"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "performpostcleanuplink"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "testwinbiosnodelink"
+        }, 
+        {
+            "order": 350, 
+            "stepKey": "performtestwin2016link"
+        }, 
+        {
+            "order": 400, 
+            "stepKey": "performtestifvmwaredriversinstalledlink"
         }
     ], 
     "name": "Kickstart Win2019 BIOS autounattend Dual ISO on Linux for ESXi", 
