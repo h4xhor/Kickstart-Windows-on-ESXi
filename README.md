@@ -116,6 +116,9 @@ Kickstarts a Windows Server 2019 virtual machine on ESXi.
 ### Kickstart Win10 BIOS autounattend WinPE ISO on Linux for ESXi
 
 
+### Kickstart Win2019 BIOS autounattend WinPE ISO on Linux for ESXi
+
+
 
 
 

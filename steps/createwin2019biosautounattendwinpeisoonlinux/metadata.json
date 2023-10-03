@@ -1,12 +1,12 @@
 {
-    "actionOnStepFail": null, 
+    "actionOnStepFail": "stop", 
     "blueprintName": "", 
     "blueprintUuid": "f4706927-2150-4aa5-afb8-7415433bce89", 
     "cloneUrl": "", 
     "enabled": true, 
-    "externalUuid4": "63741358-7dda-4d8a-8ef8-66b357b6e48a", 
-    "key": "createwin10biosautounattendwinpeisoonlinux", 
-    "name": "Create Win10 BIOS autounattend WinPE ISO on Linux", 
+    "externalUuid4": "d5d1129d-1051-4068-b263-79d146ec9229", 
+    "key": "createwin2019biosautounattendwinpeisoonlinux", 
+    "name": "Create Win2019 BIOS autounattend WinPE ISO on Linux", 
     "parameterMap": [
         {
             "childParameterName": null, 
@@ -15,7 +15,7 @@
             "childProjectName": null, 
             "childProjectUuid": "05c41adc-9b4e-49f9-b72c-aa4ee4a0cf27", 
             "parentParameterKey": null, 
-            "parentStaticTextValue": "true"
+            "parentStaticTextValue": "false"
         }, 
         {
             "childParameterName": null, 
@@ -33,7 +33,7 @@
             "childProjectName": null, 
             "childProjectUuid": "05c41adc-9b4e-49f9-b72c-aa4ee4a0cf27", 
             "parentParameterKey": null, 
-            "parentStaticTextValue": "false"
+            "parentStaticTextValue": "true"
         }, 
         {
             "childParameterName": null, 
@@ -78,7 +78,7 @@
             "childProjectName": null, 
             "childProjectUuid": "05c41adc-9b4e-49f9-b72c-aa4ee4a0cf27", 
             "parentParameterKey": null, 
-            "parentStaticTextValue": "windows10"
+            "parentStaticTextValue": "windows2019"
         }
     ], 
     "projectName": "", 
