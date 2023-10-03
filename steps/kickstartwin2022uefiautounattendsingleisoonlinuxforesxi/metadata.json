@@ -1,0 +1,52 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "d17ffd89-d3e5-497c-a51d-d0ee98daa2b2", 
+    "isBlueprint": true, 
+    "key": "kickstartwin2022uefiautounattendsingleisoonlinuxforesxi", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "performpostcleanuplink"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "performwin10uefipostcleanuplink"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "performdeployesxidriverstoadropdirectorylink"
+        }, 
+        {
+            "order": 350, 
+            "stepKey": "createwin2022uefiautounattendsingleisoonlinuxlink"
+        }, 
+        {
+            "order": 450, 
+            "stepKey": "buildwindowsserveruefivirtualmachineonesxilink"
+        }, 
+        {
+            "order": 500, 
+            "stepKey": "winrmhttpswait60s"
+        }, 
+        {
+            "order": 600, 
+            "stepKey": "performpostcleanuplink"
+        }, 
+        {
+            "order": 700, 
+            "stepKey": "testwinuefinodelink"
+        }, 
+        {
+            "order": 850, 
+            "stepKey": "performtestwin2022link"
+        }, 
+        {
+            "order": 900, 
+            "stepKey": "performtestifvmwaredriversinstalledlink"
+        }
+    ], 
+    "name": "Kickstart Win2022 UEFI autounattend Single ISO on Linux for ESXi", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

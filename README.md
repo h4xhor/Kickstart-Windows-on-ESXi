@@ -101,6 +101,9 @@ Kickstarts Windows Server 2019 from a single ISO.
 ### Kickstart Win2022 BIOS autounattend WinPE ISO on Linux for ESXi
 
 
+### Kickstart Win2022 UEFI autounattend Single ISO on Linux for ESXi
+
+
 ### Kickstart Win2022 UEFI autounattend WinPE ISO on Linux for ESXi
 
 
