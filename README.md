@@ -83,14 +83,6 @@ Kickstarts a Windows virtual machine from two ISOs.
 1. Unaltered Windows ISO.
 2. ESXi Drivers ISO.
 
-### LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw
-
-1. `boot.wim` is seen as `X:` drive and is available when WinPE runs.
-2.  winpe_staging will be used as the DVD root directory for `mkisofs`. This will be seen as `D:` drive during the Windows installation and when the `autounattend.xml` PowerShell scripts runs. 
-
-### LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw
-
-
 ### WinPE Kickstart Win10+ESXi
 
 
@@ -111,6 +103,17 @@ Kickstarts a Windows Server 2019 virtual machine on ESXi.
 
 
 ### Kickstart Win10 UEFI autounattend Dual ISO on Linux for ESXi
+
+
+### LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw - DELETE
+
+
+### LIN WinPE Kickstart BIOS Win 2019+ESXi with wimmountrw - DELETE
+
+1. `boot.wim` is seen as `X:` drive and is available when WinPE runs.
+2.  winpe_staging will be used as the DVD root directory for `mkisofs`. This will be seen as `D:` drive during the Windows installation and when the `autounattend.xml` PowerShell scripts runs. 
+
+### Kickstart Win10 BIOS autounattend WinPE ISO on Linux for ESXi
 
 
 

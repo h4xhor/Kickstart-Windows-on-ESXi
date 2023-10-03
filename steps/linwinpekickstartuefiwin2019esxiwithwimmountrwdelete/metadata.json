@@ -4,7 +4,7 @@
     "enabled": true, 
     "externalUuid4": "d1718ba9-8308-47d1-8243-833d55dc798e", 
     "isBlueprint": true, 
-    "key": "linwinpekickstartuefiwin2019esxiwithwimmountrw", 
+    "key": "linwinpekickstartuefiwin2019esxiwithwimmountrwdelete", 
     "links": [
         {
             "order": 50, 
@@ -59,6 +59,6 @@
             "stepKey": "performpostcleanuplink"
         }
     ], 
-    "name": "LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw", 
+    "name": "LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw - DELETE", 
     "type": "com.servertribe.attune.tuples.StepGroupTuple"
 }
