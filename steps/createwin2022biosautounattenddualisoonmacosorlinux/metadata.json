@@ -1,12 +1,12 @@
 {
     "actionOnStepFail": "stop", 
     "blueprintName": "", 
-    "blueprintUuid": "28dba38b-0367-405f-885b-d2891662e4de", 
+    "blueprintUuid": "f79f8329-887e-4bee-954b-ff418c9edb00", 
     "cloneUrl": "", 
     "enabled": true, 
-    "externalUuid4": "fdf079ed-7d42-48ad-a1fd-d11126188b47", 
-    "key": "createwin2019biosautounattenddualisoonmacosorlinux", 
-    "name": "Create Win2019 BIOS autounattend Dual ISO on macOS or Linux", 
+    "externalUuid4": "2dc3bc70-dcb1-487e-a9aa-e5b4c63570c1", 
+    "key": "createwin2022biosautounattenddualisoonmacosorlinux", 
+    "name": "Create Win2022 BIOS autounattend Dual ISO on macOS or Linux", 
     "parameterMap": [
         {
             "childParameterName": null, 
