@@ -73,6 +73,9 @@ Kickstarts Windows Desktop 10 from a single ISO.
 ### Kickstart Win10 UEFI autounattend Single ISO on Linux for ESXi
 
 
+### Kickstart Win10 UEFI autounattend WinPE ISO on Linux for ESXi
+
+
 ### Kickstart Win2016 BIOS autounattend Dual ISO on Linux for ESXi
 
 
@@ -80,6 +83,15 @@ Kickstarts Windows Desktop 10 from a single ISO.
 
 
 ### Kickstart Win2016 BIOS autounattend WinPE ISO on Linux for ESXi
+
+
+### Kickstart Win2016 UEFI autounattend Dual ISO on Linux for ESXi
+
+
+### Kickstart Win2016 UEFI autounattend Single ISO on Linux for ESXi
+
+
+### Kickstart Win2016 UEFI autounattend WinPE ISO on Linux for ESXi
 
 
 ### Kickstart Win2019 BIOS autounattend Dual ISO on Linux for ESXi
@@ -92,6 +104,15 @@ Kickstarts Windows Server 2019 from a single ISO.
 ### Kickstart Win2019 BIOS autounattend WinPE ISO on Linux for ESXi
 
 
+### Kickstart Win2019 UEFI autounattend Dual ISO on Linux for ESXi
+
+
+### Kickstart Win2019 UEFI autounattend Single ISO on Linux for ESXi
+
+
+### Kickstart Win2019 UEFI autounattend WinPE ISO on Linux for ESXi
+
+
 ### Kickstart Win2022 BIOS autounattend Dual ISO on Linux for ESXi
 
 
@@ -101,46 +122,19 @@ Kickstarts Windows Server 2019 from a single ISO.
 ### Kickstart Win2022 BIOS autounattend WinPE ISO on Linux for ESXi
 
 
+### Kickstart Win2022 UEFI autounattend Dual ISO on Linux for ESXi
+
+
 ### Kickstart Win2022 UEFI autounattend Single ISO on Linux for ESXi
 
 
 ### Kickstart Win2022 UEFI autounattend WinPE ISO on Linux for ESXi
 
 
-### Kickstart Windows 10 DVD on ESXi with 2 ISOs
-
-Kickstarts a Windows virtual machine from two ISOs.
-1. Unaltered Windows ISO.
-2. ESXi Drivers ISO.
-
 ### WinPE Kickstart Win10+ESXi
 
 
 ### WinPE Kickstart Win10+ESXi - Old
-
-
-### Kickstart Win2019 UEFI autounattend Single ISO on Linux for ESXi
-
-
-### Kickstart Win2016 UEFI autounattend Single ISO on Linux for ESXi
-
-
-### Kickstart Win2022 UEFI autounattend Dual ISO on Linux for ESXi
-
-
-### Kickstart Win2019 UEFI autounattend Dual ISO on Linux for ESXi
-
-
-### Kickstart Win2016 UEFI autounattend Dual ISO on Linux for ESXi
-
-
-### Kickstart Win2019 UEFI autounattend WinPE ISO on Linux for ESXi
-
-
-### Kickstart Win2016 UEFI autounattend WinPE ISO on Linux for ESXi
-
-
-### Kickstart Win10 UEFI autounattend WinPE ISO on Linux for ESXi
 
 
 
