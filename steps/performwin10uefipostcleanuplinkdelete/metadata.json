@@ -5,8 +5,8 @@
     "cloneUrl": "", 
     "enabled": true, 
     "externalUuid4": "a711415e-0b25-4728-ad56-cc6fa4920ddd", 
-    "key": "performwin10uefipostcleanuplink", 
-    "name": "Perform Win10 UEFI Post Cleanup (link)", 
+    "key": "performwin10uefipostcleanuplinkdelete", 
+    "name": "Perform Win10 UEFI Post Cleanup (link) - DELETE", 
     "parameterMap": [
         {
             "childParameterName": null, 

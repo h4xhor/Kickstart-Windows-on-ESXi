@@ -2,47 +2,47 @@
     "actionOnStepFail": "stop", 
     "concurrency": 1, 
     "enabled": true, 
-    "externalUuid4": "510e9516-e0c4-4bc7-bc37-5319c2565956", 
+    "externalUuid4": "e05d866e-c834-4491-a840-bffa4a79dde3", 
     "isBlueprint": true, 
-    "key": "kickstartwin10uefiautounattendsingleisoonlinuxforesxi", 
+    "key": "kickstartwin2019uefiautounattendsingleisoonlinuxforesxi", 
     "links": [
         {
-            "order": 0, 
-            "stepKey": "performpostcleanuplink"
-        }, 
-        {
-            "order": 100, 
-            "stepKey": "performdeployesxidriverstoadropdirectorylink"
-        }, 
-        {
             "order": 150, 
-            "stepKey": "createwin10uefiautounattendsingleisoonlinuxlink"
-        }, 
-        {
-            "order": 200, 
-            "stepKey": "buildwin10uefivirtualmachineonesxilink"
-        }, 
-        {
-            "order": 250, 
-            "stepKey": "winrmhttpswait60s"
+            "stepKey": "performpostcleanuplink"
         }, 
         {
             "order": 300, 
-            "stepKey": "performpostcleanuplink"
+            "stepKey": "performdeployesxidriverstoadropdirectorylink"
         }, 
         {
             "order": 350, 
-            "stepKey": "testwinuefinodelink"
+            "stepKey": "createwin2019uefiautounattendsingleisoonlinuxlink"
         }, 
         {
             "order": 400, 
-            "stepKey": "performtestwin10link"
+            "stepKey": "buildwindowsserveruefivirtualmachineonesxilink"
         }, 
         {
             "order": 450, 
+            "stepKey": "winrmhttpswait60s"
+        }, 
+        {
+            "order": 500, 
+            "stepKey": "performpostcleanuplink"
+        }, 
+        {
+            "order": 600, 
+            "stepKey": "testwinuefinodelink"
+        }, 
+        {
+            "order": 750, 
+            "stepKey": "performtestwin2019link"
+        }, 
+        {
+            "order": 800, 
             "stepKey": "performtestifvmwaredriversinstalledlink"
         }
     ], 
-    "name": "Kickstart Win10 UEFI autounattend Single ISO on Linux for ESXi", 
+    "name": "Kickstart Win2019 UEFI autounattend Single ISO on Linux for ESXi", 
     "type": "com.servertribe.attune.tuples.StepGroupTuple"
 }

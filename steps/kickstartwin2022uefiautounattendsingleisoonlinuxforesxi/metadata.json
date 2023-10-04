@@ -11,10 +11,6 @@
             "stepKey": "performpostcleanuplink"
         }, 
         {
-            "order": 100, 
-            "stepKey": "performwin10uefipostcleanuplink"
-        }, 
-        {
             "order": 200, 
             "stepKey": "performdeployesxidriverstoadropdirectorylink"
         }, 
