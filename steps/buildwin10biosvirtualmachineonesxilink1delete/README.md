@@ -1,1 +1,0 @@
-Creates a ESXi virtual machine.

@@ -1,1 +1,0 @@
-Modifies `startnet.cmd` that's inside `boot.wim`.

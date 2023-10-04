@@ -1,1 +1,0 @@
-Reboots the target Windows virtual machine.

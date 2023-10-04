@@ -1,1 +1,0 @@
-Extracts the `boot.img` image file out of the WinPE ISO into the `WinPE_amd64Dir` directory.
