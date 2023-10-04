@@ -5,8 +5,8 @@
     "cloneUrl": "", 
     "enabled": true, 
     "externalUuid4": "b66a5ed0-a7ef-40f9-9a28-8dc94d2f3574", 
-    "key": "esxiuefirecreatevirtualmachinelink", 
-    "name": "ESXi UEFI Recreate Virtual Machine (link)", 
+    "key": "esxiuefirecreatevirtualmachinelinkdelete", 
+    "name": "ESXi UEFI Recreate Virtual Machine (link) - DELETE", 
     "parameterMap": [
         {
             "childParameterName": null, 

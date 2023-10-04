@@ -118,9 +118,6 @@ Kickstarts a Windows virtual machine from two ISOs.
 1. `boot.wim` is seen as `X:` drive and is available when WinPE runs.
 2.  winpe_staging will be used as the DVD root directory for `mkisofs`. This will be seen as `D:` drive during the Windows installation and when the `autounattend.xml` PowerShell scripts runs. 
 
-### LIN WinPE Kickstart UEFI Win 2019+ESXi with wimmountrw - DELETE
-
-
 ### WinPE Kickstart Win10+ESXi
 
 
