@@ -12,7 +12,7 @@
         }, 
         {
             "order": 50, 
-            "stepKey": "deployplainwinpeisolink"
+            "stepKey": "deployplainwinpeisolinkdelete"
         }, 
         {
             "order": 100, 

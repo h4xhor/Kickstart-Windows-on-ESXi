@@ -1,1 +1,0 @@
-Kickstarts a Windows Server 2019 virtual machine on ESXi.

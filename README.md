@@ -119,10 +119,6 @@ Kickstarts a Windows virtual machine from two ISOs.
 ### WinPE Kickstart Win10+ESXi - Old
 
 
-### WinPE Kickstart Win 2019+ESXi - DELETE
-
-Kickstarts a Windows Server 2019 virtual machine on ESXi.
-
 ### Kickstart Win2019 UEFI autounattend Single ISO on Linux for ESXi
 
 
