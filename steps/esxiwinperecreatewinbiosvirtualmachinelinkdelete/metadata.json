@@ -5,8 +5,8 @@
     "cloneUrl": "", 
     "enabled": true, 
     "externalUuid4": "eb147750-01d0-4fbd-a50f-65b1f4e0ef5d", 
-    "key": "esxiwinperecreatewinbiosvirtualmachinelink", 
-    "name": "ESXi WinPE Recreate Win BIOS Virtual Machine (link)", 
+    "key": "esxiwinperecreatewinbiosvirtualmachinelinkdelete", 
+    "name": "ESXi WinPE Recreate Win BIOS Virtual Machine (link) - DELETE", 
     "parameterMap": [
         {
             "childParameterName": null, 

@@ -1,12 +1,12 @@
 {
     "actionOnStepFail": null, 
     "blueprintName": "", 
-    "blueprintUuid": "bc7db717-ab07-414c-87c4-e00b6708e454", 
+    "blueprintUuid": "0722c16d-cf7c-42fd-90c2-1bc04aacd598", 
     "cloneUrl": "", 
     "enabled": true, 
-    "externalUuid4": "6bdb6290-a9d6-4ec9-966b-19cc296581fd", 
-    "key": "lindeploystartnetcmdforwinpeonesxiforwin2019link", 
-    "name": "LIN Deploy startnet.cmd for WinPE on ESXi for Win2019 (link)", 
+    "externalUuid4": "f8c8af25-4a4b-4b14-a248-34f23865a234", 
+    "key": "lindeploywin2019unattendedconfigesxibiosfordriversonxdrivelinkdelete", 
+    "name": "LIN Deploy Win2019 Unattended Config ESXi BIOS for Drivers on X Drive (link) - DELETE", 
     "parameterMap": [
         {
             "childParameterName": null, 
