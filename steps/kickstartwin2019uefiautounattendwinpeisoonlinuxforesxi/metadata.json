@@ -1,0 +1,48 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "fc9e235c-274b-4977-b5c6-a129121a773d", 
+    "isBlueprint": true, 
+    "key": "kickstartwin2019uefiautounattendwinpeisoonlinuxforesxi", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "performpostcleanuplink"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "performdeployesxidriverstoadropdirectorylink"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "createwin2019uefiautounattendwinpeisoonlinux"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "buildwindowsserveruefivirtualmachineonesxilink"
+        }, 
+        {
+            "order": 400, 
+            "stepKey": "winrmhttpswait60s"
+        }, 
+        {
+            "order": 500, 
+            "stepKey": "performpostcleanuplink"
+        }, 
+        {
+            "order": 600, 
+            "stepKey": "testwinuefinodelink"
+        }, 
+        {
+            "order": 750, 
+            "stepKey": "performtestwin2019link"
+        }, 
+        {
+            "order": 800, 
+            "stepKey": "performtestifvmwaredriversinstalledlink"
+        }
+    ], 
+    "name": "Kickstart Win2019 UEFI autounattend WinPE ISO on Linux for ESXi", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}
