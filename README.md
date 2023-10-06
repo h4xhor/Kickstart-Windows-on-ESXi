@@ -134,6 +134,9 @@ Kickstarts Windows Server 2019 from a single ISO.
 ### WinPE Kickstart Win10+ESXi
 
 
+### Deploy Plain WinPE ISO (link) - DELETE
+
+
 
 
 

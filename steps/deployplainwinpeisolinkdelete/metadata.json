@@ -1,0 +1,11 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "e084e09d-a038-40f6-af58-3ab0c5fdb3ac", 
+    "isBlueprint": true, 
+    "key": "deployplainwinpeisolinkdelete", 
+    "links": [], 
+    "name": "Deploy Plain WinPE ISO (link) - DELETE", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}
